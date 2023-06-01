@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="/xmlrpc.php">
+
+	<script type="text/javascript">document.documentElement.className = 'js';</script>
+	
+	<title>advaitamandscience | Advaitam and Science</title>
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,latin-ext&display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style>
+<meta name="robots" content="noindex, nofollow">
+<script type="text/javascript">let jqueryParams=[],jQuery=function(r){return jqueryParams=[...jqueryParams,r],jQuery},$=function(r){return jqueryParams=[...jqueryParams,r],$};window.jQuery=jQuery,window.$=jQuery;let customHeadScripts=!1;jQuery.fn=jQuery.prototype={},$.fn=jQuery.prototype={},jQuery.noConflict=function(r){if(window.jQuery)return jQuery=window.jQuery,$=window.jQuery,customHeadScripts=!0,jQuery.noConflict},jQuery.ready=function(r){jqueryParams=[...jqueryParams,r]},$.ready=function(r){jqueryParams=[...jqueryParams,r]},jQuery.load=function(r){jqueryParams=[...jqueryParams,r]},$.load=function(r){jqueryParams=[...jqueryParams,r]},jQuery.fn.ready=function(r){jqueryParams=[...jqueryParams,r]},$.fn.ready=function(r){jqueryParams=[...jqueryParams,r]};</script><link rel="alternate" type="application/rss+xml" title="Advaitam and Science &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="Advaitam and Science &raquo; Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Advaitam and Science &raquo; Posts by advaitamandscience Feed" href="/author/advaitamandscience/feed/">
+<meta content="Default Divi Child v.4.0.1" name="generator">
+<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=6.2.2" type="text/css" media="all">
+<style id="wp-block-library-theme-inline-css" type="text/css">.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}</style>
+<style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}</style>
+<link rel="stylesheet" id="divi-style-parent-css" href="/wp-content/themes/Divi/style-static.min.css?ver=4.21.0" type="text/css" media="all">
+<link rel="stylesheet" id="divi-style-css" href="/wp-content/themes/default-divichild/style.css?ver=4.21.0" type="text/css" media="all">
+<link rel="stylesheet" id="site_style-css" href="/wp-content/themes/default-divichild/site-style.css?ver=6.2.2" type="text/css" media="all">
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/users/5">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 6.2.2">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1">
+<style type="text/css" id="custom-background-css">body.custom-background { background-image: url("/wp-content/uploads/sites/3/2021/05/page-1024x640-1.jpeg"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }</style>
+	<script>
+// Add A Dynamic Year In Divi Footer Copyright
+ // var beg_year = 2019; // Year site went live
+ var this_year = new Date(); // Get current date
+ var developed_by = '<p>Site Powered by <a href="https://digitalindiya.com/" target="_blank" rel="noopener noreferrer"><strong>DigitalIndiya.com<\/strong><\/a><\/p>'; // Developer info
+ //this_year = this_year.getFullYear();
+ stitle = jQuery('title').text(); 
+ var s_title = stitle;
+ var year = this_year;
+ 
+ jQuery(function($){
+ $('#footer-info').html('© ' + year + ' <a href="/">' + s_title + '<\/a> ' + developed_by );
+ });
+</script><style id="et-divi-customizer-global-cached-inline-styles">#top-menu li a{font-size:16px}body.et_vertical_nav .container.et_search_form_container .et-search-form input{font-size:16px!important}@media only screen and (min-width:981px){.et_header_style_left #et-top-navigation,.et_header_style_split #et-top-navigation{padding:50px 0 0 0}.et_header_style_left #et-top-navigation nav>ul>li>a,.et_header_style_split #et-top-navigation nav>ul>li>a{padding-bottom:50px}.et_header_style_split .centered-inline-logo-wrap{width:100px;margin:-100px 0}.et_header_style_split .centered-inline-logo-wrap #logo{max-height:100px}.et_pb_svg_logo.et_header_style_split .centered-inline-logo-wrap #logo{height:100px}.et_header_style_centered #top-menu>li>a{padding-bottom:18px}.et_header_style_slide #et-top-navigation,.et_header_style_fullscreen #et-top-navigation{padding:41px 0 41px 0!important}.et_header_style_centered #main-header .logo_container{height:100px}#logo{max-height:100%}.et_pb_svg_logo #logo{height:100%}}@media only screen and (min-width:1350px){.et_pb_row{padding:27px 0}.et_pb_section{padding:54px 0}.single.et_pb_pagebuilder_layout.et_full_width_page .et_post_meta_wrapper{padding-top:81px}.et_pb_fullwidth_section{padding:0}}.et_pb_widget_area_left{border-right:0px!important;padding-right:0px!important;border-left:1px solid rgba(0,0,0,.1);padding-left:30px}.et_pb_column article{margin-bottom:30px!important}.post-content{padding-bottom:20px}.post-content-inner{padding-bottom:15px}a[aria-current="page"],.et_pb_widget_area a:hover{color:#e91e63!important}h4.widgettitle{font-size:20px;font-weight:600;border-bottom:1px dashed #ccc;margin-bottom:15px}.wp-block-loginout{padding:10px;background:#edfaff;text-align:center;border-radius:5px}a#cancel-comment-reply-link{position:relative;right:0px;top:21px;background:#fff4f4;padding:10px 15px}#commentform{padding-bottom:50px;padding-top:30px}</style>
+</head>
+<body class="archive paged author author-advaitamandscience author-5 custom-background paged-17 author-paged-17 et-tb-has-template et-tb-has-header et-tb-has-footer et_pb_button_helper_class et_boxed_layout et_cover_background et_pb_gutter et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><div id="page-container">
+<div id="et-boc" class="et-boc">
+			
+		<header class="et-l et-l--header">
+			<div class="et_builder_inner_content et_pb_gutters3">
+<div class="et_pb_section et_pb_section_0_tb_header et_pb_with_background et_section_regular et_pb_section--with-menu">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_header et_pb_equal_columns et_pb_gutters3">
+				<div class="et_pb_column et_pb_column_1_4 et_pb_column_0_tb_header  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_with_border et_pb_module et_pb_blurb et_pb_blurb_0_tb_header logo et_animated  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><a href="/"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img decoding="async" src="https://advaitamandscience.org/wp-content/uploads/sites/3/2021/05/advaitam-logo-wpp1605575340446.png" alt="" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone"></span></a></div>
+					<div class="et_pb_blurb_container">
+						
+						
+					</div>
+				</div>
+			</div>
+			</div>
+<div class="et_pb_column et_pb_column_3_4 et_pb_column_1_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0_tb_header et_clickable  et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h1 style="text-align: center;"><strong>Advaitam and Science</strong></h1></div>
+			</div>
+<div class="et_pb_module et_pb_text et_pb_text_1_tb_header  et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h4>
+<strong>OM, Purnamata purnamitam purnat purnamutachyate, </strong><strong>purnasya purnamataye purnamevavasishyate – Bri.Up V.i.1</strong>
+</h4></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+<div class="et_pb_row et_pb_row_1_tb_header et_pb_row--with-menu">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_2_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column--with-menu">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_menu et_pb_menu_0_tb_header et_pb_bg_layout_light  et_pb_text_align_center et_dropdown_animation_fade et_pb_menu--without-logo et_pb_menu--style-left_aligned">
+					
+					
+					
+					
+					<div class="et_pb_menu_inner_container clearfix">
+						
+						<div class="et_pb_menu__wrap">
+							<div class="et_pb_menu__menu">
+								<nav class="et-menu-nav"><ul id="menu-main-menu" class="et-menu nav">
+<li class="et_pb_menu_page_id-home menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1553"><a href="/">Home</a></li>
+<li class="et_pb_menu_page_id-4 menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1923"><a href="/category/articles/">Articles</a></li>
+<li class="et_pb_menu_page_id-7 menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1924"><a href="/category/poems/">Poems</a></li>
+<li class="et_pb_menu_page_id-5 menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1872"><a href="/category/my-views/">My Views</a></li>
+<li class="et_pb_menu_page_id-103 menu-item menu-item-type-post_type menu-item-object-page menu-item-1557"><a href="/about-me/">About me</a></li>
+<li class="et_pb_menu_page_id-104 menu-item menu-item-type-post_type menu-item-object-page menu-item-1558"><a href="/contact-2/">Contact</a></li>
+</ul></nav>
+							</div>
+							
+							
+							<div class="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</header>
+	<div id="et-main-area">
+	
+<div id="main-content">
+	<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+		
+					<article id="post-743" class="et_pb_post post-743 post type-post status-publish format-standard hentry category-my-views">
+
+				
+															<h2 class="entry-title"><a href="/my-views/a-guru/">A GURU</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">Feb 14, 2014</span> | <a href="/category/my-views/" rel="category tag">My Views</a></p>
+<h4>                                                                                             A GURU</h4>
+<p>&nbsp;</p>
+<p style="text-align: justify">It is easy to learn, but difficult to teach.  Learning process to a large extent depends on the teacher and the teaching.  Teaching is an art, and it improves gradually with dedication and sincere effort.  To exactly reflect what one has learned is a skill.  A good teacher uses proper methodology and suitable techniques to make his point clear.  A good teacher never gets disappointed when the students do not understand his teachings.  Instead, he strives more to improve his skill.  A good teacher has always undergone proper training and learnt his subject of specialization in a proper manner and he replicates his understanding in a productive way, so that many more can be benefited from it.  However, a Guru is more than a teacher.  A Guru dispels ignorance.  A Guru not only teaches the subject, he becomes the role model for the student.  A student follows his lifestyle and behavior.  He is looked upon with respect by all.  A Guru&#8217;s job extends beyond the working hours of the day.  He imparts the subject matter as well as good values to the students.  Seekers of liberation need a Guru of such caliber than a mere teacher.  Since what they seek is very subtle they need proper guidance, else they will be left in the dark.  Their area of analysis is entirely different from the worldly matter that they are familiar with so far.  Each student looks for a role model who practices those teachings so that he can follow the teachings with confidence, and the Guru is that role model.</p>
+<p style="text-align: justify">A Vedanta Guru should be well versed in the scriptures and must have spent a considerable period of life studying the scriptures under a well versed Guru.  Only such a Guru knows the proper way of teaching this profound subject.  Such a Guru is known as <i>&#8216;srotriyan&#8217;</i> in Sanskrit.  A person, who always remains in the contemplation of Brahman, gets detached from the worldly life.  He is called as <i>&#8216;Brahmanishtan&#8217;</i>.  The teachings of a <i>&#8216;Brahmanishtan&#8217;</i> are of very high standard and it will be difficult for the beginners to follow his teachings.  He may be a very good teacher but not suitable for a beginner.  A <i>&#8216;utthama</i> Guru&#8217; (suitable Guru) is a person who is both a <i>&#8216;srotriyan&#8217;</i> and a <i>&#8216;brahmanishtan&#8217;</i>.</p>
+<p style="text-align: justify">A Guru does not expect any favors from the students; instead he imparts the subject along with good value to the students.  He concentrates on his teachings and always contemplates on the Truth.  It is the duty of the Guru to know the grasping capacity of the students and impart the knowledge accordingly.  He never discourages or disappoints the students by his teaching, words or by his behaviour.</p>
+<p style="text-align: justify">In the scriptures, there are many conditions laid out for a Guru.  In my view, though in the modern times all those conditions cannot be followed, a Guru must atleast be a dedicated and sincere person with good values.  There is nothing wrong in receiving gifts for proper teaching. However, if receiving gifts become the central point, then teaching takes a back stage.  A person cannot be made or trained to be a Guru.  A student looks upon a person who has imparted good values, advices him in challenging times and teaches him the subject as a &#8216;respectful Guru&#8217;.</p>
+				
+					</article>
+			
+					<article id="post-740" class="et_pb_post post-740 post type-post status-publish format-standard hentry category-my-views">
+
+				
+															<h2 class="entry-title"><a href="/my-views/in-search-of-perfection/">IN SEARCH OF PERFECTION</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">Feb 14, 2014</span> | <a href="/category/my-views/" rel="category tag">My Views</a></p>
+<h4>                                                                          IN SEARCH OF PERFECTION</h4>
+<p>&nbsp;</p>
+<p style="text-align: justify">Every one searches for that one thing which does not exist anywhere &#8211; perfection.  Nothing in this world is described as perfectly good or perfectly bad.  Everything is a permutation and combination.  No one can extract a single thing from this combination without its opposites accompanying it as its side effect.  When we get something as really good its demerits always follows it.  Likewise, when we get something bad some of its merits follow it without noticing.  No person is perfectly good or perfectly bad.  The same is applicable for situations and objects.  If we search for perfection that does not exist, it is ignorance.</p>
+<p style="text-align: justify">When we want good things to happen, then we must have the capacity to view as well as extract the good things out of life.  This is the only possible thing that can be done.  Instead if we target on the negative qualities, we will be never satisfied in life.  When we view the positive qualities, even the negative qualities accompanying them will not affect us.  A person or a situation is said as good or bad depending on the majority of the qualities that prevail in them.  No one can exactly define what is good or bad.  If a person&#8217;s values and actions help many people to a large extent, then he is considered as a person with good values.  If his values and action disturb others to a large extent, then he is considered as a person with bad values.  A person can change his values only by proper advice.  He must be made to realize his mistakes in the most dignified way; else it will lead only to more confusion and traumatic situations.  If a person is deeply rooted in negative values and ideas, then it will take a long time for him to realize his mistakes and come out of his beliefs.  In such people even their positive qualities are ignored by others.</p>
+<p style="text-align: justify">If one always projects their negativity or view others negativity, then their nature will become more negative.  In my view, one must learn to ignore negativity and enhance the positive qualities in oneselves and try to view the positive nature of others, else our life will be spent in worrying, correcting and grudging on others.  One must learn to manage negative situations suitably.  Only such mentality succeeds.</p>
+<p style="text-align: justify">Perfection is a concept; it differs with different people.  It also differs in the same person at different stages of life.  Searching for perfection will only lead to a dissatisfied life.  No one acts according to our idea and views.  We can expect or perform a work only to a general rule of perfection.  If we personalize it, then it will lead to a total dissatisfied life.</p>
+				
+					</article>
+			
+					<article id="post-736" class="et_pb_post post-736 post type-post status-publish format-standard hentry category-articles">
+
+				
+															<h2 class="entry-title"><a href="/articles/the-vedic-varna-system/">THE VEDIC VARNA SYSTEM</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">Feb 6, 2014</span> | <a href="/category/articles/" rel="category tag">Articles</a></p>
+<h4>                                                                                THE VEDIC VARNA SYSTEM</h4>
+<p>&nbsp;</p>
+<p style="text-align: justify">Varna is the fundamental principle of existence.  Varna system is dependent on the karmas (actions) and <i>guna</i> (nature of a person).  Varna is the basic distinction among the people.  Four powers are required for the existence of this world.  They are the intelligence, decision making, planning and execution.  In the Vedic period this is referred as the <i>Brahmana</i>, <i>Kshatriya</i>, <i>Vaisya</i> and <i>Sudra</i>.  The entire human race has been divided in to four Varnas based on the qualities of nature &#8211; <i>Sattva</i>, <i>Rajas</i> and <i>Tamas</i>.  The caste system that is prevalent in modern India is based on the ancient Varna system, but it is practiced in an entirely different manner.  Social stigma and discrimination are a part of modern caste system, but in the Varna system everyone are treated as equals and there is no place for any stigma.  They performed their duties according to the Varna, and <i>gunas</i> played an important role in the Varna system.</p>
+<p style="text-align: justify">Basically there are three types of <i>gunas</i> (qualities), they are <i>sattva</i>, <i>rajas</i> and <i>tamas</i>.  &#8220;Purity, passion and inertia &#8211; these qualities, O Arjuna, born of nature, bind fast in the body, the embodied, and the indestructible&#8221;, (Bhagavad Gita, 14, 5).  These three qualities indicate the triple mentality.  They together produce attachment in the individual&#8217;s soul, delude them and bind them down.  These qualities become an obstacle in the path of realizing the truth.  <i>Gunas</i> are the primary constituents of the nature and are the basis of all substances.  One must transcend the <i>gunas</i> to realize the true nature.  These three <i>gunas</i> were at equilibrium at the primordial state.  During manifestation their equilibrium was disturbed and they became distinct. Still, there is no clear distinction between the three <i>gunas</i>.  At a time, only one <i>guna</i> predominates than the other two and from this we can infer that this particular <i>guna</i> is prevalent at that period of time.  This manifested world is considered as the twisted rope of these three <i>gunas, </i>the primary constituent of the nature.</p>
+<p style="text-align: justify"><b>The nature of the three gunas</b></p>
+<p style="text-align: justify"><b><i>Sattva</i></b> &#8211; <i>sattva</i> is the most pure nature.  It gives cheerfulness, blissfulness and helps to realize the truth.  <i>Sattva</i> attaches to happiness, absence of pride, contentment, divine nature.  &#8220;When through every gate (sense) in this body, the wisdom-light shines, then it may be known that <i>sattva</i> is predominant&#8221;, Bhagavad Gita, (14,11).</p>
+<p style="text-align: justify"><b><i>Rajas</i></b> &#8211; the nature of desire, anger, greed, pride, envy, egotism, jealous and passion and so on belongs to rajas.  &#8220;Know thou rajas to be of the nature of passion, the source of thirst (for sensual enjoyments) and attachment; it binds fast, O Arjuna the embodied one by attachment to action&#8221;, Bhagavad Gita, (14, 7).</p>
+<p style="text-align: justify"><b><i>Tamas</i></b> &#8211; the main nature of <i>tamas</i> is inertia.  It makes things to appear to be what they are not.  Ignorance, dullness, sleep, thinking of impossible things, delusion and so on belongs to <i>tamas</i>.  &#8220;But know thou <i>tamas</i> to be born of ignorance, deluding all embodied beings, it binds fast, O Arjuna, by heedlessness, indolence and sleep&#8221;, Baghavad Gita, (14,8).  All the three <i>gunas</i> exist in a person, but only one <i>guna</i> will be dominating.  The <i>gunas</i> are at different combinations in a person.  When the mind selects a <i>guna</i>, it performs its related functions.  If a particular <i>guna</i> dominates in a person for most of the time, then that person is known to have that <i>guna</i>.  Mostly <i>sattva</i> predominates in a person in the early morning, in the mid day mostly rajas predominates, in the night <i>tamas</i> predominates.  The three <i>gunas</i> are very important for a person.  If <i>sattva</i> predominates in a person for most of the time, then that person tend to be a very intelligent person.  If rajas predominate most of the time, then he will be a very active, passionate and highly ambitious person.  If <i>tamas</i> predominate at most of the time, then he will be a very dull person.  Human temperaments and tendencies vary according to the <i>gunas</i>.  According to the nature of the <i>gunas</i> will be the degree of evolution.</p>
+<p style="text-align: justify"><i>Gunas</i> cannot manifest themselves without a cause.  Nature is the tendency, <i>samskara</i> or <i>vasana</i> (impressions) in the living beings.  Tendencies and Impressions are acquired from the past births.  They manifest itself in the present birth and produce its effects.  This nature is the source of the <i>gunas</i>.  Every individual is born with his or her own <i>svabhava</i> (nature).  The <i>gunas</i> operate according to the respective natural tendencies of a person, which impel him to perform his own duties as their natural effects.  At any point of time it is possible to change the lower nature (<i>tamas</i>) to the higher nature (<i>sattva</i>).  The change should be step by step; else it is not possible to continue in the higher nature for a long period of time.</p>
+<p style="text-align: justify">The Vedic Varna system is based on the <i>gunas</i>.  The duties are allotted to the four <i>Varnas</i> in accordance with the <i>gunas</i> of the individual.  There are four <i>Varnas &#8211;</i> <i>Brahmana</i>, <i>Kshatriya</i>, <i>Vaisya</i> and <i>Sudra</i>.  These four divisions are needed for the governance of the manifested world.  Basically these four <i>Varnas</i> represent the skill and mentality.  &#8220;The fourfold caste has been created by Me according to the differentiation of <i>gunas</i> and karmas, though I am the author thereof know Me as non-doer and immutable&#8221;, Baghavad Gita, (4, 13).</p>
+<p style="text-align: justify"><b>Brahmana Varna</b></p>
+<p style="text-align: justify">The nature of <i>Brahmana</i> is <i>sattva</i>, and so he is of serene nature.  <i>Brahmana</i> is a person who is endowed with spiritual knowledge.  A person who has the knowledge of <i>Brahman</i> is a <i>Brahmana</i>.  In the ancient period, even the rulers of the nation respected the <i>Brahmanas</i> as their guru.  He is expected to perform the purificatory rites, by that he keeps the body and mind clean of impurities.  They are assigned with the duty of studying the Vedas, giving gifts, performing sacrifices etc.  They earn their living by performing sacrifices and teaching Vedas.  They are considered as very noble persons.  They will not have the least pride about their knowledge; they do not insult or discriminate the other <i>Varnas</i>.  The mental traits of a <i>Brahmana</i> are restraint of the mind and senses.  Even if a person who belongs to the other Varna has the knowledge of <i>Brahman</i>, then he is considered as a <i>Brahmana</i>.  The knowledge of <i>Brahman</i> is more important to be a Brahmana than his birth as a <i>Brahmana</i>.  Brahmin hood is not a mere social status, it is the status attached with the knowledge of <i>Brahman</i>.  The Brahmin caste system that is prevalent in the modern India is poles apart from the Vedic <i>Brahmana</i> Varna.</p>
+<p style="text-align: justify"><b>Kshatriya Varna</b></p>
+<p style="text-align: justify">The nature of <i>kshatriya</i> is <i>rajas</i> and <i>sattva</i>.  <i>Rajas</i> predominate and <i>sattva</i> is subordinate to <i>rajas</i>.  They posses lordliness.  They were the ancient rulers of India.  Their duty is to govern and protect the people.  In the discharge of this duty, he collects taxes from all expect the <i>Brahmana</i>.  He is considered by the other <i>Varnas</i> as the protector and not as a dictator.  <i>Kshatriya</i> is characterized by heroism, valor, fortitude, impressiveness, Self-control, patience, devotion to holy men, optimistic aptitude, and readiness to offer protection to the weak.</p>
+<p style="text-align: justify"><b>Vaisya Varna</b></p>
+<p style="text-align: justify">The nature of the<i> Vaisya</i> is <i>rajas</i> and <i>tamas</i>.  <i>Rajas</i> predominate and <i>tamas</i> is subordinate to <i>rajas</i>.  He does various sorts of activities or business to earn money.  His profession is agriculture and trade.  His mental trait is to take effort for the fulfillment of duty, securing of wealth and pleasure, perseverance under all circumstances and faith in God and Vedas.  They are the great devotees of the Lord.  The <i>kshatriya&#8217;s</i> income is dependent on the <i>Vaisya</i>.</p>
+<p style="text-align: justify"><b>Sudra Varna</b></p>
+<p style="text-align: justify">The nature of the sudra is tamas and rajas, tamas predominate and rajas is subordinate to tamas.  His mental traits are humility, purity, straight forwardness, service to the three Varnas, truth and care for the Brahmanas and their cows.  Their main occupation is to do service for the other Varnas.  This does not mean that they are socially degraded people.  They are not mistreated by the other Varnas at any point of time.  &#8220;Of Brahmanas, Kshtriyas, and Vaisyas as also of Sudras, O Arjuna, the duties are distributed according to the qualities born of their own nature&#8221;, Baghavad Gita (18, 41).</p>
+<p style="text-align: justify">There was no discrimination among the Varnas in the Vedic period; however Brahmans are entitled for Vedic rites because of their serene nature and knowledge.  Each individual devoted to his own duty attained perfection.  The duties are allotted to the four Varnas in accordance with the gunas of the individuals.  In the Vedic period each Varna had mutual respect for the other.  No Varna is barred from the knowledge of Brahman, provided they are evolved to absorb that superior knowledge.</p>
+<p style="text-align: justify">All the four Varnas are important for the society.  Society can exist in a flourishing state if the four Varnas do their duties properly.  Otherwise there will be chaos, rupture and fighting.  No Varna is considered as superior or inferior to the other, because the society needs all the Varnas.</p>
+<p style="text-align: justify">The Varna system is not only present in the society.  It is also found in the families, in individuals, in firms etc.  A Varna means basically the duties allotted to an individual according to their gunas.  In a family, each member has different gunas, and accordingly they perform their duties.  Intellect is associated with sattva, mind is associated with rajas, and body with tamas.  Some members of the family may have sattva guna.  They understand everything easily, it is purely based on the intellect and it is Brahmana nature.  Some members will be good decision makers and it is the nature of the kshathriya .  Some will be excellent in planning and it is the nature of Vaishya.   Some will be good in executing the plan and it is the nature of the Sudra.  Even in an individual these Varnas are present.  When sattva dominates in us, we understand everything and it is Brahmana nature.  When rajas dominates in us we take correct decisions, it is the nature of kshatriya.  When rajas dominate along with the combination of tamas, we will be busy planning for something, it is Vaishya nature.  When tamas dominates with rajas as subordinate, we execute the duties; it is the nature of Sudra.  Each and every individual is under the Varna system personally.  In the same manner, according to the gunas and the duties allotted, the Varna system can be applied to all the organizations.  Therefore, even in the modern India the Varna system can be slightly traced, but it is not recognized and it is submissive, and the caste system dominates.  One has the capacity to go from one guna to the other and subsequently from one Varna to the other else we will be stagnated.</p>
+<p style="text-align: justify">Each Varna purifies them by doing Vedic purificatory rites and makes one physically and mentally fit for grasping and practicing high ideals.  When the time rolled on, the Vedic Varna system diminished and became an organized distinguishable social form as caste system.  The modern caste system of India should never be identified with the Vedic Varna system, in which the man&#8217;s guna (constituent nature) and karma (work) are the clue to his Varna.  The modern caste system is made by the dominating people of the society for their own convenience and it is entirely different from the sensible Vedic Varna system.</p>
+<p style="text-align: justify">References</p>
+<p style="text-align: justify">The Baghavad Gita, (trans, Swami Sivananda), The Divine Life Society, Himalayas, 2003</p>
+<p style="text-align: justify">Srimad Bhagavata, Vol 1&amp;2 (trans, Swami Tapasyananda), Sri Ramakrishna Math, Mylapore</p>
+<p style="text-align: justify">Vivekacudamani Of Sri Sankaracarya, (trans, Swami Turiyananda), Sri Ramakrishna Math, Mylapore</p>
+				
+					</article>
+			
+					<article id="post-734" class="et_pb_post post-734 post type-post status-publish format-standard hentry category-poems">
+
+				
+															<h2 class="entry-title"><a href="/poems/a-crucial-decision/">A CRUCIAL DECISION</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">Jan 30, 2014</span> | <a href="/category/poems/" rel="category tag">Poems</a></p>
+<h4>                                                                                          CRUCIAL DECISION</h4>
+<h4></h4>
+<p>If you think the world is all,</p>
+<p>Then learn to rebut</p>
+<p>If you feel God is all,</p>
+<p>Then learn to ignore the rest</p>
+<p>If not both,</p>
+<p>You are a slave in the hands of others</p>
+<p>If you tie your leg to fear,</p>
+<p>Then you move in the direction of fear</p>
+<p>Ultimately, you are crushed by fear</p>
+<p>If you fail to come up,</p>
+<p>In a moment, the world is on you</p>
+<p>Then you become a rickshaw,</p>
+<p>And every one travels on it</p>
+<p>Neither can you drag it, nor can you leave it</p>
+<p>That burden is unbearable</p>
+<p>Any choice is yours,</p>
+<p>Anyway, the decision is crucial</p>
+<p>&nbsp;</p>
+<p>&nbsp;		</p>
+				
+					</article>
+			
+					<article id="post-731" class="et_pb_post post-731 post type-post status-publish format-standard hentry category-poems">
+
+				
+															<h2 class="entry-title"><a href="/poems/a-successful-boat/">A SUCCESSFUL BOAT</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">Jan 30, 2014</span> | <a href="/category/poems/" rel="category tag">Poems</a></p>
+<h4>                                                                              A SUCCESSFUL BOAT</h4>
+<p>&nbsp;</p>
+<p>I battled for life,</p>
+<p>In the middle of the tides</p>
+<p>The wind is withering me</p>
+<p>High tides are pushing me back</p>
+<p>I drifted here and there</p>
+<p>The roar of the ocean scared me</p>
+<p>The power of the wind bothered me</p>
+<p>Left alone,</p>
+<p>And unable to find a path,</p>
+<p>I accepted every suffering</p>
+<p>Suddenly, someone from somewhere,</p>
+<p>Began to row me,</p>
+<p>As if he knows the path well.</p>
+<p>He rowed me through the high tides</p>
+<p>He rowed me in the direction of the wind,</p>
+<p>But, only to control it.</p>
+<p>Till I<i> </i>crossed a point,</p>
+<p>Rowing was a challenge for him.</p>
+<p>Suddenly, everything seemed peaceful</p>
+<p>He left me in the middle, and vanished away</p>
+<p>Far away from the chaotic shore</p>
+<p>How peaceful it is,</p>
+<p>Till I saw, I never imagined a serene ocean</p>
+<p>I thanked my Guru,</p>
+<p>Who rowed me with the oar of knowledge.</p>
+<p>How peaceful it is,</p>
+<p>I reached my destination.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;		</p>
+				
+					</article>
+			<div class="pagination clearfix">
+	<div class="alignleft"><a href="/author/advaitamandscience/page/18/">&laquo; Older Entries</a></div>
+	<div class="alignright"><a href="/author/advaitamandscience/page/16/">Next Entries &raquo;</a></div>
+</div>			</div>
+
+				<div id="sidebar">
+		<div id="search-2" class="et_pb_widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://advaitamandscience.in001.wpcs.cc/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form></div>
+		<div id="recent-posts-2" class="et_pb_widget widget_recent_entries">
+		<h4 class="widgettitle">Recent Posts</h4>
+		<ul>
+											<li>
+					<a href="/articles/idol-worship-in-sanatana-dharma/">IDOL WORSHIP IN SANATANA DHARMA</a>
+									</li>
+											<li>
+					<a href="/articles/the-importance-of-pooja-in-sanatana-dharma/">THE IMPORTANCE OF POOJA IN SANATANA DHARMA</a>
+									</li>
+											<li>
+					<a href="/articles/rishis-of-sanatana-dharma/">RISHIS OF SANATANA DHARMA</a>
+									</li>
+											<li>
+					<a href="/articles/the-mutts-and-the-desa-nama-sampradaya-established-by-sri-adi-shankaracharya/">THE MUTTS AND THE DESA NAMA SAMPRADAYA ESTABLISHED BY SRI ADI SHANKARACHARYA</a>
+									</li>
+											<li>
+					<a href="/articles/advaita-guru-parampara/">ADVAITA GURU PARAMPARA</a>
+									</li>
+					</ul>
+
+		</div>
+<div id="recent-comments-2" class="et_pb_widget widget_recent_comments">
+<h4 class="widgettitle">Recent Comments</h4>
+<ul id="recentcomments">
+<li class="recentcomments">
+<span class="comment-author-link">Vrinda</span> on <a href="/articles/paroksha-jnana-to-aparoksha-jnana/#comment-41">PAROKSHA JNANA TO APAROKSHA JNANA</a>
+</li>
+<li class="recentcomments">
+<span class="comment-author-link">advaitamandscience</span> on <a href="/articles/the-three-types-of-knowledge/#comment-40">THE THREE TYPES OF KNOWLEDGE</a>
+</li>
+<li class="recentcomments">
+<span class="comment-author-link"><a href="http://www.dwaitaadwaitam.wordpress.com/" class="url" rel="ugc external nofollow">N. Anuradha</a></span> on <a href="/articles/the-three-types-of-knowledge/#comment-39">THE THREE TYPES OF KNOWLEDGE</a>
+</li>
+<li class="recentcomments">
+<span class="comment-author-link">Jyoti</span> on <a href="/articles/destiny-versus-freewill/#comment-44">DESTINY VERSUS FREEWILL</a>
+</li>
+<li class="recentcomments">
+<span class="comment-author-link">RESHMA ARORA</span> on <a href="/articles/atma-anatma-viveka/#comment-27">ATMA &#8211; ANATMA &#8211; VIVEKA</a>
+</li>
+</ul>
+</div>
+<div id="block-3" class="et_pb_widget widget_block"><div class="logged-out wp-block-loginout"><a href="/wp-login.php?redirect_to=https%3A%2F%2F%2Fauthor%2Fadvaitamandscience%2Fpage%2F17%2F%3Fsimply_static_page%3D2218">Log in</a></div></div>	</div>
+		</div>
+	</div>
+</div>
+
+	<footer class="et-l et-l--footer">
+			<div class="et_builder_inner_content et_pb_gutters3">
+<div class="et_pb_section et_pb_section_0_tb_footer et_pb_with_background et_section_regular">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_footer et_pb_equal_columns et_pb_gutters3">
+				<div class="et_pb_column et_pb_column_1_4 et_pb_column_0_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0_tb_footer  et_pb_text_align_left et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>Powered by : <a href="https://digitalindiya.com/" target="_blank" rel="noopener">DigitalIndiya.com</a></p></div>
+			</div>
+			</div>
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_1_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_1_tb_footer  et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p style="text-align: center;"><a href="/" id="site-title">DigitalIndiya.com</a> <span>©</span> 2023 | <a href="/privacy-policy/">Privacy policy</a></p></div>
+			</div>
+<div class="et_pb_module et_pb_code et_pb_code_0_tb_footer">
+				
+				
+				
+				
+				<div class="et_pb_code_inner"><script>jQuery(document).ready(function($){
+    var title = $('head title').text();
+   $('footer a#site-title').html(title);
+});</script></div>
+			</div>
+			</div>
+<div class="et_pb_column et_pb_column_1_4 et_pb_column_2_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<ul class="et_pb_module et_pb_social_media_follow et_pb_social_media_follow_0_tb_footer clearfix  et_pb_text_align_right et_pb_bg_layout_light">
+				
+				
+				
+				
+				<li class="et_pb_social_media_follow_network_0_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-facebook"><a href="#" class="icon et_pb_with_border" title="Follow on Facebook" target="_blank"><span class="et_pb_social_media_follow_network_name" aria-hidden="true">Follow</span></a></li>
+<li class="et_pb_social_media_follow_network_1_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-twitter"><a href="#" class="icon et_pb_with_border" title="Follow on Twitter" target="_blank"><span class="et_pb_social_media_follow_network_name" aria-hidden="true">Follow</span></a></li>
+<li class="et_pb_social_media_follow_network_2_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-linkedin"><a href="#" class="icon et_pb_with_border" title="Follow on LinkedIn" target="_blank"><span class="et_pb_social_media_follow_network_name" aria-hidden="true">Follow</span></a></li>
+			</ul>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</footer>
+		</div>
+
+			
+		</div>
+		</div>
+
+				<script type="text/javascript">var et_animation_data = [{"class":"et_pb_blurb_0_tb_header","style":"zoom","repeat":"once","duration":"600ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"}];
+					var et_link_options_data = [{"class":"et_pb_text_0_tb_header","url":"\/","target":"_self"}];</script>
+	<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.4" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="jquery-js-after">jqueryParams.length&&$.each(jqueryParams,function(e,r){if("function"==typeof r){var n=String(r);n.replace("$","jQuery");var a=new Function("return "+n)();$(document).ready(a)}});</script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"\/wp-admin\/admin-ajax.php","images_uri":"\/wp-content\/themes\/Divi\/images","builder_images_uri":"\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"7316ea661e","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"cf480ed468","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"743","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":"\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#7EBEC5","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/Divi/js/scripts.min.js?ver=4.21.0" id="divi-custom-script-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.21.0" id="fitvids-js"></script>
+<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=6.2.2" id="comment-reply-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.21.0" id="jquery-mobile-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.21.0" id="magnific-popup-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.21.0" id="easypiechart-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.21.0" id="salvattore-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/core/admin/js/common.js?ver=4.21.0" id="et-core-common-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.21.0" id="et-builder-modules-script-motion-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.21.0" id="et-builder-modules-script-sticky-js"></script>
+<style id="et-builder-module-design-1831-cached-inline-styles">.et_pb_menu .et_pb_menu__wrap{justify-content:flex-end}.et_pb_menu__logo img{max-height:90px!important;width:auto!important;padding:10px}.et_pb_module.et_pb_menu--with-logo{width:100%}.et-menu a,.et-menu a:hover{transition:none}header .et_pb_section.et_pb_sticky .et_pb_row{max-height:80px}header .et_pb_section.et_pb_sticky .et_pb_module img{min-height:60px;max-width:240px!important}@media (max-width:980px){header .et_pb_column:first-child{max-width:80%;margin-bottom:0px!important}header .et_pb_column:last-child{position:absolute;z-index:1}.et_mobile_nav_menu{padding:24px 10px}}.et_pb_section_0_tb_header.et_pb_section{padding-top:11px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:3%;margin-right:0px;margin-left:0px;background-color:rgba(0,0,0,0)!important}.et_pb_row_0_tb_header.et_pb_row{padding-top:0px!important;padding-right:0px!important;padding-bottom:0px!important;padding-left:0px!important;padding-top:0;padding-right:0px;padding-bottom:0;padding-left:0px}.et_pb_blurb_0_tb_header .et_pb_main_blurb_image .et_pb_only_image_mode_wrap,.et_pb_blurb_0_tb_header .et_pb_main_blurb_image .et-pb-icon{border-radius:100% 100% 100% 100%;overflow:hidden;border-width:1px}.et_pb_blurb_0_tb_header.et_pb_blurb{max-width:180px}.et_pb_blurb_0_tb_header .et_pb_main_blurb_image .et_pb_image_wrap{box-shadow:0px 2px 35px 10px #ffffff;max-width:100%}.et_pb_blurb_0_tb_header.et_pb_blurb .et_pb_main_blurb_image{margin-top:30px}.et_pb_column_1_tb_header{margin:auto}.et_pb_text_0_tb_header.et_pb_text,.et_pb_text_1_tb_header.et_pb_text{color:#ffffff!important}.et_pb_text_0_tb_header h1{font-weight:700;font-size:54px;color:#ffffff!important;text-align:center;text-shadow:0em 0.1em 0.1em #BB1593}.et_pb_text_0_tb_header{padding-top:2%!important;padding-right:3%!important;padding-bottom:2%!important;padding-left:3%!important;margin-top:0px!important}.et_pb_text_1_tb_header h1{text-align:center}.et_pb_text_1_tb_header h4{font-size:16px;line-height:1.4em;text-align:center}.et_pb_text_1_tb_header{border-radius:5px 5px 5px 5px;overflow:hidden;padding-top:2%!important;padding-right:0px!important;padding-bottom:2%!important;padding-left:0px!important;margin-top:-60px!important;margin-right:0px!important;margin-left:0px!important;max-width:500px}.et_pb_row_1_tb_header.et_pb_row{padding-top:0px!important;padding-right:0px!important;padding-bottom:0px!important;padding-left:0px!important;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px}.et_pb_row_1_tb_header,body.et_boxed_layout #page-container .et_pb_row_1_tb_header.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_1_tb_header.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_1_tb_header.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single.et_full_width_portfolio_page #page-container #et-boc .et-l .et_pb_row_1_tb_header.et_pb_row{width:100%}.et_pb_menu_0_tb_header.et_pb_menu ul li a{font-weight:700;font-size:17px;color:#dd1c70!important}.et_pb_menu_0_tb_header.et_pb_menu{background-color:#000000}.et_pb_menu_0_tb_header{padding-top:20px;padding-bottom:20px}.et_pb_menu_0_tb_header.et_pb_menu ul li.current-menu-item a{color:#FFFFFF!important}.et_pb_menu_0_tb_header.et_pb_menu .nav li ul,.et_pb_menu_0_tb_header.et_pb_menu .et_mobile_menu,.et_pb_menu_0_tb_header.et_pb_menu .et_mobile_menu ul{background-color:#000000!important}.et_pb_menu_0_tb_header .et_pb_menu_inner_container>.et_pb_menu__logo-wrap,.et_pb_menu_0_tb_header .et_pb_menu__logo-slot{width:auto;max-width:100%}.et_pb_menu_0_tb_header .et_pb_menu_inner_container>.et_pb_menu__logo-wrap .et_pb_menu__logo img,.et_pb_menu_0_tb_header .et_pb_menu__logo-slot .et_pb_menu__logo-wrap img{height:auto;max-height:none}.et_pb_menu_0_tb_header .mobile_nav .mobile_menu_bar:before,.et_pb_menu_0_tb_header .et_pb_menu__icon.et_pb_menu__search-button,.et_pb_menu_0_tb_header .et_pb_menu__icon.et_pb_menu__close-search-button,.et_pb_menu_0_tb_header .et_pb_menu__icon.et_pb_menu__cart-button{color:#7EBEC5}.et_pb_text_1_tb_header.et_pb_module{margin-left:auto!important;margin-right:auto!important}@media only screen and (max-width:767px){.et_pb_text_0_tb_header h1{font-size:54px}}</style>
+<style id="et-builder-module-design-1832-cached-inline-styles">.et_pb_section_0_tb_footer.et_pb_section{padding-top:0px;padding-bottom:0px;background-color:#000000!important}.et_pb_row_0_tb_footer.et_pb_row{padding-top:15px!important;padding-bottom:15px!important;padding-top:15px;padding-bottom:15px}.et_pb_row_0_tb_footer,body.et_boxed_layout #page-container .et_pb_row_0_tb_footer.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single.et_full_width_portfolio_page #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row{max-width:1280px}.et_pb_column_0_tb_footer,.et_pb_column_1_tb_footer,.et_pb_column_2_tb_footer{margin:auto}.et_pb_text_0_tb_footer.et_pb_text a,.et_pb_text_1_tb_footer.et_pb_text a:hover{color:#0eb1ed!important}.et_pb_text_0_tb_footer a{font-weight:600}.et_pb_text_1_tb_footer.et_pb_text a{color:#FFFFFF!important;transition:color 300ms ease 0ms}.et_pb_text_1_tb_footer{margin-bottom:0px!important}.et_pb_social_media_follow_network_0_tb_footer a.icon{background-color:#3b5998!important}.et_pb_social_media_follow_network_1_tb_footer a.icon{background-color:#00aced!important}.et_pb_social_media_follow_network_2_tb_footer a.icon{background-color:#007bb6!important}</style>	
+			<span class="et_pb_scroll_top et-pb-icon"></span>
+	</body>
+</html>

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="/xmlrpc.php">
+
+	<script type="text/javascript">document.documentElement.className = 'js';</script>
+	
+	<title>advaitamandscience | Advaitam and Science</title>
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,latin-ext&display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style>
+<meta name="robots" content="noindex, nofollow">
+<script type="text/javascript">let jqueryParams=[],jQuery=function(r){return jqueryParams=[...jqueryParams,r],jQuery},$=function(r){return jqueryParams=[...jqueryParams,r],$};window.jQuery=jQuery,window.$=jQuery;let customHeadScripts=!1;jQuery.fn=jQuery.prototype={},$.fn=jQuery.prototype={},jQuery.noConflict=function(r){if(window.jQuery)return jQuery=window.jQuery,$=window.jQuery,customHeadScripts=!0,jQuery.noConflict},jQuery.ready=function(r){jqueryParams=[...jqueryParams,r]},$.ready=function(r){jqueryParams=[...jqueryParams,r]},jQuery.load=function(r){jqueryParams=[...jqueryParams,r]},$.load=function(r){jqueryParams=[...jqueryParams,r]},jQuery.fn.ready=function(r){jqueryParams=[...jqueryParams,r]},$.fn.ready=function(r){jqueryParams=[...jqueryParams,r]};</script><link rel="alternate" type="application/rss+xml" title="Advaitam and Science &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="Advaitam and Science &raquo; Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Advaitam and Science &raquo; Posts by advaitamandscience Feed" href="/author/advaitamandscience/feed/">
+<meta content="Default Divi Child v.4.0.1" name="generator">
+<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=6.2.2" type="text/css" media="all">
+<style id="wp-block-library-theme-inline-css" type="text/css">.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}</style>
+<style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}</style>
+<link rel="stylesheet" id="divi-style-parent-css" href="/wp-content/themes/Divi/style-static.min.css?ver=4.21.0" type="text/css" media="all">
+<link rel="stylesheet" id="divi-style-css" href="/wp-content/themes/default-divichild/style.css?ver=4.21.0" type="text/css" media="all">
+<link rel="stylesheet" id="site_style-css" href="/wp-content/themes/default-divichild/site-style.css?ver=6.2.2" type="text/css" media="all">
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/users/5">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 6.2.2">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1">
+<style type="text/css" id="custom-background-css">body.custom-background { background-image: url("/wp-content/uploads/sites/3/2021/05/page-1024x640-1.jpeg"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }</style>
+	<script>
+// Add A Dynamic Year In Divi Footer Copyright
+ // var beg_year = 2019; // Year site went live
+ var this_year = new Date(); // Get current date
+ var developed_by = '<p>Site Powered by <a href="https://digitalindiya.com/" target="_blank" rel="noopener noreferrer"><strong>DigitalIndiya.com<\/strong><\/a><\/p>'; // Developer info
+ //this_year = this_year.getFullYear();
+ stitle = jQuery('title').text(); 
+ var s_title = stitle;
+ var year = this_year;
+ 
+ jQuery(function($){
+ $('#footer-info').html('© ' + year + ' <a href="/">' + s_title + '<\/a> ' + developed_by );
+ });
+</script><style id="et-divi-customizer-global-cached-inline-styles">#top-menu li a{font-size:16px}body.et_vertical_nav .container.et_search_form_container .et-search-form input{font-size:16px!important}@media only screen and (min-width:981px){.et_header_style_left #et-top-navigation,.et_header_style_split #et-top-navigation{padding:50px 0 0 0}.et_header_style_left #et-top-navigation nav>ul>li>a,.et_header_style_split #et-top-navigation nav>ul>li>a{padding-bottom:50px}.et_header_style_split .centered-inline-logo-wrap{width:100px;margin:-100px 0}.et_header_style_split .centered-inline-logo-wrap #logo{max-height:100px}.et_pb_svg_logo.et_header_style_split .centered-inline-logo-wrap #logo{height:100px}.et_header_style_centered #top-menu>li>a{padding-bottom:18px}.et_header_style_slide #et-top-navigation,.et_header_style_fullscreen #et-top-navigation{padding:41px 0 41px 0!important}.et_header_style_centered #main-header .logo_container{height:100px}#logo{max-height:100%}.et_pb_svg_logo #logo{height:100%}}@media only screen and (min-width:1350px){.et_pb_row{padding:27px 0}.et_pb_section{padding:54px 0}.single.et_pb_pagebuilder_layout.et_full_width_page .et_post_meta_wrapper{padding-top:81px}.et_pb_fullwidth_section{padding:0}}.et_pb_widget_area_left{border-right:0px!important;padding-right:0px!important;border-left:1px solid rgba(0,0,0,.1);padding-left:30px}.et_pb_column article{margin-bottom:30px!important}.post-content{padding-bottom:20px}.post-content-inner{padding-bottom:15px}a[aria-current="page"],.et_pb_widget_area a:hover{color:#e91e63!important}h4.widgettitle{font-size:20px;font-weight:600;border-bottom:1px dashed #ccc;margin-bottom:15px}.wp-block-loginout{padding:10px;background:#edfaff;text-align:center;border-radius:5px}a#cancel-comment-reply-link{position:relative;right:0px;top:21px;background:#fff4f4;padding:10px 15px}#commentform{padding-bottom:50px;padding-top:30px}</style>
+</head>
+<body class="archive paged author author-advaitamandscience author-5 custom-background paged-27 author-paged-27 et-tb-has-template et-tb-has-header et-tb-has-footer et_pb_button_helper_class et_boxed_layout et_cover_background et_pb_gutter et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><div id="page-container">
+<div id="et-boc" class="et-boc">
+			
+		<header class="et-l et-l--header">
+			<div class="et_builder_inner_content et_pb_gutters3">
+<div class="et_pb_section et_pb_section_0_tb_header et_pb_with_background et_section_regular et_pb_section--with-menu">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_header et_pb_equal_columns et_pb_gutters3">
+				<div class="et_pb_column et_pb_column_1_4 et_pb_column_0_tb_header  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_with_border et_pb_module et_pb_blurb et_pb_blurb_0_tb_header logo et_animated  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><a href="/"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img decoding="async" src="https://advaitamandscience.org/wp-content/uploads/sites/3/2021/05/advaitam-logo-wpp1605575340446.png" alt="" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone"></span></a></div>
+					<div class="et_pb_blurb_container">
+						
+						
+					</div>
+				</div>
+			</div>
+			</div>
+<div class="et_pb_column et_pb_column_3_4 et_pb_column_1_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0_tb_header et_clickable  et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h1 style="text-align: center;"><strong>Advaitam and Science</strong></h1></div>
+			</div>
+<div class="et_pb_module et_pb_text et_pb_text_1_tb_header  et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h4>
+<strong>OM, Purnamata purnamitam purnat purnamutachyate, </strong><strong>purnasya purnamataye purnamevavasishyate – Bri.Up V.i.1</strong>
+</h4></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+<div class="et_pb_row et_pb_row_1_tb_header et_pb_row--with-menu">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_2_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column--with-menu">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_menu et_pb_menu_0_tb_header et_pb_bg_layout_light  et_pb_text_align_center et_dropdown_animation_fade et_pb_menu--without-logo et_pb_menu--style-left_aligned">
+					
+					
+					
+					
+					<div class="et_pb_menu_inner_container clearfix">
+						
+						<div class="et_pb_menu__wrap">
+							<div class="et_pb_menu__menu">
+								<nav class="et-menu-nav"><ul id="menu-main-menu" class="et-menu nav">
+<li class="et_pb_menu_page_id-home menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1553"><a href="/">Home</a></li>
+<li class="et_pb_menu_page_id-4 menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1923"><a href="/category/articles/">Articles</a></li>
+<li class="et_pb_menu_page_id-7 menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1924"><a href="/category/poems/">Poems</a></li>
+<li class="et_pb_menu_page_id-5 menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1872"><a href="/category/my-views/">My Views</a></li>
+<li class="et_pb_menu_page_id-103 menu-item menu-item-type-post_type menu-item-object-page menu-item-1557"><a href="/about-me/">About me</a></li>
+<li class="et_pb_menu_page_id-104 menu-item menu-item-type-post_type menu-item-object-page menu-item-1558"><a href="/contact-2/">Contact</a></li>
+</ul></nav>
+							</div>
+							
+							
+							<div class="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</header>
+	<div id="et-main-area">
+	
+<div id="main-content">
+	<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+		
+					<article id="post-1516" class="et_pb_post post-1516 post type-post status-publish format-standard hentry category-my-views">
+
+				
+															<h2 class="entry-title"><a href="/my-views/disappointment-and-frustration/">DISAPPOINTMENT AND FRUSTRATION</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">Jun 28, 2013</span> | <a href="/category/my-views/" rel="category tag">My Views</a></p>
+<h4 style="text-align: justify">                                                            DISAPPOINTMENT AND FRUSTRATION</h4>
+<p>&nbsp;</p>
+<p style="text-align: justify">Disappointment and frustration are very common mental disturbances in people of modern times.  Sometimes it causes emotional outbursts, which spoils the peaceful atmosphere.  When disappointment mounts up, frustration will follow.  It is impossible to overcome this mental state   unless we work on it.</p>
+<p style="text-align: justify">Spirituality helps to analyze the causes for this common mental disturbance.  One of the reasons is, we often imagine that hard times are permanent forgetting the fact that life itself is a string of unsettled moments.  We are so scared that bad times will leave a scar on our life.  We have to remember that no situation is permanent and any situation can affect the life depending on the manner we deal with it.  Time will automatically change the situation even though no effort is made to change the situation.  Without understanding this we get frustrated by failures and sometimes disturb others also.  A ray of hope that the situation will pass on after a period of time will give the mind a tremendous strength.  Any bad moment or situation before it leaves us will definitely leave a rope for us to climb up to design our own destiny.  A frustrated mind can never view the path clearly.  It is immature to get frustrated and disappointed at the time when our success is covered by dark clouds.</p>
+<p style="text-align: justify">Sometimes, we experience success eluding our hands, which causes more disappointment and frustration.  No individual will have a life full success or life full of failures.  A mature mind will accept the change of time, and persists on doing the duties without getting disappointed or frustrated.  A calm mind knows the art of dealing with problems, and this reduces the chance of our life being affected by the problems.  A frustrated mind wavers like a boat struck in storm and becomes an abject of others crude criticism and hurting remarks.</p>
+<p style="text-align: justify">Another reason for disappointment and frustration is, we expect others to behave in the way we decide.  We always try to fit others in our frame.  When others refuse to be exploited by us, we feel disappointed.  This behavior of us controls the other person&#8217;s freedom of thought.  We can never control the freedom of the other mind.  A mature mind will never indulge in controlling the situations or other persons.  We have to control our own mind.</p>
+<p style="text-align: justify">In my view, till we emerge out of the trying situation we can avoid building a thought cocoon about our own inability and weakness.  There is not a single person in this world without weakness or inability to perform some action or other.  When we project our own weakness, the world will find no time to cover us with their remarks.  Then it will be more difficult for us to come out of our own thought cocoon and emerge out without getting affected.  The mind that always thinks about negative aspects, doubts and weakness gets disappointed and frustrated easily.  Spiritual path gives strength to the mind and lifts us from the bad times without getting affected.  It is important to respect the society and the situation we live in, but it is not necessary to yield to the pressure of any person.  A strong mind is always respected and appreciated.</p>
+				
+					</article>
+			
+					<article id="post-448" class="et_pb_post post-448 post type-post status-publish format-standard hentry category-articles">
+
+				
+															<h2 class="entry-title"><a href="/articles/content-of-the-vedas/">CONTENT OF THE VEDAS</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">Jun 22, 2013</span> | <a href="/category/articles/" rel="category tag">Articles</a></p>
+<h4>                                                                            CONTENT OF THE VEDAS</h4>
+<p>&nbsp;</p>
+<p style="text-align: justify">Vedas are profound and are revealed by Aryan Rishis before thousands of years.  Vedas are beginningless; it came to common knowledge only after the Rishis revealed it.  Vedic literature is very sacred; it gives a clear picture of the religious thought of the Aryans.  Veda is derived from the Sanskrit word &#8220;Vid&#8221; (to know).  Veda means knowledge. The Rishis passed on the Vedas generations after generations by oral rendition.  Vedas are also known as &#8216;Srutis&#8217;, because they are memorized by the Vedic students.  Vedas are believed to be the vibrations in space, and the Rishis during meditation were able to trace these vibrations and reveal them to the world as Vedas.  Many Rishis, including women were involved in bringing out the Vedas.</p>
+<p style="text-align: justify"><i>Brahman</i> is a state of quietude, a state without vibration.  When the manifestation began a stream of energy and vibration of different frequencies manifested out of that pure state.  The world is created by these vibrations.  Vibrations of similar frequencies combined together to take a form.  Forms like stone, soil are mere matter and they emanate very low frequency vibration, whereas a divine person emanates high frequency vibration.  When we understand about these vibrations, we can understand the whole creation.  These vibrations are very subtle in space and an ordinary person cannot grasp it.  When an individual produces the vibration with a certain frequency, its corresponding effect is received.  As we know, vibrations can create, preserve and destroy the world.  Major portion of the Vedas are Veda mantras.  Veda mantras also produce vibrations of different frequencies.  When the Veda mantras are recited with certain rhythm, to produce necessary vibration, then they will produce the corresponding effect.  The Rishis had the knowledge about the vibrations; they knew which mantra is suitable for getting the required effect.  To produce the needed vibration, some sound of the words has to be in high chromatic scale, some in middle or low chromatic scales.  The Veda mantras should be uttered with correct accent, intonation and pronunciation.  If any one of the above is wrong, it will lessen the intended effect and will affect the emotional response and the cosmic forces.  We can even utter the mantras mentally without producing sound, but it needs high concentration power.  Some Vedic rites like <i>yagna</i>, needed the mantras to be uttered loudly to produce the required effect.  Veda mantra works like telepathy, when a Veda mantra is uttered with correct pitch, modulation, pronunciation etc., then the vibrations emanated from that person will attract similar vibrations in space, and this will give the desired effect.  When we utter a word, the life breath is allowed to pass through the gaps in the throat, tongue, lips, etc., only then the sound will be audible.  Vibrations are caused in the nerve centers situated in these areas through which the breath passes to produce the sound.  Each nerve center produces a certain emotion in the mind, and also a corresponding vibration.  Uttering Veda mantras produce the necessary emotions in the mind and the vibrations produced by it ensures the well being of the person reciting it, as well as his surroundings.  It is for this reason the Veda mantras are learnt by oral rendition.  Only the Rishis and the <i>Guru</i> know the exact way of rendering a mantra.</p>
+<p style="text-align: justify">Vedas deal extensively with many subjects.  The main portions of the Vedas are mantras for the performance of the Vedic rituals like <i>Yagna</i> and <i>Homa</i>.  It also gives details about the welfare work beneficial to the community like, construction of shelters, digging wells, conduct of marriage ceremonies, funeral rites, details about good governance, the way to conduct oneself in a learned assembly etc.  Apart from <i>Yagnas </i>and method of worship, Vedas also mention many methods of meditation and prayer.  It also mentions about the way the <i>Athma</i> enters and leaves the body.  Vedas also deal with various kinds of medical treatment to ensure  health, method to pacify the enemies and to avert the harm contemplated by them.  Vedas give details about almost everything concerned with the well being of a person and the society.  One will be surprised to find the details given in the Vedas.  The goal of the Vedas is to realize <i>Brahman</i>.  The Vedas prescribe the above community services so that by selfless service the mind will be purified and this will help to realize <i>Brahman</i> through a disciplined path.  Vedic rituals and mantras make the mind more matured and turn inwards to realize <i>Brahman</i>.  The aim of the Vedas is to lead the mind to <i>Vedanta</i>(Advaita philosophy).  <i>Agni</i> is used extensively in the Vedas, which denote the awakening of the soul.  The supreme purpose of the Vedas is to make us realize by our own experience, that all is <i>Brahman</i> and thus leads us to a state of supreme intelligence.</p>
+<p style="text-align: justify">The Vedas altogether has more than 20500 mantras.  Apart from the mantras, it has many sections of prose regarding the details of the mantras, philosophy, and much more detailed information.  In that period, the Vedas were not separate.  The Vedas were in a conglomerate state like flood waters.  Only the ancient Rishis had the capacity to grasp that Veda.  The Vedas were in a mixed state till the end of <i>Dwapara Yuga</i>.  At the end of <i>Dwapara Yuga</i>, a Maharshi by name Krishna, felt that the people of <i>Kali Yuga</i> may not be able to study Veda, if it were in that mixed state.  Since Maharshi Krishna was born in an Island(Dweepa) , he was known as Krishna Dvaipaayana.  He was also known as Baadaraayana.  Maharshi Krishna Dvaipaayana codified the Vedas, which was till then in the oral form.  He classified the Vedas and arranged them subject wise.  Since Krishna Dvaipaayana codified and classified the Vedas, he was known as Veda Vyaasa.  Vyaasa in Sanskrit means to deal with matter and classify it suitably.  He classified the Veda into 1180 Veda saakhas(branches).  He again divided these 1180 saakhas into four parts as Rig Veda, Yajur Veda, Saama Veda and Atharva Veda.</p>
+<p style="text-align: justify">Rig Veda had 21 saakhas</p>
+<p style="text-align: justify">Yajur Veda had 109 saakhas.  Yajur Veda was later divided in to two as Sukla Yajur Veda &#8211; 15 saakhas, Krishna Yajur Veda &#8211; 94 saakhas.</p>
+<p style="text-align: justify">Saama Veda had 1000 saakhas</p>
+<p style="text-align: justify">Atharva Veda had 50 saakhas</p>
+<p style="text-align: justify">He selected four of his disciples and handed over one Veda to each, to propagate and spread it further.  He gave</p>
+<p style="text-align: justify">Rig Veda saakhas(21) to Muni Paila</p>
+<p style="text-align: justify">Yajur Veda saakhas(109) to Muni  Vaisampaayana</p>
+<p style="text-align: justify">Saama Veda saakhas(1000) to Muni Jaimini</p>
+<p style="text-align: justify">Atharva Veda saakhas(50) to Muni Sumanthu</p>
+<p style="text-align: justify">Unfortunately, in today&#8217;s time only 8 or 9 Veda saakhas are available( a great lose to humanity).  At present only Rig Veda &#8211; 1 saakha, Yajur Veda(sukla- 2, Krishna &#8211; 2), Saama Veda &#8211; 3, Atharva Veda &#8211; 1 are available.  In ancient period, people used to study almost all the saakhas, but today it is a great achievement, if a person completes atleast one saakha.</p>
+<p style="text-align: justify"><b>Veda saakhas</b></p>
+<p style="text-align: justify">Each saakha consists of Samhita, Braahmana, Aaranyaka and Upanishad.</p>
+<p style="text-align: justify">Samhita is full of mantras, which has to be memorized by a Vedic student.</p>
+<p style="text-align: justify">Braahmana has details and procedures of Yagnas(sacrifice), that has to be performed with the help of the mantras.</p>
+<p style="text-align: justify">Aaranyaka explains the inner and the philosophical meaning hidden in the mantras.  This section enlightens us about the importance of each yagna and karma; it also gives the guidelines for performing the Vedic rites.</p>
+<p style="text-align: justify">Upanishad means &#8220;sitting near&#8221;, meaning sitting near the <i>guru</i> to get the knowledge about the creator and the created individuals.  It is the end portion of the Aaranayakas and it is also the philosophical portion of the Vedas.  Whole existence is described in the Upanishads.  Upanishad has mantras of philosophical thoughts, when recited the vibration of the mantra makes us realize our divine nature and the truth.  When we perform Vedic rituals, it makes the mind mature and prepare the mind to grasp the philosophy of the Upanishad.  The Upanishad portion is called <i>Vedanta</i>.</p>
+<p style="text-align: justify">It is said that there were originally 1180 Upanishads  revealed by various Rishis, out of which 200 were codified and at present 108 are available, among them Adi shankara wrote commentary for 10, which are considered to be very old.  The Upanishads do not present a consistent system of philosophy; it contains the opinion and lessons of many men who knew philosophy and religion.  The two conceptions, <i>Brahman </i>and <i>Athma</i> are united in the philosophy of the Upanishad.  This secret knowledge is communicated only to students worthy of it.</p>
+<p style="text-align: justify">At first a student of Veda has to memorize the mantra in the samhita portion of the saakha, then he has to study Braahmana portion of the saakha , so that he can perform the Vedic rituals by using the mantras he studied in the samhita portion.  The procedure, rules and regulations of the performance of the Vedic rituals are given in the Braahmana portion.  Then the student has to study the Aaranyaka portion of the saakha.  It contains the meaning and guidelines for the performance of the Vedic rituals.  At a later age the student has to study the Upanishads, by that time the student&#8217;s mind will be purified by the performance of the Vedic rituals and will be matured enough to understand the profound philosophical thoughts of the Upanishad.  Thus this four sections form a saakha and many such saakha&#8217;s are present in one Veda.  Each saakha contains that measure of mantras, rituals and philosophical instructions as would enable a common man to achieve liberation.</p>
+<p style="text-align: justify"><b>Rig Veda</b></p>
+<p style="text-align: justify">Rik means a verse or mantra.  Each verse or mantra will be of 2 to 4 lines length.  A group of Rik or mantras is called Sukta.  In English a Sukta is called a Hymn.  Rig Veda has 10552 Riks(mantras) and 1028 Suktas in Rik samhita.  One of the famous Sukta( group of mantras) in Rig Veda is known as Purusha Suktam.  The famous Gayatri mantra is a verse in this Purusha Suktam.  A Rik gives detail about the nature of God, meditation procedures, relevant metaphors etc.  The Riks explain both the form and formless nature of God.  Rig Veda is the most ancient Veda among the four Vedas.  It has mainly mantras related to the performance of various kinds of sacrifices.  The other two Vedas(Yajur and Saama) are related to Rig Veda.</p>
+<p style="text-align: justify"><b>Yajur Veda</b></p>
+<p style="text-align: justify">Yajur Veda is divided into two in the later stage as Sukla Yajus and Krishna Yajus.  It has more than 2000 mantras.  Rishi Yaajnavalkya is believed to have brought Sukla Yajur Veda to the knowledge of the world, after learning it from the Sun God.  In the Krishna Yajur Veda, the distinction between the Samhita and Braahmana portions are conjoined in some places.  Even though Yajur Veda contains mantras, most of its portions are in prose form, explaining the details and procedures of the Vedic rituals.</p>
+<p style="text-align: justify"><b>Saama Veda</b></p>
+<p style="text-align: justify">Many mantras in Rig Veda are set to music in Saama Veda.  Saama Veda has a set of mantras with lengthened musical notes.  In <i>Yagnas</i>, the <i>Udgaata</i> priest chants the Saama Veda.  It has nearly 2000 mantras.</p>
+<p style="text-align: justify"><b>Atharva Veda</b></p>
+<p style="text-align: justify">Atharva Veda has 6000 mantras, which were brought to light by Rishi Atharvan.  This contains many mantras to ward off evil and hardship, and to destroy enemies.  It helps and protects a person from danger and enemies.  It also has mantras extolling the greatness of God.</p>
+<p style="text-align: justify">To put the above written matter in a nutshell, there are four Vedas, Rik, Yajur, Saama and Atharva Veda.  Each Veda has a number of saakhas and each saakha has four sections.  They are Samhita, Braahmana, Aaranyaka and Upanishad.  Major part of the Vedas is mantras, but it also has prose section, where many details about the Vedic rituals and other useful information are given.  All these constitute the Vedas.</p>
+<p style="text-align: justify"><b>Yagna</b></p>
+<p style="text-align: justify"><i>Yagna</i> is the performance of Vedic rituals with the aid of <i>Agni</i>(sacrificial fire) and Veda mantras.  It is one of the important aspects of the Vedas.  <i>Yagna</i> requires many substances to be consigned to <i>Agni</i> along with the chanting of the mantras.  This kind of offering is called &#8216;Homa&#8217;.  In <i>Yagna</i> when we chant a mantra to a particular <i>Deva</i>(God), the vibrations of the mantra will attract the vibrations of that particular <i>Deva</i>.  When we give oblations to that <i>Deva</i> through <i>Agni</i>, the <i>Agni</i> converts that oblation to a subtle state and offers it to that <i>Deva</i>, who is also in a subtle form.  All these functions happen in a subtle state and in vibration mode.  A spiritually evolved person can view clearly the happenings in the subtle state.  It is the Veda mantras that make these transformations by its powerful vibrations.  The Veda mantras uttered during the <i>Yagna</i> help to improve the power of the <i>Devas</i>, the <i>Devas</i> in turn help the persons involved in the <i>Yagna.</i></p>
+<p style="text-align: justify">Vedas say that, the Supreme power is manifested through many divinities.  Vedas say that, till we obtain the knowledge of <i>Advaitam</i>, we should believe in <i>Dvaitam</i> and perform Vedic rites.  When the spiritual awakening occurs and when one gets the direct experience of <i>Brahman</i>, the need to propitiate the <i>Devas</i> separately ceases to exist.</p>
+<p style="text-align: justify">To study the Vedas, we need the help of six Vedasngas, else we will not be able to study the Vedas.  The six Vedangas are Siksha, Vyaakarana, Chandas, Niruktam, Jyotisha and Kalpa.</p>
+<p style="text-align: justify"><b>Siksha </b></p>
+<p style="text-align: justify">Each letter of the Veda mantra must be uttered correctly within the duration of time, as per rule.  This is called syllable purity(akshara shuddhi).  There are also rules for the pitch of the sound &#8211; high, medium or low.  If the pitch is perfect, then the sound of the mantra will have tonal purity.  Mantras will yield benefit only when the syllable and tonal purity are fully satisfied.  The pronunciation, accent and pitch are more important in the mantra than its meaning.  Siksha lays down the rule of phonetics.  It gives even the minute details as how the breath has to originate from the pit on the stomach and touch many points, twist and roll in different ways, before it escapes through the mouth.  This ensures the purity of the sound.  In short, Siksha gives all the details to chant the Veda mantra, so that it produces the desired vibration.</p>
+<p style="text-align: justify"><b>Vyaakarana</b></p>
+<p style="text-align: justify">Vyaakarana gives details about the Sanskrit grammar.  Since Vedas are written in Sanskrit language, it is impossible to study the Vedas without knowing the Sanskrit grammar.  The most used grammar text is the Vyaakarana of Sage Paanini.  It is in the form of aphorisms with elaborate commentary.</p>
+<p style="text-align: justify"><b>Chandas </b></p>
+<p style="text-align: justify">It is the metric composition of the Vedas.  The Veda mantras in the form of poetry are called Chandas.  Chandas refers to the meter or rhyme of poetic expression.  Chandas gives a form for the mantras.  There are rules regarding steps to be in each stanza, the number of letters in each line etc.  Chandas defines the boundaries of metrical composition.</p>
+<p style="text-align: justify"><b>Niruktam </b></p>
+<p style="text-align: justify">It is the Vedic dictionary.  Each word is broken into syllable wise indicating the root from which it is derived, and the meaning of each syllable is indicated.  This is the Nirukta sastra, which is called etymology in English.  It gives the precise meaning of rare and uncommon words used in Vedas; it also gives the meaning with usage.</p>
+<p style="text-align: justify"><b>Jyotisha </b></p>
+<p style="text-align: justify">It<b> </b>is mainly intended to calculate the most favorable time for performing the Vedic rites.  Its calculations are based on planetary positions.  It exactly calculates the location and time for the performance of the Vedic karmas.  Jyotisha exactly calculates the effect of the far away planets on the individuals.  It tells the past life and exactly predicts the future of a person.<b>         </b>Since Jyotisha involves calculations, mathematics is also included as the auxiliary of the Vedas.  Vedic mathematics includes Algebra, Geometry and Equations.  Vedic mathematics is an advanced science.</p>
+<p style="text-align: justify"><b>Kalpa</b></p>
+<p style="text-align: justify">Kalpa sastra gives the details about the performance of the rituals, mantras used for rituals, required materials, the number of priests to be employed, the size and shape of the vessels to be used in the rituals etc.  It also deals with Vaastu Lakshana( the rules for building sacrificial altars and other buildings).</p>
+<p style="text-align: justify">Vedas are very vast, only a part of the Vedas is revealed.  Veda mantras protect the person who chants it and his surroundings, regardless of the caste, creed or religion.  Vedas are common to all people, provided it should be practiced perfectly.  The dedicated and devoted effort of many Rishis made the Vedas accessible to us.  Humanity has to understand the importance of the Vedas and use it accordingly to attain liberation.</p>
+<p style="text-align: justify">Vedas existed even before our birth; it is in use in our period; it will exist even after our life time.  It is our intelligence to use it for our goodness.  Vedas are immortal.</p>
+<p style="text-align: justify">References</p>
+<p style="text-align: justify">Mahajan, V .D., History of India: From beginning to 1526 AD, New Delhi, S.Chand &amp; company Ltd, 1977</p>
+<p style="text-align: justify">Pujyasri Chandrasekharendra Saraswati, The Vedas, Mumbai, Bharatiya Vidya Bhavan, 2011</p>
+				
+					</article>
+			
+					<article id="post-430" class="et_pb_post post-430 post type-post status-publish format-standard hentry category-articles">
+
+				
+															<h2 class="entry-title"><a href="/articles/evolution-of-vedas/">EVOLUTION OF VEDAS</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">Jun 17, 2013</span> | <a href="/category/articles/" rel="category tag">Articles</a></p>
+<h4>                                                                               EVOLUTION OF VEDAS</h4>
+<h4></h4>
+<p style="text-align: justify">India is a vast country divided into different regions by rivers, mountains, deserts and forests. The richness of the soil of India attracted many invaders.  In the Indo-Gangetic plain, the richness of the soil facilitated the establishment of big empires in this region.  Great philosophical ideas were born in this region.  The vedas were compiled here.  Sanskrit literature and religions such as Buddhism, Jainism were started and flourished here.  Taxila, Nalanda, Saranath and other seats of learning were established in this region.</p>
+<p style="text-align: justify">The Himalayas saved India from invasions from the north.  The northern passes are covered with snow for most of the year.  The northwestern ranges of the Himalayas called the Sulaiman and Hidukush Mountains are not very high.  There existed a number of passes, which enabled many foreigners to come to India.</p>
+<p style="text-align: justify">Before explaining the Vedic evolution in India, the present generation and I must thank and have gratitude towards many scholars who had done researches and excavations.  It is their hard work and effort, which enable us to know about our heritage and ancestors.</p>
+<p style="text-align: justify">Rishis of India revealed the Vedas and they passed on the Vedas, generation after generation through oral rendition, until sage Veda Vyasa, codified and compiled the Vedas.  I worship and thank the Rishis and their lineage who made the Vedas accessible to us.  Without their devoted and dedicated work, we would have never known the truth.</p>
+<p style="text-align: justify">India being a vast country, excavation had to be done very widely.  After the partition of India in 1947, its size was reduced by one third, but still it is large and very fast developing country, in spite of natural disasters, erosion, corruption and its alarming population.</p>
+<p style="text-align: justify">India has always been a land of religion and rich culture.  No land on earth has such a long cultural continuity as India; the Hindus in their daily worship recite the Vedic hymns, which were composed over 3000 years ago.  India has enjoyed civilization for over 4000 years, and every period of her history has left something to the present day.</p>
+<p style="text-align: justify">The earliest settlers in India were divided into two classes as Palaeolithic and Neolithic, meaning the old stone and new stone.</p>
+<p style="text-align: justify"><b>Palaeolithic </b>men were known as Quartzite men.  Cuddapah district in Andra Pradesh was the center of Palaeolithic culture.  They were strong men with dark skin, woolly hair and flat nose.  They ate roots, nuts, fruits and flesh of wild animals.  It is suggested that Palaeolithic men belonged to the Negrito race.  Their worship culture is not known.</p>
+<p style="text-align: justify"><b>Neolithic</b> men occupied the whole of India, except the portion below Kaveri.  The Neolithic remains were mainly found from Tirunelveli and Salem districts of Tamil Nadu.  Their food consisted of fruits, vegetables, fish, milk and milk products.  Even though, initially they used barks and skins of animals for covering their bodies, later they used cotton and wool.  Neolithic people worshipped ancestral spirits.  Stone worship was very common.  There were also human and animal sacrifices.  Some of their practices are even followed in modern age like use of beads, amulets, sacred threads, shells, stones etc. for curing diseases and keeping away the evil spirits.  The belief of omens was traced from their period.  It is very difficult to fix the exact date of the different ages.  However, it may be stated that the Palaeolithic age lasted from 35000 BC to 10000 BC and the Neolithic age lasted from 10000 BC to 5000 BC.</p>
+<p style="text-align: justify"><b>The Indus valley civilization </b></p>
+<p style="text-align: justify">Sir John Marshal named Harappa and Mohenjo-Daro cultures as Indus valley civilization, because both the sites were within the area covered by the Indus River and its tributaries.  It was the largest civilization.  It included Afganisthan, Pakisthan and large parts of India.  Mohenjo-Daro was discovered in Larkana district, near Karachi in Pakisthan.  Harappa was situated in west Punjab near Lahore, Pakisthan.  In India Harappa culture was discovered in Rupar in Ambala district, Rangpur and Lothal in Saurashtra, Kalibangan and Dholavira.  Their diet was barley, wheat, milk and milk products, fish, mutton etc.  They covered themselves with cotton and woolen clothes and were expert in dying.  Their ornaments were necklaces, finger rings, nose studs, anklets etc.</p>
+<p style="text-align: justify">Indus valley people were very religious people.  They worshipped Lord Shiva and Mother Goddess.  The Mohenjo-Daro people worshipped Goddess whose emblem was tiger.  Mother Goddess models have been found all over western Asia, without break from the Indus River to the Nile River.  They worshipped a male deity under a pipal tree.  They also worshipped pipal and acacia trees.  They regarded these trees as celestial plants and inhabited by divine spirits.  Indus valley people believed that the pipal tree was the tree of creation and knowledge, and believed that it imparts highest knowledge to those who donned its branches on their heads.  They worshipped Lord Shiva extensively, they also worshipped Shiva Linga and Yoni symbols.  They practiced Yoga.  They had faith in amulets and charms, and this shows that they were afraid of demons.</p>
+<p style="text-align: justify">Some theory says that the Indus valley people were pre-Aryan and its people, language and scripts were Dravidian, namely Tamil.  Some scholars say that their language was Sanskrit.  Excavations show that the Indus valley civilization flourished around 2500 BC.  The decline of the Indus valley civilization happened because of natural disasters, floods, climate change, drought and severe cold climates.  Most of the rivers were also dried up.  One theory says that the Aryans invaded the Indus valley people.</p>
+<p style="text-align: justify"><b>The Aryans</b></p>
+<p style="text-align: justify">The origin of the Aryans is of great controversy.  Researchers and scholars have been arguing from time to time but still there does not exist an unanimity of opinion.  Their argument is whether the Aryans were the invaders or the origins of India.  I would like to present both the theories as it is.</p>
+<p style="text-align: justify"><b>Aryans are Invaders</b></p>
+<p style="text-align: justify">The most important theory says that, the Aryans originally lived in central Asia.  According to Prof. Max Muller, a German Sanskrit scholar, the ancestors of Indians, Germans, Persians, Romans and Greeks might have lived together originally.  He further said that the Aryans of Europe migrated by a route, south of the Caspian through Asia Minor to Greece and Italy.  One of their groups came to India through the North West passage.  His study was mainly based on linguistics.  He found that some words used by the Aryans in India are similar to the words used in English, Latin and Persian.  Some words in Vedas are similar to Zend-Avesta.  Bal Gangadhar Tilak was of the opinion that the original home of the Aryans was the Arctic region.  German scholars have proposed Germany as the origin of Aryans. Swami Dyanand Saraswati says that the origin of Aryans is Tibet.  Like this, each scholar based on their own research work believes different places as the origin of Aryans, but they all maintain the idea that the Aryans were invaders.</p>
+<p style="text-align: justify"><b>Origin of Aryans is India</b></p>
+<p style="text-align: justify">The opponents are of a strong view that, the origin of Aryans is India.  They say that the invasion is a story created by the British to spread Christianity in India.  There is no concrete evidence to prove the invasion.  Opponents say that the British were interested in knowing the underlying truths about the Hindu religion, which is entirely different and opposite to their own religion and beliefs.  They employed Prof. Max Muller, a Professor of Oxford University to find the truth about the basic culture, tradition and religion.  Opponents say that the British wanted to project an idea that, the British invaded India just like the Aryans, and India was a no man land.  Rig Veda is the most ancient text, full of wisdom and knowledge.  The British wanted to target the Rig Veda, because if Rig Veda is defeated, then the Hindu religion which is based on the Vedas can be defeated.</p>
+<p style="text-align: justify">However, there is no enough evidence to prove that the origin of Aryans is India, because it is very difficult to maintain the evidences for thousands and thousands of years.  Nalanda University was the most ancient and advanced University, its library had many records and evidences, but it was destroyed long ago.  The Muslims ruled India for over 800 years and the British ruled for over 200 years.  During that period, many records were either looted or destroyed.  Natural disasters also ruined many proofs.  The opponents say that the Vedic culture is exclusively followed by the Indians, so, the origin of Aryans is India.</p>
+<p style="text-align: justify">Despite the argument about the origin of the Aryans, the fact is that the Aryans revealed the Vedas, and it is on the soil of India that the Vedas were revealed.  The atmosphere of India, the soil, its divine rivers, forests and the mighty Himalayas, all together has a power to squeeze the best out of man and make him realize the inherent divinity in him.</p>
+<p style="text-align: justify"><b>Veda</b> in Sanskrit means knowledge.  Vedic literature is very sacred.  The Aryans wanted to realize the aspect of the whole creation.  They meditated to realize the truth about creation and they realized the divinity inherent in each one.  They gathered quality knowledge and revealed it to others as Vedas.  The Aryans who revealed the Vedas were called the Rishis.  They devoted their entire life for the Vedas and passed on the Vedas to the future generation by oral rendition.  The Vedas were revealed in Sanskrit language.  Vedas are <i>anaadi</i>(without beginning).  They existed in all times even before the Rishis discovered it, but it came to the knowledge of the common person only after the Rishis discovered it.  The Vedas are the cosmic vibrations in space.  The Rishis are aware of all the vibrations that resulted in the creation of the world.  Cosmic vibrations are audible to the Rishis in their high state of <i>dhyana</i>, and they decoded these to the world as Veda mantras.  At the highest state of concentration, these vibrations are felt by the Rishis and this left an impact in the mind of the Rishis, which enabled them to convert it as Veda mantras.  Yoga sastra says that if the outer space(macrocosm) and the space which exists in the mind(microcosm) are unified, then all the suspended sound in space will become audible.  The sound vibrations are capable of creation, preservation and destruction.  Veda mantras also have the capacity of the three aspects of vibration.</p>
+<p style="text-align: justify">Different Rishis wrote the Vedic hymns at different times.  Nearly 400 Rishis, including 30 women were involved in revealing the Rig Veda.  Vedas are very vast and only a portion of the Vedas is available to us.  Most part of the Vedas are revealed on the banks of the river Saraswati, which is now dried up.</p>
+<p style="text-align: justify">The Rig Vedic Aryans worshipped the nature as God, like the sun, moon, <i>agni, vayu</i> etc.  They believed that these Gods are the different aspects of that one Supreme power.  Rid Veda is full of <i>mantras</i> to worship these Gods.  They believed in form worship and believed that gods are like human beings.  In Rig Vedic period, the society was highly organized and women were respected by the society and by the family.  Marriage protected women and there were many women scholars.  India was very prosperous both culturally and materialistically during that period.  Both men and women wore gold ornaments and they wore garments embroidered with gold.  The Aryans built cottages with wood, for their living.  They considered good sons as great wealth.</p>
+<p style="text-align: justify">The Rig Vedic Aryans, to make people understand the forces of nature, they created fictitious stories.  It was in this manner that mythology developed around the natural phenomena and super natural personalities.  They were men and women of vigor and activity, and they viewed life with hope and ambition.</p>
+<p style="text-align: justify">The most famous Rig Vedic king was King Bharata, after whom India was known as &#8216;Bharat&#8217;.  They settled in the territory between the River Saraswati and River Yamuna.  All the Aryan kings had a Rishi as their Guru.  The Aryans ruled their kingdom under the strict guidance of their guru.  The Kuru-Panchalas were the most prominent Aryan kingdom.  This was the land of king Parikshit and king Janamejaya.  The kingdom of Kasi, Videha and Kosala were also the seat of Vedic culture.  During this period, they often conducted philosophical conferences in the kingdom.  The Rishis, the King, and the scholars including women participated in it.  Women like Gargi and Maitreye were intellectually advanced women of Vedic period.  They conducted fiery debate among the participants, based on Upanishad concepts and rich gifts were offered to the winners.  This is how they spread the Vedas and made it popular.  This also paved way for many kings to become Rishis.  A person with philosophical knowledge was highly respected.  People meditated sitting on <i>kusha</i> grass.  There were wandering teachers called Charakas.  When a Charaka arrived, men and women sit around him to gain knowledge.  The children were send with a guru to the guru&#8217;s house to gain knowledge.  The children were sent to study at the age of twelve.  If the girl child prefers, they should also be sent with the guru.  It is the responsibility of the guru to maintain discipline and impart knowledge to the students.  The children stayed with the guru in his house, until their education is complete.  Students were taught arts, science, philosophy, mantras and almost everything from the Vedas, so that when they face the outside world, they can compete and excel others.  After the completion of education, they return to their home and they were advised by the guru to get married and have good progeny, so that they can take on the Vedas to the next generation.  After the completion of the household duties, when the students became old, they move to the forest leaving the family, to practice meditation, which they have learnt during their student life.  Thus, each of the Aryans attained liberation, leaving a generation and the Vedas behind. The progeny and the students of the Rishis devoted themselves to the task of preserving and propagating the sacred text of the Vedas in different parts of the country.  The generations that preserved and propagated the Vedas are called the Kula and Gothra.  Sacrifice(Yagna) was their main religious practice, but they devoted the time mainly to know the truth.</p>
+<p style="text-align: justify"><b>The Epic age</b></p>
+<p style="text-align: justify">The Vedic age slowly led way to the epic age.  The greatest epic of the Aryans were Ramayana and Mahabharata.  The Epic age came between the Vedic period and the Buddhist period.  During the Epic age, Vedic rituals were given importance and philosophy comparatively took a back stage.  The caste system became prominent.  Astronomy made a great progress in that period.  Vedic rituals were conducted depending on the planetary position.  They worshipped Brahma, Vishnu and Shiva.  Sanskrit was the spoken language.  The rulers were noble in the beginning of the epic age and ruled their kingdom consulting the guru and the people.</p>
+<p style="text-align: justify"><b>Buddha and Buddhism</b></p>
+<p style="text-align: justify">In the later epic age, with the Vedic rituals becoming popular, the priesthood dominated the society.  The caste system became very prominent.  This disturbed the young prince Buddha.  He opposed the rituals and priesthood.  Buddha left his luxurious life and went in search of truth.  He meditated and after his enlightenment, he spread his teachings.</p>
+<p style="text-align: justify">His teachings were similar to Vedanta but did not emphasis on the concepts of the universal soul, God or rebirth.  He believed that everything is based on cause and effect.  Life is shaped by the mind.  He said that suffering follows an evil thought and joy follows a positive thought.  Many people followed Buddhism and still now, it is one of the main religions.</p>
+<p style="text-align: justify"><b>Resurgence of Advaita Philosophy </b></p>
+<p style="text-align: justify">In 788 AD Adi Shankara was born in Kaladi, Kerala.  At the age of 16, he mastered all the Vedas under the guru Govinda Bhagavadpada.  At that period, nearly 72 sects of religion were prevalent in India.  Some of them are the Charvakas, Kapalikas, Shaktas, Buddhas, Jainas, Madhyamikas, Shaivas, Vaishnavas etc.  All the sects were very powerful and each sect had philosophical contradiction with the other.  Advaita Vedanta was left behind these sects.  It was Adi Shankara who brought the Advaita Vedanta back to light.  He travelled to nook and corner of India and held debates and arguments over the facts of Advaita Philosophy and made people realize about this profound philosophy.  He spread this philosophy all over India.  Apart from that, he established four math, to spread the teachings of Advaita Vedanta.  They were</p>
+<p style="text-align: justify">Sarada math in Dwaraka.  It practices Sama Veda</p>
+<p style="text-align: justify">Govardhan math in Puri.  It practices Rig Veda</p>
+<p style="text-align: justify">Jyotir math in Badarikashrama.  It practices Atharva Veda</p>
+<p style="text-align: justify">Shringeri math in Shringeri .  It practices Yajur Veda</p>
+<p style="text-align: justify">Without the literary works of Adi Shankara, we will not be able to understand the Vedas.  He has written commentaries for ten Upanishads, Brahma sutras and Bhagavad Gita, he has also written many hymns and text based on Advaita philosophy.  His contribution to the Advaita philosophy is beyond comparison.  His Vedic commentaries and teachings are even today reaching the common man through the math that he has established during his life time.  He merged with consciousness in 820 AD.</p>
+<p style="text-align: justify">In this modern technological world, atleast one verse of the Veda is recited everyday in most of the Hindu household, all over the world.  A day will not begin without chanting the Veda in the religious centers and temples all over India.  Vedic legacy will continue forever… Vedas are immortal.</p>
+<p style="text-align: justify">References</p>
+<p style="text-align: justify">Mahajan, V .D., History of India: From beginning to 1526 AD, New Delhi, S.Chand &amp; company Ltd, 1977</p>
+<p style="text-align: justify">Basham, A.L.,(Edited), A cultural History of India, New Delhi, Oxford University Press, 2008</p>
+<p style="text-align: justify">Pujyasri Chandrasekharendra Saraswati, The Vedas, Mumbai, Bharatiya Vidya Bhavan, 2011</p>
+<p style="text-align: justify"><b> </b></p>
+<p style="text-align: justify"><b> </b></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;		</p>
+				
+					</article>
+			
+					<article id="post-380" class="et_pb_post post-380 post type-post status-publish format-standard hentry category-poems">
+
+				
+															<h2 class="entry-title"><a href="/poems/enjoy-the-infinite/">ENJOY THE INFINITE</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">Jun 7, 2013</span> | <a href="/category/poems/" rel="category tag">Poems</a></p>
+<h4>                                                                                     ENJOY THE INFINITE</h4>
+<p>&nbsp;</p>
+<p>When I am all,</p>
+<p>What karma can I do,</p>
+<p>Or, can I remain without doing karma?</p>
+<p>Says everyone,</p>
+<p>Desire prompt karma</p>
+<p>But, who has the desire?</p>
+<p>When I am content</p>
+<p>How can I have desire?</p>
+<p>If not me,</p>
+<p>Then who desires?</p>
+<p>Who makes me finite?</p>
+<p>Who dreams about me?</p>
+<p>They say,</p>
+<p>I am full of conflicts and opposites</p>
+<p>But, do they know me?</p>
+<p>If known, will they exist?</p>
+<p>Oh mind,</p>
+<p>You are just a bubble</p>
+<p>When touched,</p>
+<p>You will burst and merge</p>
+<p>Then why this imagination &#8211;</p>
+<p>Remain silent and enjoy,</p>
+<p>Enjoy the infinite!</p>
+<p>&nbsp;		</p>
+				
+					</article>
+			
+					<article id="post-377" class="et_pb_post post-377 post type-post status-publish format-standard hentry category-poems">
+
+				
+															<h2 class="entry-title"><a href="/poems/ego/">EGO</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">Jun 7, 2013</span> | <a href="/category/poems/" rel="category tag">Poems</a></p>
+<h4>                                                                                   EGO</h4>
+<p>When I am alone and thoughtless &#8211;</p>
+<p>I had neither the body nor the world</p>
+<p>I felt free and light,</p>
+<p>Limitless without boundaries</p>
+<p>I did not accept or reject</p>
+<p>Nothing bothered me,</p>
+<p>Though, everything was around me</p>
+<p>Suddenly, I had one thought,</p>
+<p>Just one thought, &#8220;I&#8221;</p>
+<p>In no time I felt,</p>
+<p>I am connected,</p>
+<p>To the whole world,</p>
+<p>And to a lot of worries.</p>
+<p>So hard to bear it</p>
+<p>Oh Creator!</p>
+<p>What is my problem,</p>
+<p>And what disturbs me?</p>
+<p>The world or my EGO</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;		</p>
+				
+					</article>
+			<div class="pagination clearfix">
+	<div class="alignleft"><a href="/author/advaitamandscience/page/28/">&laquo; Older Entries</a></div>
+	<div class="alignright"><a href="/author/advaitamandscience/page/26/">Next Entries &raquo;</a></div>
+</div>			</div>
+
+				<div id="sidebar">
+		<div id="search-2" class="et_pb_widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://advaitamandscience.in001.wpcs.cc/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form></div>
+		<div id="recent-posts-2" class="et_pb_widget widget_recent_entries">
+		<h4 class="widgettitle">Recent Posts</h4>
+		<ul>
+											<li>
+					<a href="/articles/idol-worship-in-sanatana-dharma/">IDOL WORSHIP IN SANATANA DHARMA</a>
+									</li>
+											<li>
+					<a href="/articles/the-importance-of-pooja-in-sanatana-dharma/">THE IMPORTANCE OF POOJA IN SANATANA DHARMA</a>
+									</li>
+											<li>
+					<a href="/articles/rishis-of-sanatana-dharma/">RISHIS OF SANATANA DHARMA</a>
+									</li>
+											<li>
+					<a href="/articles/the-mutts-and-the-desa-nama-sampradaya-established-by-sri-adi-shankaracharya/">THE MUTTS AND THE DESA NAMA SAMPRADAYA ESTABLISHED BY SRI ADI SHANKARACHARYA</a>
+									</li>
+											<li>
+					<a href="/articles/advaita-guru-parampara/">ADVAITA GURU PARAMPARA</a>
+									</li>
+					</ul>
+
+		</div>
+<div id="recent-comments-2" class="et_pb_widget widget_recent_comments">
+<h4 class="widgettitle">Recent Comments</h4>
+<ul id="recentcomments">
+<li class="recentcomments">
+<span class="comment-author-link">Vrinda</span> on <a href="/articles/paroksha-jnana-to-aparoksha-jnana/#comment-41">PAROKSHA JNANA TO APAROKSHA JNANA</a>
+</li>
+<li class="recentcomments">
+<span class="comment-author-link">advaitamandscience</span> on <a href="/articles/the-three-types-of-knowledge/#comment-40">THE THREE TYPES OF KNOWLEDGE</a>
+</li>
+<li class="recentcomments">
+<span class="comment-author-link"><a href="http://www.dwaitaadwaitam.wordpress.com/" class="url" rel="ugc external nofollow">N. Anuradha</a></span> on <a href="/articles/the-three-types-of-knowledge/#comment-39">THE THREE TYPES OF KNOWLEDGE</a>
+</li>
+<li class="recentcomments">
+<span class="comment-author-link">Jyoti</span> on <a href="/articles/destiny-versus-freewill/#comment-44">DESTINY VERSUS FREEWILL</a>
+</li>
+<li class="recentcomments">
+<span class="comment-author-link">RESHMA ARORA</span> on <a href="/articles/atma-anatma-viveka/#comment-27">ATMA &#8211; ANATMA &#8211; VIVEKA</a>
+</li>
+</ul>
+</div>
+<div id="block-3" class="et_pb_widget widget_block"><div class="logged-out wp-block-loginout"><a href="/wp-login.php?redirect_to=https%3A%2F%2F%2Fauthor%2Fadvaitamandscience%2Fpage%2F27%2F%3Fsimply_static_page%3D2228">Log in</a></div></div>	</div>
+		</div>
+	</div>
+</div>
+
+	<footer class="et-l et-l--footer">
+			<div class="et_builder_inner_content et_pb_gutters3">
+<div class="et_pb_section et_pb_section_0_tb_footer et_pb_with_background et_section_regular">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_footer et_pb_equal_columns et_pb_gutters3">
+				<div class="et_pb_column et_pb_column_1_4 et_pb_column_0_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0_tb_footer  et_pb_text_align_left et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>Powered by : <a href="https://digitalindiya.com/" target="_blank" rel="noopener">DigitalIndiya.com</a></p></div>
+			</div>
+			</div>
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_1_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_1_tb_footer  et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p style="text-align: center;"><a href="/" id="site-title">DigitalIndiya.com</a> <span>©</span> 2023 | <a href="/privacy-policy/">Privacy policy</a></p></div>
+			</div>
+<div class="et_pb_module et_pb_code et_pb_code_0_tb_footer">
+				
+				
+				
+				
+				<div class="et_pb_code_inner"><script>jQuery(document).ready(function($){
+    var title = $('head title').text();
+   $('footer a#site-title').html(title);
+});</script></div>
+			</div>
+			</div>
+<div class="et_pb_column et_pb_column_1_4 et_pb_column_2_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<ul class="et_pb_module et_pb_social_media_follow et_pb_social_media_follow_0_tb_footer clearfix  et_pb_text_align_right et_pb_bg_layout_light">
+				
+				
+				
+				
+				<li class="et_pb_social_media_follow_network_0_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-facebook"><a href="#" class="icon et_pb_with_border" title="Follow on Facebook" target="_blank"><span class="et_pb_social_media_follow_network_name" aria-hidden="true">Follow</span></a></li>
+<li class="et_pb_social_media_follow_network_1_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-twitter"><a href="#" class="icon et_pb_with_border" title="Follow on Twitter" target="_blank"><span class="et_pb_social_media_follow_network_name" aria-hidden="true">Follow</span></a></li>
+<li class="et_pb_social_media_follow_network_2_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-linkedin"><a href="#" class="icon et_pb_with_border" title="Follow on LinkedIn" target="_blank"><span class="et_pb_social_media_follow_network_name" aria-hidden="true">Follow</span></a></li>
+			</ul>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</footer>
+		</div>
+
+			
+		</div>
+		</div>
+
+				<script type="text/javascript">var et_animation_data = [{"class":"et_pb_blurb_0_tb_header","style":"zoom","repeat":"once","duration":"600ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"}];
+					var et_link_options_data = [{"class":"et_pb_text_0_tb_header","url":"\/","target":"_self"}];</script>
+	<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.4" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="jquery-js-after">jqueryParams.length&&$.each(jqueryParams,function(e,r){if("function"==typeof r){var n=String(r);n.replace("$","jQuery");var a=new Function("return "+n)();$(document).ready(a)}});</script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"\/wp-admin\/admin-ajax.php","images_uri":"\/wp-content\/themes\/Divi\/images","builder_images_uri":"\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"7316ea661e","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"cf480ed468","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"1516","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":"\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#7EBEC5","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/Divi/js/scripts.min.js?ver=4.21.0" id="divi-custom-script-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.21.0" id="fitvids-js"></script>
+<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=6.2.2" id="comment-reply-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.21.0" id="jquery-mobile-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.21.0" id="magnific-popup-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.21.0" id="easypiechart-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.21.0" id="salvattore-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/core/admin/js/common.js?ver=4.21.0" id="et-core-common-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.21.0" id="et-builder-modules-script-motion-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.21.0" id="et-builder-modules-script-sticky-js"></script>
+<style id="et-builder-module-design-1831-cached-inline-styles">.et_pb_menu .et_pb_menu__wrap{justify-content:flex-end}.et_pb_menu__logo img{max-height:90px!important;width:auto!important;padding:10px}.et_pb_module.et_pb_menu--with-logo{width:100%}.et-menu a,.et-menu a:hover{transition:none}header .et_pb_section.et_pb_sticky .et_pb_row{max-height:80px}header .et_pb_section.et_pb_sticky .et_pb_module img{min-height:60px;max-width:240px!important}@media (max-width:980px){header .et_pb_column:first-child{max-width:80%;margin-bottom:0px!important}header .et_pb_column:last-child{position:absolute;z-index:1}.et_mobile_nav_menu{padding:24px 10px}}.et_pb_section_0_tb_header.et_pb_section{padding-top:11px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:3%;margin-right:0px;margin-left:0px;background-color:rgba(0,0,0,0)!important}.et_pb_row_0_tb_header.et_pb_row{padding-top:0px!important;padding-right:0px!important;padding-bottom:0px!important;padding-left:0px!important;padding-top:0;padding-right:0px;padding-bottom:0;padding-left:0px}.et_pb_blurb_0_tb_header .et_pb_main_blurb_image .et_pb_only_image_mode_wrap,.et_pb_blurb_0_tb_header .et_pb_main_blurb_image .et-pb-icon{border-radius:100% 100% 100% 100%;overflow:hidden;border-width:1px}.et_pb_blurb_0_tb_header.et_pb_blurb{max-width:180px}.et_pb_blurb_0_tb_header .et_pb_main_blurb_image .et_pb_image_wrap{box-shadow:0px 2px 35px 10px #ffffff;max-width:100%}.et_pb_blurb_0_tb_header.et_pb_blurb .et_pb_main_blurb_image{margin-top:30px}.et_pb_column_1_tb_header{margin:auto}.et_pb_text_0_tb_header.et_pb_text,.et_pb_text_1_tb_header.et_pb_text{color:#ffffff!important}.et_pb_text_0_tb_header h1{font-weight:700;font-size:54px;color:#ffffff!important;text-align:center;text-shadow:0em 0.1em 0.1em #BB1593}.et_pb_text_0_tb_header{padding-top:2%!important;padding-right:3%!important;padding-bottom:2%!important;padding-left:3%!important;margin-top:0px!important}.et_pb_text_1_tb_header h1{text-align:center}.et_pb_text_1_tb_header h4{font-size:16px;line-height:1.4em;text-align:center}.et_pb_text_1_tb_header{border-radius:5px 5px 5px 5px;overflow:hidden;padding-top:2%!important;padding-right:0px!important;padding-bottom:2%!important;padding-left:0px!important;margin-top:-60px!important;margin-right:0px!important;margin-left:0px!important;max-width:500px}.et_pb_row_1_tb_header.et_pb_row{padding-top:0px!important;padding-right:0px!important;padding-bottom:0px!important;padding-left:0px!important;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px}.et_pb_row_1_tb_header,body.et_boxed_layout #page-container .et_pb_row_1_tb_header.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_1_tb_header.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_1_tb_header.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single.et_full_width_portfolio_page #page-container #et-boc .et-l .et_pb_row_1_tb_header.et_pb_row{width:100%}.et_pb_menu_0_tb_header.et_pb_menu ul li a{font-weight:700;font-size:17px;color:#dd1c70!important}.et_pb_menu_0_tb_header.et_pb_menu{background-color:#000000}.et_pb_menu_0_tb_header{padding-top:20px;padding-bottom:20px}.et_pb_menu_0_tb_header.et_pb_menu ul li.current-menu-item a{color:#FFFFFF!important}.et_pb_menu_0_tb_header.et_pb_menu .nav li ul,.et_pb_menu_0_tb_header.et_pb_menu .et_mobile_menu,.et_pb_menu_0_tb_header.et_pb_menu .et_mobile_menu ul{background-color:#000000!important}.et_pb_menu_0_tb_header .et_pb_menu_inner_container>.et_pb_menu__logo-wrap,.et_pb_menu_0_tb_header .et_pb_menu__logo-slot{width:auto;max-width:100%}.et_pb_menu_0_tb_header .et_pb_menu_inner_container>.et_pb_menu__logo-wrap .et_pb_menu__logo img,.et_pb_menu_0_tb_header .et_pb_menu__logo-slot .et_pb_menu__logo-wrap img{height:auto;max-height:none}.et_pb_menu_0_tb_header .mobile_nav .mobile_menu_bar:before,.et_pb_menu_0_tb_header .et_pb_menu__icon.et_pb_menu__search-button,.et_pb_menu_0_tb_header .et_pb_menu__icon.et_pb_menu__close-search-button,.et_pb_menu_0_tb_header .et_pb_menu__icon.et_pb_menu__cart-button{color:#7EBEC5}.et_pb_text_1_tb_header.et_pb_module{margin-left:auto!important;margin-right:auto!important}@media only screen and (max-width:767px){.et_pb_text_0_tb_header h1{font-size:54px}}</style>
+<style id="et-builder-module-design-1832-cached-inline-styles">.et_pb_section_0_tb_footer.et_pb_section{padding-top:0px;padding-bottom:0px;background-color:#000000!important}.et_pb_row_0_tb_footer.et_pb_row{padding-top:15px!important;padding-bottom:15px!important;padding-top:15px;padding-bottom:15px}.et_pb_row_0_tb_footer,body.et_boxed_layout #page-container .et_pb_row_0_tb_footer.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single.et_full_width_portfolio_page #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row{max-width:1280px}.et_pb_column_0_tb_footer,.et_pb_column_1_tb_footer,.et_pb_column_2_tb_footer{margin:auto}.et_pb_text_0_tb_footer.et_pb_text a,.et_pb_text_1_tb_footer.et_pb_text a:hover{color:#0eb1ed!important}.et_pb_text_0_tb_footer a{font-weight:600}.et_pb_text_1_tb_footer.et_pb_text a{color:#FFFFFF!important;transition:color 300ms ease 0ms}.et_pb_text_1_tb_footer{margin-bottom:0px!important}.et_pb_social_media_follow_network_0_tb_footer a.icon{background-color:#3b5998!important}.et_pb_social_media_follow_network_1_tb_footer a.icon{background-color:#00aced!important}.et_pb_social_media_follow_network_2_tb_footer a.icon{background-color:#007bb6!important}</style>	
+			<span class="et_pb_scroll_top et-pb-icon"></span>
+	</body>
+</html>

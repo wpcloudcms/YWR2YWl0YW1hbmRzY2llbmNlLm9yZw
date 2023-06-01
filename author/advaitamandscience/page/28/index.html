@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="/xmlrpc.php">
+
+	<script type="text/javascript">document.documentElement.className = 'js';</script>
+	
+	<title>advaitamandscience | Advaitam and Science</title>
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,latin-ext&display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style>
+<meta name="robots" content="noindex, nofollow">
+<script type="text/javascript">let jqueryParams=[],jQuery=function(r){return jqueryParams=[...jqueryParams,r],jQuery},$=function(r){return jqueryParams=[...jqueryParams,r],$};window.jQuery=jQuery,window.$=jQuery;let customHeadScripts=!1;jQuery.fn=jQuery.prototype={},$.fn=jQuery.prototype={},jQuery.noConflict=function(r){if(window.jQuery)return jQuery=window.jQuery,$=window.jQuery,customHeadScripts=!0,jQuery.noConflict},jQuery.ready=function(r){jqueryParams=[...jqueryParams,r]},$.ready=function(r){jqueryParams=[...jqueryParams,r]},jQuery.load=function(r){jqueryParams=[...jqueryParams,r]},$.load=function(r){jqueryParams=[...jqueryParams,r]},jQuery.fn.ready=function(r){jqueryParams=[...jqueryParams,r]},$.fn.ready=function(r){jqueryParams=[...jqueryParams,r]};</script><link rel="alternate" type="application/rss+xml" title="Advaitam and Science &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="Advaitam and Science &raquo; Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Advaitam and Science &raquo; Posts by advaitamandscience Feed" href="/author/advaitamandscience/feed/">
+<meta content="Default Divi Child v.4.0.1" name="generator">
+<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=6.2.2" type="text/css" media="all">
+<style id="wp-block-library-theme-inline-css" type="text/css">.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}</style>
+<style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}</style>
+<link rel="stylesheet" id="divi-style-parent-css" href="/wp-content/themes/Divi/style-static.min.css?ver=4.21.0" type="text/css" media="all">
+<link rel="stylesheet" id="divi-style-css" href="/wp-content/themes/default-divichild/style.css?ver=4.21.0" type="text/css" media="all">
+<link rel="stylesheet" id="site_style-css" href="/wp-content/themes/default-divichild/site-style.css?ver=6.2.2" type="text/css" media="all">
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/users/5">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 6.2.2">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1">
+<style type="text/css" id="custom-background-css">body.custom-background { background-image: url("/wp-content/uploads/sites/3/2021/05/page-1024x640-1.jpeg"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }</style>
+	<script>
+// Add A Dynamic Year In Divi Footer Copyright
+ // var beg_year = 2019; // Year site went live
+ var this_year = new Date(); // Get current date
+ var developed_by = '<p>Site Powered by <a href="https://digitalindiya.com/" target="_blank" rel="noopener noreferrer"><strong>DigitalIndiya.com<\/strong><\/a><\/p>'; // Developer info
+ //this_year = this_year.getFullYear();
+ stitle = jQuery('title').text(); 
+ var s_title = stitle;
+ var year = this_year;
+ 
+ jQuery(function($){
+ $('#footer-info').html('© ' + year + ' <a href="/">' + s_title + '<\/a> ' + developed_by );
+ });
+</script><style id="et-divi-customizer-global-cached-inline-styles">#top-menu li a{font-size:16px}body.et_vertical_nav .container.et_search_form_container .et-search-form input{font-size:16px!important}@media only screen and (min-width:981px){.et_header_style_left #et-top-navigation,.et_header_style_split #et-top-navigation{padding:50px 0 0 0}.et_header_style_left #et-top-navigation nav>ul>li>a,.et_header_style_split #et-top-navigation nav>ul>li>a{padding-bottom:50px}.et_header_style_split .centered-inline-logo-wrap{width:100px;margin:-100px 0}.et_header_style_split .centered-inline-logo-wrap #logo{max-height:100px}.et_pb_svg_logo.et_header_style_split .centered-inline-logo-wrap #logo{height:100px}.et_header_style_centered #top-menu>li>a{padding-bottom:18px}.et_header_style_slide #et-top-navigation,.et_header_style_fullscreen #et-top-navigation{padding:41px 0 41px 0!important}.et_header_style_centered #main-header .logo_container{height:100px}#logo{max-height:100%}.et_pb_svg_logo #logo{height:100%}}@media only screen and (min-width:1350px){.et_pb_row{padding:27px 0}.et_pb_section{padding:54px 0}.single.et_pb_pagebuilder_layout.et_full_width_page .et_post_meta_wrapper{padding-top:81px}.et_pb_fullwidth_section{padding:0}}.et_pb_widget_area_left{border-right:0px!important;padding-right:0px!important;border-left:1px solid rgba(0,0,0,.1);padding-left:30px}.et_pb_column article{margin-bottom:30px!important}.post-content{padding-bottom:20px}.post-content-inner{padding-bottom:15px}a[aria-current="page"],.et_pb_widget_area a:hover{color:#e91e63!important}h4.widgettitle{font-size:20px;font-weight:600;border-bottom:1px dashed #ccc;margin-bottom:15px}.wp-block-loginout{padding:10px;background:#edfaff;text-align:center;border-radius:5px}a#cancel-comment-reply-link{position:relative;right:0px;top:21px;background:#fff4f4;padding:10px 15px}#commentform{padding-bottom:50px;padding-top:30px}</style>
+</head>
+<body class="archive paged author author-advaitamandscience author-5 custom-background paged-28 author-paged-28 et-tb-has-template et-tb-has-header et-tb-has-footer et_pb_button_helper_class et_boxed_layout et_cover_background et_pb_gutter et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><div id="page-container">
+<div id="et-boc" class="et-boc">
+			
+		<header class="et-l et-l--header">
+			<div class="et_builder_inner_content et_pb_gutters3">
+<div class="et_pb_section et_pb_section_0_tb_header et_pb_with_background et_section_regular et_pb_section--with-menu">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_header et_pb_equal_columns et_pb_gutters3">
+				<div class="et_pb_column et_pb_column_1_4 et_pb_column_0_tb_header  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_with_border et_pb_module et_pb_blurb et_pb_blurb_0_tb_header logo et_animated  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><a href="/"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img decoding="async" src="https://advaitamandscience.org/wp-content/uploads/sites/3/2021/05/advaitam-logo-wpp1605575340446.png" alt="" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone"></span></a></div>
+					<div class="et_pb_blurb_container">
+						
+						
+					</div>
+				</div>
+			</div>
+			</div>
+<div class="et_pb_column et_pb_column_3_4 et_pb_column_1_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0_tb_header et_clickable  et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h1 style="text-align: center;"><strong>Advaitam and Science</strong></h1></div>
+			</div>
+<div class="et_pb_module et_pb_text et_pb_text_1_tb_header  et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h4>
+<strong>OM, Purnamata purnamitam purnat purnamutachyate, </strong><strong>purnasya purnamataye purnamevavasishyate – Bri.Up V.i.1</strong>
+</h4></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+<div class="et_pb_row et_pb_row_1_tb_header et_pb_row--with-menu">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_2_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column--with-menu">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_menu et_pb_menu_0_tb_header et_pb_bg_layout_light  et_pb_text_align_center et_dropdown_animation_fade et_pb_menu--without-logo et_pb_menu--style-left_aligned">
+					
+					
+					
+					
+					<div class="et_pb_menu_inner_container clearfix">
+						
+						<div class="et_pb_menu__wrap">
+							<div class="et_pb_menu__menu">
+								<nav class="et-menu-nav"><ul id="menu-main-menu" class="et-menu nav">
+<li class="et_pb_menu_page_id-home menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1553"><a href="/">Home</a></li>
+<li class="et_pb_menu_page_id-4 menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1923"><a href="/category/articles/">Articles</a></li>
+<li class="et_pb_menu_page_id-7 menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1924"><a href="/category/poems/">Poems</a></li>
+<li class="et_pb_menu_page_id-5 menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1872"><a href="/category/my-views/">My Views</a></li>
+<li class="et_pb_menu_page_id-103 menu-item menu-item-type-post_type menu-item-object-page menu-item-1557"><a href="/about-me/">About me</a></li>
+<li class="et_pb_menu_page_id-104 menu-item menu-item-type-post_type menu-item-object-page menu-item-1558"><a href="/contact-2/">Contact</a></li>
+</ul></nav>
+							</div>
+							
+							
+							<div class="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</header>
+	<div id="et-main-area">
+	
+<div id="main-content">
+	<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+		
+					<article id="post-372" class="et_pb_post post-372 post type-post status-publish format-standard hentry category-articles">
+
+				
+															<h2 class="entry-title"><a href="/articles/the-incredible-mind/">THE INCREDIBLE MIND</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">May 31, 2013</span> | <a href="/category/articles/" rel="category tag">Articles</a></p>
+<h4>                                                               THE INCREDIBLE MIND</h4>
+<p style="text-align: justify">Mind is the manifestation of infinite consciousness, so much so that, mind is infinite, but it is limited by thoughts.  A thoughtless mind merges in its source.  When we meditate, we can realize the vastness of the mind.  Every mind is unique and independent.  Each mind has a set of accumulated impressions and gathered impressions, which project outside as thoughts.  It is the thoughts that decide the nature of the mind.  The mind decides the future of a person.  To be more precise, the accumulated impressions and the gathered impressions collectively induce a person to perform an action.</p>
+<p style="text-align: justify">Depending on the nature of the impressions and thoughts, the mind is of two kinds, the impure mind and the pure mind.</p>
+<p style="text-align: justify"><b>Impure mind</b> is also called the emotional mind.  An impure mind is full of binding desires and imaginations.  When the desires are not satisfied, the mind becomes agitated.  Such strong desires are called the binding desires.  Impure mind lives either in the past or in the future.  Impure mind is an emotional mind and can be easily exploited.  It always thinks about the incidents of the past or have imaginations about the future, by that, it loses its tranquil nature.  It always compares its performance with the other mind(other persons) which is a negative trait.</p>
+<p style="text-align: justify">Imagination leads to unnecessary complications.  When a mind is impure, not matured and disordered, it can be easily influenced and manipulated.  It lacks divinity and it is not spiritually bound.  An impure mind never accepts its own mistakes; it always blames others for its own mistakes.  It becomes more and more weak, and loses its courage and strength by blaming others.  When its desires are rejected, it becomes more weak and agitated.  Desires cause bondage and bondage causes suffering.  The root cause of desire is ignorance.  A mind can never be satisfied by experiencing desires, because its source is infinite pure consciousness, and no materialistic matter can satisfy a mind completely.  When one desire is satisfied, another one pops up and the desires keep on arising regardless of time and situation.  When a lot of desires and emotions flood the mind, the body will not be able to balance its stability, as a result, the body will be affected.  &#8220;When the mind is agitated, the body indeed goes to the state of agitation and on account of agitation, the vital airs flow unevenly.  When the currents of bio-energy flow unevenly, their channels(nadis) attain to an improper condition.  This causes physical sickness.  By the purity of the mind, the vital air flows in regular course&#8221;. (Essence of Yogavaasishtha, 25, 35-40).  An emotional mind gets fed up with life easily and that too at a very early stage.</p>
+<p style="text-align: justify">Intellect means the acquired information and intelligence is the pure consciousness.  It is because of the intelligence we are able to gather information.  It is very important to take the mind to the intelligent level, and then it is easy to manage an emotional mind.  This is acquired by meditating on the Self.  The basis of life is intelligence.  Intellect and emotions form only a part of the life.  A suspicious mind always thinks about the consequences.  It is a fearful mind and it leads to failure.  Suspicion and fear suppresses the performance of the mind.  Importance should be given to the performance of action, because the consequences and result follow automatically.  When an emotional mind experiences success, it builds up its ego, and claims that the success is achieved because of its own effort alone.  At the same time, when it experiences failure, it blames others as the cause for its failure.  An emotional mind is a problematic mind; it always deals with situation in an adverse way.  &#8220;The experiences of the world are a mere imagination of the mind.  By the restraint of the mind, the delusion of worldly existence reaches alleviation&#8221;.(Essence of Yogavaasishtha, 7, 27)</p>
+<p style="text-align: justify"><b>Pure mind </b>is based on intelligence.  It lives in the present.  Future is the extension of the present moment.  An intelligent mind lives and realizes the importance of each moment.  Pure mind knows to deal with worldly situations.  Pure mind is matured, very stable and spiritual.  It has clarity in life.  When the mind has clarity, nothing can disturb that mind.  Mind is ruled by two powers, one is the time and the other is the intelligence.  When the mind concentrates on intelligence, the experiences that are the product of time can be ignored.  Mind expands and becomes relaxed by meditation.  Pure mind is the relaxed mind.</p>
+<p style="text-align: justify">Each action is time bound and time completes the action.  Karma phala, the result of action, is the completion of an action. No one can interfere in its result.  When we receive the result, we have the choice only to deal with the result; whether we have to consider the result as a success or an opportunity to learn from that experience, is our choice.  A pure mind will not be anxious or have fear over the result.  Anxiety grows by thinking, just as fire grows by fuel.  Only a pure mind can involve deeply and perform an action with perfection.  When an action is perfect, the result will be perfect.  We have authority only over the action and not over the result.  If the belief is based on the inherent divine nature, then it definitely reflects on the personality(eg. Swami Vivekananda).  Personality radiates the true nature, which is permanent.</p>
+<p style="text-align: justify">Life passes through each moment; when each moment is enjoyed, then life will be successful.  Each experience is unique.  An intelligent mind will learn from the experiences of the past, and will not be affected by the experiences.  A pure mind is not bound by its desires.  &#8220;Mind alone is the cause for people&#8217;s bondage and liberation.  When attached to objects, it leads to bondage.  When free from objects, it leads to liberation&#8221;.  (Amrita Bindu Upanishad, verse 2)</p>
+<p style="text-align: justify">Liberation does not mean indifference; it means contentment.  &#8220;Liberation is attained when the mind does not desire or grieve or reject or accept or feel happy or angry&#8221; (Astavakra samhita, 8, 2).  If we realize that in reality the nature is Satchitananda Atma, then we will not have binding desires.  Mind will be bereft of desires when it realizes its true nature.  &#8220;The mind should be restrained to the extent that it resolves in the heart.  This is wisdom and meditation.  All else is but mere logic&#8221; (Amrita Bindu Upanishad, verse 5).</p>
+<p style="text-align: justify"><b>Meditation</b> helps the mind to connect with intelligence.  In the waking state, mind works in the conscious layer.  In the dream state, mind works in the subconscious layer.  In the deep sleep state, mind works in the unconscious layer.  During meditation, the mind will be in the supreme conscious layer(intelligence layer).  The power of the mind increases by meditation, and it will become more and more receptive and acceptable.  Each thought is a conscious energy in different forms.  Situations are common to all, but the way we react to situations shows our intelligence.  An intelligent mind always reacts in an intelligent manner.  A weak mind should be overcome by intelligence and should rise above situations.</p>
+<p style="text-align: justify">Meditation reduces the accumulated impressions.  When we meditate on the Self(silence), the power of the mind develops and this helps to deal with situations.  Mind will gradually taste its infinite nature by meditation.  Each thought is made of consciousness and meditation relaxes the mind and obstructs the wrong conclusions.  Mind is like a screen, through which events pass on like an image.  All the experiences are temporary and are erased by time.  The scriptures give the knowledge about the mind and the way to deal with it.  Mind has no form and it attains happiness when it is calm.  &#8220;Mind is reduced to the state of bondage only by its own net of impression of thoughts just as the silkworm in the cocoon&#8221;(Essence of Yogavaasishtha, 6, 37).  The undivided consciousness appears to become fragmented as the individualized consciousness by the play of the mind or thought.  Just like a wave in the ocean, the individual consciousness or soul is the appearance on the supreme consciousness, through mind or thought.  When the mind realizes this, it is liberated.</p>
+<p style="text-align: justify">Thought of any kind is illusory.  Even the mantras are the finite expression of the infinite.  Meditation on forms can be a positive worship or an initial stage in meditation, but it veils the reality.  The divine is formless and infinite.  Meditating on the Self in silence is the highest worship.  This concept is explained in Yogavaaasishtha, where sage Vaasishtha asks about the highest form of worship to Lord Shiva.  Lord Shiva explains that &#8220;The lotus eyed (vishnu) is not the deity.  The three-eyed Shiva is not the deity; nor is the deity of the form of the mind.  The splendor which is not artificial and which is without beginning and end is called the deity.  For those who have not known the essential nature of the deity, the worship of form and the like has been prescribed.  Worship of the form is not worship.  Know that as the worship of the deity in which the divine Self is worshipped by the flowers of tranquility, knowledge and the like.  Pure intelligence (or consciousness) which is beyond all parts and which is of the nature of the generality of Existence, attaining to the nature of vast Existence(or the totality of being) is described by the word deity.  That pure consciousness gradually moved by the splendor of the energies of space, time and the like, having become the Jeeva(individual soul or individual consciousness), soon becomes the buddhi.  There after it becomes the sense of &#8216; I &#8216;, then attaining to the state of the mind, it clings to worldly existence.  The Self is indeed full of all powers or energies.  He accomplishes everything thoroughly.  The Self is the highest deity.  The Self is always worthy of worship by the wise ones.  His worship is only meditation within.  Nothing else is(His) worship.  Therefore, let one worship Him, who is eternal, who is the support of the three worlds, who is of the nature of pure consciousness; who shines like a hundred thousand suns and who illuminates all appearances, by meditation.  Let one meditate on this supreme spirit who is ever abiding in the body.  Let him consider this splendor of pure consciousness in his own body as the deity&#8221; (Essence of Yoga vaasishtha, 22, 16-27).  These are the words of lord Shiva on worship as explained to sage Vaasishtha.</p>
+<p style="text-align: justify">We have to raise the mind by our own effort to meditate on the supreme consciousness.  The scriptures and the rituals help us to attain tranquility of mind.  A mind with full load of thoughts is very difficult to be abandoned.  Accepting the present that has arrived in regular course, and not thinking about the past or future, the mind is reduced to the state free from thoughts.</p>
+<p style="text-align: justify">The two methods for the thinning of the mind that facilitates meditation are the Yoga and the Jhana.  Yoga is the restraint of the movement of the mind.  The movement of the mind depends on prana(vital air).  When that prana is controlled, the mind certainly becomes tranquil.  The mind moves the body and the senses.  The movement of prana happens under the influence of mental impressions.  Also, mental impressions are gathered through the movement of prana.  When one among the two is worn away, the other becomes weak.</p>
+<p style="text-align: justify">Jhana means perceiving the truth.  As long as there is no knowledge of truth, there is no extinction of the mind.  Knowledge about the Self disappear the mental impressions.  When the truth is realized, there may be desires, but we are not bound by the desires.</p>
+<p style="text-align: justify">Mind is the finest manifestation of the pure consciousness.  Mind causes the movement in the existence.  Binding desires makes a person weak.  Among all the ills of the worldly life, it is the binding desires, which causes lasting grief.  &#8220;Whom the world is not afraid of and who is not afraid of the world and who is free from exultation, anger and fear, he is said to be liberated while living&#8221;(Essence of Yogavaasishtha, 3, 29).</p>
+<p style="text-align: justify">Mind is needed to experience life, it is by the mind we gather knowledge and reach the supreme conscious level.  After reaching the goal, the mind should be discarded.  This is the highest bliss.  Indeed, mind has an incredible journey.</p>
+<p style="text-align: justify">References</p>
+<p style="text-align: justify">The Bhagavad Gita,(Swami sivananda,Trans), Uttaranchal, Himalayas, The Divine Life Society, (2003).</p>
+<p style="text-align: justify">Amrita Bindu Upanishad, (Swami Tadatmananda,Trans),  Somerset, New Jersey, Arsha bodha center.</p>
+<p style="text-align: justify">The Essence of Yogavaasishtha, (Samvid,Trans), Mount Road, Chennai, Samata Books</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;		</p>
+				
+					</article>
+			
+					<article id="post-368" class="et_pb_post post-368 post type-post status-publish format-standard hentry category-my-views">
+
+				
+															<h2 class="entry-title"><a href="/my-views/money-and-fame/">MONEY AND FAME</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">May 25, 2013</span> | <a href="/category/my-views/" rel="category tag">My Views</a></p>
+<h4>                                                                        MONEY AND FAME</h4>
+<p style="text-align: justify">Majority of the people in the world are after this &#8211; money and fame.  Many succeed in their path and many do not.  Some people get it as a flash in a pan.  They sacrifice their peace of mind in search of these two things.  When they taste it, they will never remain calm.  Money and fame have power.  We have to work hard day and night to earn money and get fame.  Can we really enjoy money and fame?  When we do not have time, then how can we enjoy them?  We can enjoy them only for a period.  Somehow, the nature will find a way to grab it from us; does that mean that money and fame are not important in life?  No, definitely not.  We need them both for our physical well-being and social well-being.  We desperately need money, because for every two hours our hunger asks for it.  Fame is needed to maintain our dignity and social status.  At the same time, not everything is possible by money and fame.</p>
+<p style="text-align: justify">When we talk about our physical and social well-being, there is a need to remember the Raja Rishis of ancient India.  They sacrificed money and fame to attain self-realization.  They were famous rulers, who ruled their subjects with perfect justice.  Somehow, there was an urge in them to search for more, something more than they really have with them.  That was spirituality.  They left their kingdom in the hands of responsible people, and left their land in search of self-realization.  They felt that self-realization is more important than their luxurious life.  They were capable of maintaining their well-being with the wealth of spirituality.  They had strong minds to shrug off their difficulties to attain higher knowledge.</p>
+<p style="text-align: justify">Money and fame are very important for a normal person, but what is more important is, the way we deal with it and relate to it.  If we relate money and fame as our only qualification, then it will become a barrier for our growth.  If we view them as a mean or a tool for access, then they are not a barrier for our progress.  With money and fame, we can have many possibilities in the world.  There is nothing wrong with money or fame, but the way we use it and relate to it is very important.  Sometimes we mess up our life in the way we use them, and bring poverty and defame by using money and fame.</p>
+<p style="text-align: justify">In my view, culture plays an important role.  If our culture is economically dependent, then we will relate our whole being to money and fame.  If our culture is spiritually dependent, then we will know the value of our own self and the importance of money and fame in our life.  We relate to the world accordingly.  The basic nature of a person depends on his culture.  Money and fame are only a means and not an end.  A person as a being is more important in all situations.</p>
+<p style="text-align: justify">
+				
+					</p></article>
+			
+					<article id="post-363" class="et_pb_post post-363 post type-post status-publish format-standard hentry category-my-views">
+
+				
+															<h2 class="entry-title"><a href="/my-views/rigidity/">RIGIDITY</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">May 25, 2013</span> | <a href="/category/my-views/" rel="category tag">My Views</a></p>
+<h4>                                                                                    RIGIDITY</h4>
+<p style="text-align: justify">Most of the people who think they are perfect are rigid in their thoughts, emotions and feelings.  They do not allow the thoughts and feelings of others to enter them.  They limit themselves with their own imaginations.  They do not allow themselves to grow or allow others, to help them grow.  They do not enhance their own capabilities.  If we become mentally and physically rigid, then there will be no progression, there will be only regression.  At a very young age, most of the people are very flexible.  When we grow up rigidness grows with us.  Many people turn the blessings in their life like money, influence, education, intelligence etc. as a curse, because of their nature.</p>
+<p style="text-align: justify">When we go against the world, it will be very difficult for us to survive.  Peaceful mind is very important for our growth.  We mess up our mind with many imaginary thoughts.  We are just living as a bundle of thoughts, emotions and opinions which are all gathered from elsewhere.  We have to remain as a being, without any thoughts.  This will clear our mind slowly and gradually.  When we imagine a lot, actually we are building up our ego.  Most of our energy is spend on imagination.  As a result, we will become physically and mentally weak after a period.  When we are weak, our ego will also become weak and our rigidity will reduce.  This natural process affects us mentally in a bad way.  Instead, when we do thoughtless meditation for half an hour, it will have great effect on our thought process.  It will not allow the ego to build up.  This will reduce unnecessary imagination in our mind.  The most effective way for flexible mentality is the kundalini yoga.  When the kundalini rises, we will feel that we are only a force merging with everything around us.  The practice should be perfect and under a trained guru, else it will cause adverse effects.</p>
+<p style="text-align: justify">In my view, thoughtless meditation is a safe way to have flexible mentality.  Without a flexible mind, our precious life will be unnecessarily wasted in arguments and tension.  Only a peaceful mind will reflect consciousness.  It is not an easy task, but by persistent effort the mind must be trained to become flexible, else we are losing a peaceful opportunity in our life.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;		</p>
+				
+					</article>
+			
+					<article id="post-343" class="et_pb_post post-343 post type-post status-publish format-standard hentry category-articles">
+
+				
+															<h2 class="entry-title"><a href="/articles/evolution-and-dissolution-a-philosophical-and-scientific-comparison/">EVOLUTION AND DISSOLUTION &#8211; A Philosophical and Scientific comparison</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">May 17, 2013</span> | <a href="/category/articles/" rel="category tag">Articles</a></p>
+<h4>                                                                       EVOLUTION AND DISSOLUTION &#8211;</h4>
+<h4>                                                                                                 A PHILOSOPHICAL AND SCIENTIFIC COMPARISON</h4>
+<p style="text-align: justify">Evolution and dissolution is a topic of interest for both philosophers and scientist.  The manner in which the philosophers explain evolution is completely different from the manner in which the scientists explain it.  Scientists believe that the basics of creation are atoms, energies and their related matters.  They explain the evolution based on this.  Philosophers believe that the creation is the manifestation of the Supreme Consciousness, and they say that the evolution is based on karma, time, the five great elements (space, air, brightness, water, and matter), its nature, and subtle qualities.  They both differ entirely in the way they explain the evolution.  However, both their explanations have to be accepted, because they are reasonable.  Philosophy explains about one aspect of the Supreme Being and science explains about another aspect of the Supreme Being.  When both their views are accepted, an entire view of evolution and dissolution can be realized.  Science is based on the experiments and observations done outside.  Philosophy is based on the realization in deep meditation, inner reasoning, and analysis.  The philosophical facts are very deep and difficult to accept, whereas, scientific facts are easy to understand and accept.  The facts about evolution are found by philosophers approximately 5000 years back, whereas, the scientific facts are still emerging out.  This does not affect the credibility of the discovery of scientific facts or philosophical revelation, because whatever be the period of discovery, the truth has to be realized, and this is the mission in life.</p>
+<p style="text-align: justify">In philosophy, the Samkhya system of Indian philosophy explains the evolution and dissolution clearly.  In science, three theories namely The Steady state theory, The Pulsating theory, The Big Bang theory explain about evolution.  Among the three theories, the Big Bang theory attained universal acceptance and popularity.  So in this article, the analysis is done based on the Samkhya system of Indian philosophy and the Big Bang theory, to know about the overall view of evolution.</p>
+<p style="text-align: justify">Bhagavan Kapila is the profounder of the Samkhya system.  Samkhya system is explained in the Kapilopadesha  of Srimad Bhagavata.  This system explains the reality and nature of the two manifestations namely the purusha and the prakriti.  Purusha is the subject and prakriti is the object.</p>
+<p style="text-align: justify"><b>Purusha</b> is the individual center of the pure consciousness.  Even though, purusha is individual it is all pervading and one center does not relate to the other, and hence each center is all pervading and individual.  Each center has the complete nature of the pure consciousness.  Purusha does not have attributes and parts.  Purusha is an assumption of the Supreme Consciousness, due to its inherent deluding power Maya.</p>
+<p style="text-align: justify"><b>Prakriti</b> is the manifesting power of the purusha.  The inherent deluding power of the Supreme Consciousness, Maya, brings out prakriti.  Prakriti is constituted of the three gunas viz, sattva, rajas, and, tamas.  Evolution and dissolution is explained by the evolutes of prakriti and its combinations.  The evolutes are inherent in prakriti.  Prakriti is also called Pradhana (the first category), Avyakta (indiscrete).  Prakriti is insentient, part less, omnipresent, single, and objective.</p>
+<p style="text-align: justify"><b>The Three Gunas of prakriti</b></p>
+<p style="text-align: justify">Prakriti has three constituents.  They are the three gunas sattva, rajas, and tamas.  They are the functional forces of prakriti and they are not entirely separate.  Each one is convertible into another and each including in it the elements of the other.  That is, sattva merges with rajas, rajas merges with tamas, and tamas mergers with sattva.  Sattva makes the prakriti exist, rajas makes the prakriti more active, and tamas restrains the process of change and preserve the identity.  Prakriti works through the gunas.  When the gunas are at equilibrium, then the prakriti does not evolve.  During evolution, Time, the inherent power of prakriti, disturbs the equilibrium of the three gunas and the three gunas become active.  The different combination of three gunas makes the entire creation.  Three gunas are present in all the created bodies and matter, but in different proportions.  Some forms are dominated by sattva, some are dominated by rajas, and some are dominated by tamas.  In scientific terms, the gunas can be explained as the different rate of vibrations.  Sattva is the high frequency vibration, rajas is the medium frequency vibration and tamas is the low frequency vibration.  The five basic gross elements (space, air, brightness, water, matter) are the evolutes of the tamasic aspect of the prakriti.  According to philosophy, prakriti becomes outwardly active because of the gunas.</p>
+<p style="text-align: justify"><b>Combination of purusha and prakriti</b></p>
+<p style="text-align: justify">The individual centers of consciousness (purusha) gets involved with prakriti through proximity, and the mutual transfer of attributes and functions take place consequently.  When prakriti is manifested from purusha, Time, initiates the movement in prakriti.  Prakriti starts evolving from the indiscrete to the discrete condition.  The reflection of the prakriti on the individual purusha is called the Jiva.  Prakriti is insentient and purusha is sentient.  The proximity of the purusha makes prakriti sentient.  The nature of prakriti is reflected on purusha, by this the purusha assumes that it has attributes and gunas.  The nature of purusha is reflected on bhuddhi, which is an evolute of prakriti.  The subtle body consists of bhuddhi, which has the reflection of the purusha.  The reflection of the purusha on prakriti makes the body and mind active and intelligent.  The intelligence in a person is the purusha in him.  The gunas (nature) of a person uses the intelligence to become active.  The prakriti and its 24 evolutes form the different forms of the universe, by its different combinations.  The purusha assumes that the forms and gunas are its own and this assumption subjects him to birth and death.</p>
+<p style="text-align: justify"><b>Prakriti and its Evolutes</b></p>
+<p style="text-align: justify">The manifested is composed of prakriti and its 24 evolutes.  Manifestation is not producing something new.  Effect is always present in the cause, in an indiscrete state and the evolution is only the manifestation of the already existing entity.  Each evolutes is under the influence of Kala (Time), Karma (past impressions), Svabhava (nature).  The first evolutes of the prakriti is the Mahattatva.  Mahattatva has the whole creation in the seminal condition.  It is also known as Hiranyagarbha.  From mahattatva evolves the ahamkara (sense of individuality, I &#8211; sense).  Ahamkara gives the feeling that the individual consciousness is different from the supreme consciousness.  Ahamkara expresses itself in three ways.</p>
+<p style="text-align: justify">1. Sattva aspect of ahamkara &#8211; leads to determination.</p>
+<p style="text-align: justify">2. Rajas aspect of ahamkara &#8211; leads to high activity.</p>
+<p style="text-align: justify">3. Tamas aspect of ahamkara &#8211; leads to inertia and dullness.</p>
+<p style="text-align: justify">A person experiences peace from sattva aspect, high activity from rajas aspect, and dullness and inertia from tamas aspect.  Even nature has these three gunas.</p>
+<p style="text-align: justify">1. Mind evolves from the sattvika aspect of ahamkara.  Mind has two powers, imagination and obsession.</p>
+<p style="text-align: justify">2. From the rajasika aspect of ahamkara evolves,</p>
+<ul style="text-align: justify">
+<li>Bhuddhi, which manifests as intelligence in a person.  Bhuddhi helps the thoughts to have different modes and helps the senses to function effectively.</li>
+<li>Prana, which generates the power of action.</li>
+<li>The five organs of knowledge (eyes, ears, nose, tongue, skin).</li>
+<li>The five organs of action (hands, legs, organ of speech, excretory organ, generative organ).</li>
+</ul>
+<p style="text-align: justify">Bhuddhi functions through the organs of knowledge.  The organs of action are the products of prana.  In a person, all these organs are developed from the rajasika aspect of the ahamkara.</p>
+<p style="text-align: justify">3. From the tamasika aspect of ahamkara, the subtle senses called the Tanmatras evolve and then their corresponding gross elements evolve.</p>
+<p style="text-align: justify"><b>Evolutes of the Tamasika aspect of Ahamkara</b></p>
+<p style="text-align: justify">The subtle senses and their corresponding gross elements are evolved from the tamasika aspect of ahamkara.</p>
+<p style="text-align: justify">1. Tamasika aspect of ahamkara comes into being, and from it emerges the matrix (Tanmatra) of Sound, and from this in turn comes the element Ether (space).  The ear evolved from the rajasa aspect of ahamkara, captures the sensation of sound (Srimad Bhagavata 3,26,32).</p>
+<p style="text-align: justify">2. Prompted by the evolutionary urge of Time, the element Ether, which in its subtle tanmatra condition is identical with sound, produces the tanmatra of Touch, from which has emerged the element Air.  The skin is the organ that perceives touch ( Srimad Bhadavata 3, 26, 35).</p>
+<p style="text-align: justify">
+</p>
+<p style="text-align: justify">3. Through the functioning of providence, the element Air, which in its subtle tanmatra condition   is identical with touch, produces the tanmatra of Rupa (form or perception), out of which is born the element Tejas (brilliance, fire).  The eye perceives form and color, which are variations of tejas (Srimad Bhagavata 3,26,38).</p>
+<p style="text-align: justify">4. From the element Tejas, which is identical in its subtle tanmatra condition with rupa,  generates the tanmatra of taste, out of which has sprung the gross element Water.  The organ tongue apprehends taste (Srimad Bhagavata 3,26,41).</p>
+<p style="text-align: justify">5. By the prompting of the divine evolutionary force, the element water, which in its subtle condition is identical with the tanmatra of taste, evolve the tanmatra of Smell.  Out of the tanmatra of smell emerged the element Earth (matter) (Srimad Bhagavata 3, 26, 44).</p>
+<p style="text-align: justify">The qualities and nature of one tanmatra and element adds up to the immediate next.  The akasa (space) has only sound as characteristics.  Air has the characteristics of space and air.  Brightness (fire) has the characteristics of space, air and brightness.  Water has the characteristics of space, air, brightness, and water.  Matter (earth) has the qualities of all the other elements.  These categories come into combination of two types, the macrocosmic, and the microcosmic.</p>
+<p style="text-align: justify">The evolution of the gross elements is explained in scientific sense as, first the space evolved, then the air evolved, then brightness evolved, then water (ice) evolved, and finally hard matter evolved.</p>
+<p style="text-align: justify">Universe was in an unmanifested (seed state) in the supreme consciousness (Brahman).  When Brahman felt that the karmas in the seed form are matured enough to manifest, the evolution happened.</p>
+<p style="text-align: justify">Many subtle steps of evolution were involved, before the outward manifestation of Brahman, in the form of five basic gross elements.  The five basic elements, the tanmatras ( subtle senses), and gunas combine to form nature and various beings.</p>
+<p style="text-align: justify">Science is not clear about what happened before Big Bang, because there was no time to record the happenings.  Big Bang happened at time, T=0, which is estimated as nearly 13.7 billion years back.  Science further explains that, the universe existed as an infinitesimal point, before Big Bang.  Time is a measurement to indicate change.  After Big Bang, the universe began to expand and evolve.  Science is not clear about the reason for the cause of Big Bang; however, it acknowledges the fact that the high temperature and density might have caused Big Bang.  Big Bang might be an earlier step in the process of evolution and not the first step, because there must be some reaction going on in that infinitesimal point, due to which it might have exploded and expanded.  In philosophy, many steps were involved before the prakriti manifested outside as the five gross elements.  However, philosophy does not explain about atoms and its energies because philosophy concentrates on the source of creation, Brahman.  Philosophy explains creation in one dimension and science explains creation in another dimension.</p>
+<p style="text-align: justify"><b>Creation according to Science</b></p>
+<p style="text-align: justify">Scientist believes that, before Big Bang the universe was just an infinitesimal point, but it expanded incredibly.  It was incredibly dense and hot before inflation, but it got cooler and less dense as it expanded.  Light chemical elements were created within the first three minutes of the formation of the universe.  When the temperature was dropped to 100 million times, the forces of nature assumed their present properties.  The four forces are the gravity, the weak nuclear force, the strong nuclear force, and the electromagnetic force.  The weak forces make radioactive decays and the strong forces hold nuclei together.  The elementary particles known as quarks roamed freely in a sea of energy.  When the universe expanded and cooled further, the free quarks became confined in neutrons and protons.  When expanded and cooled further, the protons and neutrons collided to make deuterium, which is an isotope of hydrogen.  Much of this deuterium combined to make helium.  The helium that is present today is formed within the first three minutes of inflation.  Conditions are still hot for the atomic nuclei to capture electrons.  During the first 3,80,000 years after Big Bang, the intense heat from the creation of the universe made it essentially too hot for light to shine.  Atoms crashed together with enough force to break up into dense opaque plasma of protons, neutrons, and electrons that scattered light like fog.  About 3,80,000 years after Big Bang, matter cooled enough for electrons to combine with nuclei to form neutral atoms.  This phase is known as recombination.  The absorption of free electrons caused the universe to become transparent.  The light that was unleashed at this time is detectable today in the form of radiation from the cosmic microwave background.  Analyzing this, the scientist get a clue of the early universe.  The neutral atoms then began to coalesce into gas clouds, which later evolve into stars.  The era of recombination was followed by a period of darkness before stars and other bright objects were formed.  Roughly, 400 million years after the Big Bang, the universe began to come out of its dark ages.  This period in the universe&#8217;s evolution is called the age of re-ionization.  During this period, clumps of gas collapsed enough to form the very first stars and galaxies.  The ultraviolet light emitted from these energetic events cleared out and destroyed most of the surrounding neutral hydrogen gas.  The process of re-ionization and the clearing of foggy hydrogen gas caused the universe to become transparent to ultraviolet light for the first time.</p>
+<p style="text-align: justify">Many scientists think that sun and the rest of our solar system are formed from a giant rotating cloud of gas and dust known as the solar nebula.  As gravity caused the nebula to collapse, it spun faster and flattened into a disk.  During this phase, most of the materials were pulled towards the center, to form the sun.</p>
+<p style="text-align: justify">When the universe was half its present size, nuclear reactions in stars produced most of the heavy elements from which terrestrial planets were formed.  Overtime, the formation of stars has consumed the supply of gas in galaxies.  Scientists estimate that the universe is made of</p>
+<p style="text-align: justify">Dark energy 72%,</p>
+<p style="text-align: justify">Dark matter 23%,</p>
+<p style="text-align: justify">Atoms 4.6%,</p>
+<p style="text-align: justify">Radiation 0.01%</p>
+<p style="text-align: justify">This 4.6% of atoms makes the stars, planets, nature, and human beings.  Science is not clear about the dark matter and dark energy.  According to science the atoms combine together to form the material world.</p>
+<p style="text-align: justify">According to philosophy, the primordial categories combined and formed the universe.  The combination is based on the past karmas and time.  The proximity of purusha and prakriri is the base of creation.  The Supreme Being abiding in prakriti manifests differently as innumerable centers of consciousness (Jivas).</p>
+<p style="text-align: justify"><b>Dissolution</b></p>
+<p style="text-align: justify">In philosophy, dissolution is called Pralaya.  When the creative will of the Supreme Being subsides,  pralaya or the process of dissolution sets in.  It is the power of the Supreme Being, Time, which brings in pralaya.  All the beings dissolute in to their elemental condition.  The gross elements go back to their subtle elements.  The subtle elements will go back to their corresponding aspect of ahamkara.  Ahamkara goes back to the mahattatva.</p>
+<p style="text-align: justify">During dissolution, there will be tremendous natural disasters by water, air, fire, and matter.  All the different types of bodies and forms will lose their lives and are either buried or disintegrated by some means.  The bodies will become matter (as earth), matter into its subtle aspect smell; smell into water; water into taste; taste into fire; fire into form; form into air; air into touch; touch into Ether(space); space into sound; sound into its source, the tamasa aspect of ahamkara; the three aspects of ahamkara goes back to mahattatva.  The three aspects of prakriti will be back to equilibrium and remain silent (no vibration mode).  Mahattatva dissolves into prakriti, which is in a state of equilibrium.  Prakriti dissolves in time, which is now without any movement.  Time dissolves in the creative spirit (Maya).  Maya remain in the supreme spirit without any attributes and limitation (Srimad Bhagavata, 11, 25, 22-27)</p>
+<p style="text-align: justify">Science also supports this dissolution.  In 1920&#8217;s astronomer Edwin Hubble using a powerful telescope at the Mount Wilson observatory in Los Angles, observed that the universe is not static, but rather is expanding.  The expansion of the universe will accelerate and everything that is not gravitationally bound will speed away, leaving our observable universe (goes beyond our observation).  Everything that has gravitational pull will go through the life and death cycles until all the energy is used up.  After trillions of years, everything will contract and cool, and will be dead rocks.  Gravitational interactions will force these things to fly apart from one another.  The giant galaxies will decay.  The universe may expand forever, in which case all the galaxies and stars will eventually grow dark and cold.  If the mass of the universe is large enough, gravity will eventually reverse the expansion and all the matter and energy will be reunited.  The universe becomes smaller and the temperature increases, again matter will disintegrate to basic atoms and then quarks, there will be only a blaze of light, the universe will become smaller and smaller with high density and immense heat, and everything will take a reverse process.  Finally, the universe will shrink back to an incredibly dense and hot infinitesimal point; again a long wait….for the next cycle.</p>
+<p style="text-align: justify">Mystics, theologians, philosophers, scientists view universe in many lights.  Science uses high technology instruments, satellites, observatories (both in earth and in space) and calculates the aftermath of the happenings of the Big Bang.  Science needs experiments and observations.  The findings of the scientific world are within a period of 300 years.  Human history is very minute when compared with the cosmic history.  The findings of philosophy are made by the Indian Rishis about 5000 years back, in deep meditation.  They did not take any external help.  Their findings were passed on to their students.  There was no scripting in that period.  Later on after many generations, their findings were recorded as puranas.  People who believe in philosophy must be grateful to the Rishis who discovered  and explained about the cosmos and human life; else we will be in dark about the evolution process until science discovered it.</p>
+<p style="text-align: justify">
+</p>
+<p style="text-align: justify">References</p>
+<p style="text-align: justify">1. Srimad Bhagavata, (Swami Tapasyananda, trans), (vol 1 &amp; 4), Sri Ramakrishna Math, Mylapore, Chennai.</p>
+<p style="text-align: justify">2. Evolution of the Universe, by p. James E. Peebles, David N. schramm, Edwin L. Turner and Richard G.Kron, retrieved from http://studentresearch.wcp.muohio.edu/Astronomy/EvolutionofUniverseSciAm.pdf</p>
+<p style="text-align: justify">3. How did the universe originate and evolve to produce the galaxies, stars, and planets we see today? , retrieved from</p>
+<p style="text-align: justify">http://science.nasa.gov/astrophysics/big-questions/how-did-universe-originate-and-evolve-produce-galaxies-stars-and-planets-we-see-today/</p>
+<p style="text-align: justify">4. Big Bang Universe, explained in 10 steps, retrieved from</p>
+<p style="text-align: justify">http://www.space.com/13320-big-bang-universe-10-steps-explainer.html</p>
+<p style="text-align: justify">
+				
+					</p></article>
+			
+					<article id="post-300" class="et_pb_post post-300 post type-post status-publish format-standard hentry category-poems">
+
+				
+															<h2 class="entry-title"><a href="/poems/my-own-self/">MY OWN SELF</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">May 10, 2013</span> | <a href="/category/poems/" rel="category tag">Poems</a></p>
+<h4>                                                                      MY OWN SELF</h4>
+<p>&nbsp;</p>
+<p>How do I know</p>
+<p>The formless behind the form</p>
+<p>The pure behind the impure</p>
+<p>The bliss behind the sorrows.</p>
+<p>How do I perceive</p>
+<p>The silence behind the sound</p>
+<p>The infinite behind the finite</p>
+<p>The unmanifest behind the manifest.</p>
+<p>How do I realize</p>
+<p>The observer behind the observed</p>
+<p>The experiencer behind the experiences</p>
+<p>The knower behind the known.</p>
+<p>When I search for you,</p>
+<p>You elude me.</p>
+<p>When I remain calm,</p>
+<p>You are in me.</p>
+<p>Now,</p>
+<p>My only solution is</p>
+<p>To be MY OWN SELF</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;		</p>
+				
+					</article>
+			<div class="pagination clearfix">
+	<div class="alignleft"><a href="/author/advaitamandscience/page/29/">&laquo; Older Entries</a></div>
+	<div class="alignright"><a href="/author/advaitamandscience/page/27/">Next Entries &raquo;</a></div>
+</div>			</div>
+
+				<div id="sidebar">
+		<div id="search-2" class="et_pb_widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://advaitamandscience.in001.wpcs.cc/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form></div>
+		<div id="recent-posts-2" class="et_pb_widget widget_recent_entries">
+		<h4 class="widgettitle">Recent Posts</h4>
+		<ul>
+											<li>
+					<a href="/articles/idol-worship-in-sanatana-dharma/">IDOL WORSHIP IN SANATANA DHARMA</a>
+									</li>
+											<li>
+					<a href="/articles/the-importance-of-pooja-in-sanatana-dharma/">THE IMPORTANCE OF POOJA IN SANATANA DHARMA</a>
+									</li>
+											<li>
+					<a href="/articles/rishis-of-sanatana-dharma/">RISHIS OF SANATANA DHARMA</a>
+									</li>
+											<li>
+					<a href="/articles/the-mutts-and-the-desa-nama-sampradaya-established-by-sri-adi-shankaracharya/">THE MUTTS AND THE DESA NAMA SAMPRADAYA ESTABLISHED BY SRI ADI SHANKARACHARYA</a>
+									</li>
+											<li>
+					<a href="/articles/advaita-guru-parampara/">ADVAITA GURU PARAMPARA</a>
+									</li>
+					</ul>
+
+		</div>
+<div id="recent-comments-2" class="et_pb_widget widget_recent_comments">
+<h4 class="widgettitle">Recent Comments</h4>
+<ul id="recentcomments">
+<li class="recentcomments">
+<span class="comment-author-link">Vrinda</span> on <a href="/articles/paroksha-jnana-to-aparoksha-jnana/#comment-41">PAROKSHA JNANA TO APAROKSHA JNANA</a>
+</li>
+<li class="recentcomments">
+<span class="comment-author-link">advaitamandscience</span> on <a href="/articles/the-three-types-of-knowledge/#comment-40">THE THREE TYPES OF KNOWLEDGE</a>
+</li>
+<li class="recentcomments">
+<span class="comment-author-link"><a href="http://www.dwaitaadwaitam.wordpress.com/" class="url" rel="ugc external nofollow">N. Anuradha</a></span> on <a href="/articles/the-three-types-of-knowledge/#comment-39">THE THREE TYPES OF KNOWLEDGE</a>
+</li>
+<li class="recentcomments">
+<span class="comment-author-link">Jyoti</span> on <a href="/articles/destiny-versus-freewill/#comment-44">DESTINY VERSUS FREEWILL</a>
+</li>
+<li class="recentcomments">
+<span class="comment-author-link">RESHMA ARORA</span> on <a href="/articles/atma-anatma-viveka/#comment-27">ATMA &#8211; ANATMA &#8211; VIVEKA</a>
+</li>
+</ul>
+</div>
+<div id="block-3" class="et_pb_widget widget_block"><div class="logged-out wp-block-loginout"><a href="/wp-login.php?redirect_to=https%3A%2F%2F%2Fauthor%2Fadvaitamandscience%2Fpage%2F28%2F%3Fsimply_static_page%3D2229">Log in</a></div></div>	</div>
+		</div>
+	</div>
+</div>
+
+	<footer class="et-l et-l--footer">
+			<div class="et_builder_inner_content et_pb_gutters3">
+<div class="et_pb_section et_pb_section_0_tb_footer et_pb_with_background et_section_regular">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_footer et_pb_equal_columns et_pb_gutters3">
+				<div class="et_pb_column et_pb_column_1_4 et_pb_column_0_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0_tb_footer  et_pb_text_align_left et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>Powered by : <a href="https://digitalindiya.com/" target="_blank" rel="noopener">DigitalIndiya.com</a></p></div>
+			</div>
+			</div>
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_1_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_1_tb_footer  et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p style="text-align: center;"><a href="/" id="site-title">DigitalIndiya.com</a> <span>©</span> 2023 | <a href="/privacy-policy/">Privacy policy</a></p></div>
+			</div>
+<div class="et_pb_module et_pb_code et_pb_code_0_tb_footer">
+				
+				
+				
+				
+				<div class="et_pb_code_inner"><script>jQuery(document).ready(function($){
+    var title = $('head title').text();
+   $('footer a#site-title').html(title);
+});</script></div>
+			</div>
+			</div>
+<div class="et_pb_column et_pb_column_1_4 et_pb_column_2_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<ul class="et_pb_module et_pb_social_media_follow et_pb_social_media_follow_0_tb_footer clearfix  et_pb_text_align_right et_pb_bg_layout_light">
+				
+				
+				
+				
+				<li class="et_pb_social_media_follow_network_0_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-facebook"><a href="#" class="icon et_pb_with_border" title="Follow on Facebook" target="_blank"><span class="et_pb_social_media_follow_network_name" aria-hidden="true">Follow</span></a></li>
+<li class="et_pb_social_media_follow_network_1_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-twitter"><a href="#" class="icon et_pb_with_border" title="Follow on Twitter" target="_blank"><span class="et_pb_social_media_follow_network_name" aria-hidden="true">Follow</span></a></li>
+<li class="et_pb_social_media_follow_network_2_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-linkedin"><a href="#" class="icon et_pb_with_border" title="Follow on LinkedIn" target="_blank"><span class="et_pb_social_media_follow_network_name" aria-hidden="true">Follow</span></a></li>
+			</ul>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</footer>
+		</div>
+
+			
+		</div>
+		</div>
+
+				<script type="text/javascript">var et_animation_data = [{"class":"et_pb_blurb_0_tb_header","style":"zoom","repeat":"once","duration":"600ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"}];
+					var et_link_options_data = [{"class":"et_pb_text_0_tb_header","url":"\/","target":"_self"}];</script>
+	<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.4" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="jquery-js-after">jqueryParams.length&&$.each(jqueryParams,function(e,r){if("function"==typeof r){var n=String(r);n.replace("$","jQuery");var a=new Function("return "+n)();$(document).ready(a)}});</script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"\/wp-admin\/admin-ajax.php","images_uri":"\/wp-content\/themes\/Divi\/images","builder_images_uri":"\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"7316ea661e","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"cf480ed468","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"372","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":"\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#7EBEC5","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/Divi/js/scripts.min.js?ver=4.21.0" id="divi-custom-script-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.21.0" id="fitvids-js"></script>
+<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=6.2.2" id="comment-reply-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.21.0" id="jquery-mobile-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.21.0" id="magnific-popup-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.21.0" id="easypiechart-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.21.0" id="salvattore-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/core/admin/js/common.js?ver=4.21.0" id="et-core-common-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.21.0" id="et-builder-modules-script-motion-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.21.0" id="et-builder-modules-script-sticky-js"></script>
+<style id="et-builder-module-design-1831-cached-inline-styles">.et_pb_menu .et_pb_menu__wrap{justify-content:flex-end}.et_pb_menu__logo img{max-height:90px!important;width:auto!important;padding:10px}.et_pb_module.et_pb_menu--with-logo{width:100%}.et-menu a,.et-menu a:hover{transition:none}header .et_pb_section.et_pb_sticky .et_pb_row{max-height:80px}header .et_pb_section.et_pb_sticky .et_pb_module img{min-height:60px;max-width:240px!important}@media (max-width:980px){header .et_pb_column:first-child{max-width:80%;margin-bottom:0px!important}header .et_pb_column:last-child{position:absolute;z-index:1}.et_mobile_nav_menu{padding:24px 10px}}.et_pb_section_0_tb_header.et_pb_section{padding-top:11px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:3%;margin-right:0px;margin-left:0px;background-color:rgba(0,0,0,0)!important}.et_pb_row_0_tb_header.et_pb_row{padding-top:0px!important;padding-right:0px!important;padding-bottom:0px!important;padding-left:0px!important;padding-top:0;padding-right:0px;padding-bottom:0;padding-left:0px}.et_pb_blurb_0_tb_header .et_pb_main_blurb_image .et_pb_only_image_mode_wrap,.et_pb_blurb_0_tb_header .et_pb_main_blurb_image .et-pb-icon{border-radius:100% 100% 100% 100%;overflow:hidden;border-width:1px}.et_pb_blurb_0_tb_header.et_pb_blurb{max-width:180px}.et_pb_blurb_0_tb_header .et_pb_main_blurb_image .et_pb_image_wrap{box-shadow:0px 2px 35px 10px #ffffff;max-width:100%}.et_pb_blurb_0_tb_header.et_pb_blurb .et_pb_main_blurb_image{margin-top:30px}.et_pb_column_1_tb_header{margin:auto}.et_pb_text_0_tb_header.et_pb_text,.et_pb_text_1_tb_header.et_pb_text{color:#ffffff!important}.et_pb_text_0_tb_header h1{font-weight:700;font-size:54px;color:#ffffff!important;text-align:center;text-shadow:0em 0.1em 0.1em #BB1593}.et_pb_text_0_tb_header{padding-top:2%!important;padding-right:3%!important;padding-bottom:2%!important;padding-left:3%!important;margin-top:0px!important}.et_pb_text_1_tb_header h1{text-align:center}.et_pb_text_1_tb_header h4{font-size:16px;line-height:1.4em;text-align:center}.et_pb_text_1_tb_header{border-radius:5px 5px 5px 5px;overflow:hidden;padding-top:2%!important;padding-right:0px!important;padding-bottom:2%!important;padding-left:0px!important;margin-top:-60px!important;margin-right:0px!important;margin-left:0px!important;max-width:500px}.et_pb_row_1_tb_header.et_pb_row{padding-top:0px!important;padding-right:0px!important;padding-bottom:0px!important;padding-left:0px!important;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px}.et_pb_row_1_tb_header,body.et_boxed_layout #page-container .et_pb_row_1_tb_header.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_1_tb_header.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_1_tb_header.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single.et_full_width_portfolio_page #page-container #et-boc .et-l .et_pb_row_1_tb_header.et_pb_row{width:100%}.et_pb_menu_0_tb_header.et_pb_menu ul li a{font-weight:700;font-size:17px;color:#dd1c70!important}.et_pb_menu_0_tb_header.et_pb_menu{background-color:#000000}.et_pb_menu_0_tb_header{padding-top:20px;padding-bottom:20px}.et_pb_menu_0_tb_header.et_pb_menu ul li.current-menu-item a{color:#FFFFFF!important}.et_pb_menu_0_tb_header.et_pb_menu .nav li ul,.et_pb_menu_0_tb_header.et_pb_menu .et_mobile_menu,.et_pb_menu_0_tb_header.et_pb_menu .et_mobile_menu ul{background-color:#000000!important}.et_pb_menu_0_tb_header .et_pb_menu_inner_container>.et_pb_menu__logo-wrap,.et_pb_menu_0_tb_header .et_pb_menu__logo-slot{width:auto;max-width:100%}.et_pb_menu_0_tb_header .et_pb_menu_inner_container>.et_pb_menu__logo-wrap .et_pb_menu__logo img,.et_pb_menu_0_tb_header .et_pb_menu__logo-slot .et_pb_menu__logo-wrap img{height:auto;max-height:none}.et_pb_menu_0_tb_header .mobile_nav .mobile_menu_bar:before,.et_pb_menu_0_tb_header .et_pb_menu__icon.et_pb_menu__search-button,.et_pb_menu_0_tb_header .et_pb_menu__icon.et_pb_menu__close-search-button,.et_pb_menu_0_tb_header .et_pb_menu__icon.et_pb_menu__cart-button{color:#7EBEC5}.et_pb_text_1_tb_header.et_pb_module{margin-left:auto!important;margin-right:auto!important}@media only screen and (max-width:767px){.et_pb_text_0_tb_header h1{font-size:54px}}</style>
+<style id="et-builder-module-design-1832-cached-inline-styles">.et_pb_section_0_tb_footer.et_pb_section{padding-top:0px;padding-bottom:0px;background-color:#000000!important}.et_pb_row_0_tb_footer.et_pb_row{padding-top:15px!important;padding-bottom:15px!important;padding-top:15px;padding-bottom:15px}.et_pb_row_0_tb_footer,body.et_boxed_layout #page-container .et_pb_row_0_tb_footer.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single.et_full_width_portfolio_page #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row{max-width:1280px}.et_pb_column_0_tb_footer,.et_pb_column_1_tb_footer,.et_pb_column_2_tb_footer{margin:auto}.et_pb_text_0_tb_footer.et_pb_text a,.et_pb_text_1_tb_footer.et_pb_text a:hover{color:#0eb1ed!important}.et_pb_text_0_tb_footer a{font-weight:600}.et_pb_text_1_tb_footer.et_pb_text a{color:#FFFFFF!important;transition:color 300ms ease 0ms}.et_pb_text_1_tb_footer{margin-bottom:0px!important}.et_pb_social_media_follow_network_0_tb_footer a.icon{background-color:#3b5998!important}.et_pb_social_media_follow_network_1_tb_footer a.icon{background-color:#00aced!important}.et_pb_social_media_follow_network_2_tb_footer a.icon{background-color:#007bb6!important}</style>	
+			<span class="et_pb_scroll_top et-pb-icon"></span>
+	</body>
+</html>

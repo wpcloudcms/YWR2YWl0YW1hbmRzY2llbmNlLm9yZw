@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="/xmlrpc.php">
+
+	<script type="text/javascript">document.documentElement.className = 'js';</script>
+	
+	<title>advaitamandscience | Advaitam and Science</title>
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,latin-ext&display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style>
+<meta name="robots" content="noindex, nofollow">
+<script type="text/javascript">let jqueryParams=[],jQuery=function(r){return jqueryParams=[...jqueryParams,r],jQuery},$=function(r){return jqueryParams=[...jqueryParams,r],$};window.jQuery=jQuery,window.$=jQuery;let customHeadScripts=!1;jQuery.fn=jQuery.prototype={},$.fn=jQuery.prototype={},jQuery.noConflict=function(r){if(window.jQuery)return jQuery=window.jQuery,$=window.jQuery,customHeadScripts=!0,jQuery.noConflict},jQuery.ready=function(r){jqueryParams=[...jqueryParams,r]},$.ready=function(r){jqueryParams=[...jqueryParams,r]},jQuery.load=function(r){jqueryParams=[...jqueryParams,r]},$.load=function(r){jqueryParams=[...jqueryParams,r]},jQuery.fn.ready=function(r){jqueryParams=[...jqueryParams,r]},$.fn.ready=function(r){jqueryParams=[...jqueryParams,r]};</script><link rel="alternate" type="application/rss+xml" title="Advaitam and Science &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="Advaitam and Science &raquo; Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Advaitam and Science &raquo; Posts by advaitamandscience Feed" href="/author/advaitamandscience/feed/">
+<meta content="Default Divi Child v.4.0.1" name="generator">
+<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=6.2.2" type="text/css" media="all">
+<style id="wp-block-library-theme-inline-css" type="text/css">.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}</style>
+<style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}</style>
+<link rel="stylesheet" id="divi-style-parent-css" href="/wp-content/themes/Divi/style-static.min.css?ver=4.21.0" type="text/css" media="all">
+<link rel="stylesheet" id="divi-style-css" href="/wp-content/themes/default-divichild/style.css?ver=4.21.0" type="text/css" media="all">
+<link rel="stylesheet" id="site_style-css" href="/wp-content/themes/default-divichild/site-style.css?ver=6.2.2" type="text/css" media="all">
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/users/5">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 6.2.2">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1">
+<style type="text/css" id="custom-background-css">body.custom-background { background-image: url("/wp-content/uploads/sites/3/2021/05/page-1024x640-1.jpeg"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }</style>
+	<script>
+// Add A Dynamic Year In Divi Footer Copyright
+ // var beg_year = 2019; // Year site went live
+ var this_year = new Date(); // Get current date
+ var developed_by = '<p>Site Powered by <a href="https://digitalindiya.com/" target="_blank" rel="noopener noreferrer"><strong>DigitalIndiya.com<\/strong><\/a><\/p>'; // Developer info
+ //this_year = this_year.getFullYear();
+ stitle = jQuery('title').text(); 
+ var s_title = stitle;
+ var year = this_year;
+ 
+ jQuery(function($){
+ $('#footer-info').html('© ' + year + ' <a href="/">' + s_title + '<\/a> ' + developed_by );
+ });
+</script><style id="et-divi-customizer-global-cached-inline-styles">#top-menu li a{font-size:16px}body.et_vertical_nav .container.et_search_form_container .et-search-form input{font-size:16px!important}@media only screen and (min-width:981px){.et_header_style_left #et-top-navigation,.et_header_style_split #et-top-navigation{padding:50px 0 0 0}.et_header_style_left #et-top-navigation nav>ul>li>a,.et_header_style_split #et-top-navigation nav>ul>li>a{padding-bottom:50px}.et_header_style_split .centered-inline-logo-wrap{width:100px;margin:-100px 0}.et_header_style_split .centered-inline-logo-wrap #logo{max-height:100px}.et_pb_svg_logo.et_header_style_split .centered-inline-logo-wrap #logo{height:100px}.et_header_style_centered #top-menu>li>a{padding-bottom:18px}.et_header_style_slide #et-top-navigation,.et_header_style_fullscreen #et-top-navigation{padding:41px 0 41px 0!important}.et_header_style_centered #main-header .logo_container{height:100px}#logo{max-height:100%}.et_pb_svg_logo #logo{height:100%}}@media only screen and (min-width:1350px){.et_pb_row{padding:27px 0}.et_pb_section{padding:54px 0}.single.et_pb_pagebuilder_layout.et_full_width_page .et_post_meta_wrapper{padding-top:81px}.et_pb_fullwidth_section{padding:0}}.et_pb_widget_area_left{border-right:0px!important;padding-right:0px!important;border-left:1px solid rgba(0,0,0,.1);padding-left:30px}.et_pb_column article{margin-bottom:30px!important}.post-content{padding-bottom:20px}.post-content-inner{padding-bottom:15px}a[aria-current="page"],.et_pb_widget_area a:hover{color:#e91e63!important}h4.widgettitle{font-size:20px;font-weight:600;border-bottom:1px dashed #ccc;margin-bottom:15px}.wp-block-loginout{padding:10px;background:#edfaff;text-align:center;border-radius:5px}a#cancel-comment-reply-link{position:relative;right:0px;top:21px;background:#fff4f4;padding:10px 15px}#commentform{padding-bottom:50px;padding-top:30px}</style>
+</head>
+<body class="archive paged author author-advaitamandscience author-5 custom-background paged-20 author-paged-20 et-tb-has-template et-tb-has-header et-tb-has-footer et_pb_button_helper_class et_boxed_layout et_cover_background et_pb_gutter et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><div id="page-container">
+<div id="et-boc" class="et-boc">
+			
+		<header class="et-l et-l--header">
+			<div class="et_builder_inner_content et_pb_gutters3">
+<div class="et_pb_section et_pb_section_0_tb_header et_pb_with_background et_section_regular et_pb_section--with-menu">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_header et_pb_equal_columns et_pb_gutters3">
+				<div class="et_pb_column et_pb_column_1_4 et_pb_column_0_tb_header  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_with_border et_pb_module et_pb_blurb et_pb_blurb_0_tb_header logo et_animated  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><a href="/"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img decoding="async" src="https://advaitamandscience.org/wp-content/uploads/sites/3/2021/05/advaitam-logo-wpp1605575340446.png" alt="" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone"></span></a></div>
+					<div class="et_pb_blurb_container">
+						
+						
+					</div>
+				</div>
+			</div>
+			</div>
+<div class="et_pb_column et_pb_column_3_4 et_pb_column_1_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0_tb_header et_clickable  et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h1 style="text-align: center;"><strong>Advaitam and Science</strong></h1></div>
+			</div>
+<div class="et_pb_module et_pb_text et_pb_text_1_tb_header  et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h4>
+<strong>OM, Purnamata purnamitam purnat purnamutachyate, </strong><strong>purnasya purnamataye purnamevavasishyate – Bri.Up V.i.1</strong>
+</h4></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+<div class="et_pb_row et_pb_row_1_tb_header et_pb_row--with-menu">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_2_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column--with-menu">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_menu et_pb_menu_0_tb_header et_pb_bg_layout_light  et_pb_text_align_center et_dropdown_animation_fade et_pb_menu--without-logo et_pb_menu--style-left_aligned">
+					
+					
+					
+					
+					<div class="et_pb_menu_inner_container clearfix">
+						
+						<div class="et_pb_menu__wrap">
+							<div class="et_pb_menu__menu">
+								<nav class="et-menu-nav"><ul id="menu-main-menu" class="et-menu nav">
+<li class="et_pb_menu_page_id-home menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1553"><a href="/">Home</a></li>
+<li class="et_pb_menu_page_id-4 menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1923"><a href="/category/articles/">Articles</a></li>
+<li class="et_pb_menu_page_id-7 menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1924"><a href="/category/poems/">Poems</a></li>
+<li class="et_pb_menu_page_id-5 menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1872"><a href="/category/my-views/">My Views</a></li>
+<li class="et_pb_menu_page_id-103 menu-item menu-item-type-post_type menu-item-object-page menu-item-1557"><a href="/about-me/">About me</a></li>
+<li class="et_pb_menu_page_id-104 menu-item menu-item-type-post_type menu-item-object-page menu-item-1558"><a href="/contact-2/">Contact</a></li>
+</ul></nav>
+							</div>
+							
+							
+							<div class="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</header>
+	<div id="et-main-area">
+	
+<div id="main-content">
+	<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+		
+					<article id="post-694" class="et_pb_post post-694 post type-post status-publish format-standard hentry category-articles">
+
+				
+															<h2 class="entry-title"><a href="/articles/atma-anatma-viveka/">ATMA &#8211; ANATMA &#8211; VIVEKA</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">Dec 7, 2013</span> | <a href="/category/articles/" rel="category tag">Articles</a></p>
+<h4>                                                                        ATMA &#8211; ANATMA &#8211; VIVEKA</h4>
+<p>&nbsp;</p>
+<p style="text-align: justify"><i>Atma-anatma-viveka</i> is one of the fundamental and important concepts of Advaita Vedanta.  It is the differentiation (viveka) between the Atman and <i>anatman</i>.  To differentiate, one should have a clear knowledge about the nature of Atman and <i>anatman</i>.</p>
+<p style="text-align: justify">Atman is the witness of the <i>anatman</i> (not-Self).  Atman is the subject and <i>anatman</i> is the object.  Atman is the knower and <i>anatman</i> is the known.  These are some of the basic differences of the Atman and <i>anatman</i>.  As far as Vedanta is concerned this knowledge is very shallow.  The differences have to be analyzed based on the concepts of Vedanta.  The concept of <i>anatman</i> is more familiar to an individual than the concept of Atman, and hence <i>anatman</i> is analyzed first.</p>
+<p style="text-align: justify"><b><i>Anatman</i></b></p>
+<p style="text-align: justify"><i>Anatman</i> is an-atman that is &#8216;all that is not the Self&#8217;.  <i>Anatman</i> is inert.  It becomes active and knowledgeable by its close proximity with the Atman, which is of the nature of pure infinite consciousness.  The three bodies or the five <i>kosas</i> constitute the <i>anatman</i>.  The three bodies in an individual are the gross body (<i>sthula sarira</i>), the subtle body (<i>suksma sarira</i>), and the causal body (<i>karana sarira</i>).  The five <i>kosas</i> are the <i>annamaya kosa, pranamaya kosa, manomaya kosa, vijnanamaya kosa</i> and the <i>anandamaya kosa</i>.</p>
+<p style="text-align: justify"> The <i>annamaya</i> <i>kosa</i> is the gross body.  Since the gross body under goes six modifications namely foetus, birth, growth, change, decay and death by food (<i>anna</i>), the gross body is called the <i>annamaya kosa</i>.</p>
+<p style="text-align: justify">The subtle body consists of the <i>pranamaya kosa, manomaya kosa</i> and the <i>vijnanamaya kosa</i>.  <i>Pranamaya kosa</i> has the five <i>pranas (prana, udana, vyana, samana </i>and<i> apana</i>) and the <i>karmendriyas</i> (organ of speech, legs, hands, execratory organs and organs of procreation).  Each <i>prana</i> and <i>karmendriya</i> performs a particular function in the body.  <i>Pranamaya</i> <i>kosa</i> has the power of action.  <i>Manomaya</i> <i>kosa</i> has the <i>manas</i> and the five <i>jnanendriyas</i> (ear, skin, eye, tongue, and nose).  Thoughts in a state of volition constitute the <i>manas</i> or mind.  It also includes emotions and memory.  <i>Manomaya</i> <i>kosa</i> is endowed with the power of desire.  <i>Vijnanamaya</i> <i>kosa</i> has the <i>buddhi</i> and the five <i>jnanendriyas</i>.  Thoughts in the state of decision constitute the <i>buddhi</i>.  Reasoning, inference, logical thinking are all faculties of the <i>buddhi</i>.  <i>Ahankara</i> (ego) is an aspect of <i>buddhi</i>.  <i>Jnanendriyas</i> are common to both the <i>manomaya</i> <i>kosa</i> and <i>vijnanamaya</i> <i>kosa</i> because the perceptual knowledge gained through the <i>jnanendriyas</i> are vital for the functioning of both the <i>manomaya kosa </i>and<i> vijnanamaya kosa</i>.</p>
+<p style="text-align: justify">The causal body has the <i>anandamaya</i> <i>kosa</i>.  The causal body is the root cause for an individual&#8217;s manifestation.  The causal body has the allotted karmas (<i>prarabda</i> karmas) in the seed (unmanifested) form.  Ignorance is the cause for the formation of the causal body.  The causal body manifests as the subtle and gross bodies.  One can experience absolute bliss ignorance in this body.  By <i>Atma-anatma-viveka</i> the causal body loses its individuality and dissolves in infinity.</p>
+<p style="text-align: justify">A <i>jiva</i> exists in the three states of awareness in its lifetime.  The three states of awareness are the waking, dream, and the deep sleep states.  In the waking state it identifies with the gross body.  It mainly identifies with the external world of names and forms through the gross body.  However in the waking state it also identifies with the subtle body while thinking, deciding, imagining etc. and also identifies with the causal body momentarily when it experiences bliss, while attaining success or enjoying happy moments.  In the dream state, it identifies with the subtle body and experiences the internal world of impressions.  At this stage it is not aware of the gross body.  In the deep sleep state it identifies with the causal body.  It is neither aware of the gross body nor the subtle body.  It identifies with the bliss ignorance of the causal body in the deep sleep state.</p>
+<p style="text-align: justify">All the above described bodies and <i>kosas</i> are inert and they together constitute the <i>anatman</i>.  <i>Anatman</i> is inert because it is formed from the subtle concepts (<i>tanmatras</i>) of the inert <i>panca</i>&#8211;<i>bhutas</i> (the basic five elements).  However, from our experience we infer that <i>anatman</i> is active and knowledgeable.  It is very hard to believe that the mind, intellect, <i>prana</i>, and body are inert.  Vedanta gives explanation for this as, the <i>anatman</i> is inert, but due to the proximity of the Atman with the <i>anatman</i>, the <i>anatman</i> appears as active and knowledgeable.  Atman is of the nature of pure consciousness.  For example, when iron fillings are kept near a magnet, due to the proximity of the iron fillings with the magnet, the iron fillings inherit the nature of the magnet.  Similarly, due to the proximity of the <i>anatman</i> with the Atman, the <i>anatman</i> assumes the nature of the Atman (which is intelligence) and becomes knowledgeable and active.  When the Atman identifies with itself, <i>anatman</i> will not have the power to exist alone.  By this, the causal body dissolves in Atman (<i>Brahman</i>) and it loses its individuality and becomes infinite (<i>Brahman</i>).  When the causal body dissolves in infinity, there will be no subtle or gross body.  This is called <i>moksha</i> or liberation in common terms.</p>
+<p style="text-align: justify"><b>Atman</b></p>
+<p style="text-align: justify">Atman is the underlying cause for manifestation.  It is the witness for the three states of awareness.  To realize the underlying state of supreme consciousness, one has to detach from the three state of awareness.  This supreme underlying state is called <i>Turiya</i>.  It is the base for the three states of awareness.  The three states of awareness are temporary.  Sankaracharya says &#8220;That which is other than the <i>Sthula, Sukshma </i>and<i> Karana Sarira&#8217;s</i> (gross, subtle and causal bodies), which is beyond the five sheaths, which is the witness of the three states of awareness, which is the nature of <i>Sat-Cit-Ananda</i> (Existence-knowledge-Bliss) is Atman&#8221;, Tattva bodha (verse 2, 9.2).  Atman is omnipresent, omniscient and omnipotent.  The nature of the Atman is <i>sat-cit-ananda</i> which is existence-consciousness-bliss.</p>
+<p style="text-align: justify">In tattva-bodha, Sankaracharya says that <i>sat</i> (existence) is that which remains unchanged in the three periods of time.  It is beyond modification.</p>
+<p style="text-align: justify"><i>Cit</i>-consciousness is of the nature of absolute knowledge.  It is capable of knowing both the known and the unknown.  &#8220;That (Atman) is surely different from the known; and again, it is above the unknown&#8221;, (Kena Upanisad&#8221;, I, 4).  Atman is the subject and all that is known is the object.  It knows the body, mind, and intellect.  It also knows our ignorance.  It lends its power to the inert faculties and hence it must be of the nature of knowledge.</p>
+<p style="text-align: justify">Its awareness surpasses the three states of awareness.  Atman does not need any medium or instrument to gain knowledge.  The Self (Atman) is known by the Self through the Self&#8217;s own effulgence.  It has the inherent capacity to reveal itself without the aid of any other means of knowledge.</p>
+<p style="text-align: justify"><i>Ananda</i>-bliss &#8211; Upanisad says that everyone loves others for the sake of their own Self (Atman).  All the other desirable objects like wealth, family, friends, and even children have only an instrumental value.  Thus one loves one&#8217;s Self the most.  This love for the Self is the very proof that it is of the nature of bliss.  If the Self is of the nature of sorrow or unhappiness, it is sure that no one will love it so much.  Since the Self is beyond the <i>anandamaya kosa</i>, the bliss of the Self does not depend on the <i>papa</i> (sin) or <i>puniya</i> (good deeds), and so the bliss of the Atman (Self) is non-conditional and non-relative.  The bliss of the Self is infinite and same in all the manifested beings regardless of the name and form.  Atman is <i>sakshi</i> (witness).  A mirror accepts everything, rejects nothing, keeps nothing and reflects everything.  So too Atman illumines all thought forms without intrinsically undergoing any change or modification.  It remains unattached or unaffected by its knowledge.  The mind takes the form of the thought that it perceives.  The mind after perceiving, manipulates and modifies the thoughts.  In the case of Atman, it does not undergo any change or modification after perceiving the objects.  It is of the nature of knowledge and infinite bliss.</p>
+<p style="text-align: justify">One may be wondered that if Atman is of the nature of infinite bliss, then why not we be able to realize it?  Even though Self is present as the very Self of the seeker, he is not able to realize it.  The answer Vedanta gives is very simple &#8211; we are not turning our attention towards Atman.  A famous Chinese proverb says, &#8220;It is sure to be dark if you close your eyes&#8221;.  Our attention is at present towards <i>anatman</i> (body-mind-intellect) and the world of objects (object-emotion-thoughts).  If we are clear about the difference between the Atman and <i>anatman</i>, then the attention naturally turns towards the Atman, because it is our real Self.</p>
+<p style="text-align: justify"><i>Anatman</i> is temporary.  It involves pain and suffering.  It may give pleasure and happiness in the beginning, but it is short lived.  Sometimes the happiness and pleasure we enjoy from <i>anatman</i> may become the root cause for the pain and suffering in the later life.  Whereas, Atman is bliss infinite.</p>
+<p style="text-align: justify">When an individual understands the nature of the Atman and <i>anatman</i>, dispassion (<i>vairagya</i>) and discrimination will be natural.  Dispassion must come naturally; else it will create a depressed mind in the later life.  Some people may have dispassion due to their untoward or negative incidents in life.  Such dispassion is false and short lived.  Dispassion arising due to <i>Atma-anatma-viveka </i>is true and permanent; only such dispassion will lead to liberation.  <i>Atma-anatma-viveka </i>helps one to survive in this world without getting affected.  The knowledge of <i>Atma-anatma-viveka </i>helps us to realize the true Self which is hidden behind the veil of ignorance.</p>
+<p style="text-align: justify">
+</p>
+<p style="text-align: justify">Sources</p>
+<p style="text-align: justify">Advanced Vedanta course material from Chinmaya international foundation &#8211; www.chinfo.org</p>
+<p style="text-align: justify">Tattvabodha of shri Adi Sankaracharya published by International Vedanta mission</p>
+<p style="text-align: justify">Pancadasi of Sri Vidyaranya Swami  (Trans, Swami Swahananda), Sri Ramakrishna Math, Chennai.</p>
+<p style="text-align: justify">
+</p>
+<p>&nbsp;</p>
+<p>&nbsp;		</p>
+				
+					</article>
+			
+					<article id="post-688" class="et_pb_post post-688 post type-post status-publish format-standard hentry category-poems">
+
+				
+															<h2 class="entry-title"><a href="/poems/the-knower-behind-the-known-2/">THE KNOWER BEHIND THE KNOWN</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">Nov 28, 2013</span> | <a href="/category/poems/" rel="category tag">Poems</a></p>
+<h4>                                                                      THE KNOWER BEHIND THE KNOWN</h4>
+<p>&nbsp;</p>
+<p>Whenever in front of a mirror</p>
+<p>No matter how I looked</p>
+<p>I thought I am that</p>
+<p>Whenever I felt hunger and thirst</p>
+<p>No matter where it was</p>
+<p>I thought I am that</p>
+<p>Whenever I had imaginations</p>
+<p>No matter good or bad</p>
+<p>I thought I am that</p>
+<p>Whatever I learned with pride</p>
+<p>No matter how deep it was</p>
+<p>I thought I am that</p>
+<p>Whenever I felt enough for the day</p>
+<p>I slipped to sleep</p>
+<p>I felt nothing &#8211;</p>
+<p>Absolute ignorance</p>
+<p>Really?</p>
+<p>If I am ignorant,</p>
+<p>How do I know that?</p>
+<p>Then,</p>
+<p>Who is that silent knower?</p>
+<p>The knower of my personality</p>
+<p>The knower of my needs</p>
+<p>The knower of my thoughts</p>
+<p>The knower of my determination</p>
+<p>The knower of my ignorance</p>
+<p>Is that the real &#8216; I &#8216; ?</p>
+<p>When I thought thus,</p>
+<p>Silence engulfed me.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;		</p>
+				
+					</article>
+			
+					<article id="post-683" class="et_pb_post post-683 post type-post status-publish format-standard hentry category-poems">
+
+				
+															<h2 class="entry-title"><a href="/poems/one-thought-away/">ONE THOUGHT AWAY</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">Nov 28, 2013</span> | <a href="/category/poems/" rel="category tag">Poems</a></p>
+<h4>                                                                                 ONE THOUGHT AWAY</h4>
+<p>&nbsp;</p>
+<p>Bondage is,</p>
+<p>Till I think I am bound</p>
+<p>Till I think I am limited</p>
+<p>Till I think I am different</p>
+<p>Till I think I am sinful</p>
+<p>And,</p>
+<p>Till I decide to be free</p>
+<p>Freedom is,</p>
+<p>Just one thought away</p>
+<p>It is in me,</p>
+<p>And I search it outside</p>
+<p>When I broke my ideas,</p>
+<p>I felt the vastness</p>
+<p>I am free for ever</p>
+<p>Till I realized that,</p>
+<p>I was bound by my thoughts</p>
+<p>Just one thought, liberated me forever.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;		</p>
+				
+					</article>
+			
+					<article id="post-676" class="et_pb_post post-676 post type-post status-publish format-standard hentry category-articles">
+
+				
+															<h2 class="entry-title"><a href="/articles/vibrations-of-prana/">VIBRATIONS OF PRANA</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">Nov 23, 2013</span> | <a href="/category/articles/" rel="category tag">Articles</a></p>
+<h4 style="text-align: justify">                                                                       VIBRATIONS OF PRANA</h4>
+<p>&nbsp;</p>
+<p style="text-align: justify"><i>Prana</i> is a force and so it has vibrations.  We are not able to perceive all vibrations because our senses do not perceive the vibrations above and below a certain intensity level.  The whole universe is composed of subtle vibrations.  All the forces of the universe are generalized as <i>Prana</i>.</p>
+<p style="text-align: justify"><i><span style="text-decoration: underline">Prana</span></i><span style="text-decoration: underline"> at the universal level (<i>samashti</i>)</span></p>
+<p style="text-align: justify">&#8220;From Him originates <i>Prana</i> (vital force) as well as the mind, all the senses, space, air, fire, water and earth that supports everything&#8221; Mundaka upanisad, II, i, 3.  At the end of a cycle, all the forms that are disintegrated as solid, liquid and gas resolve into <i>akasa</i> (ether), and all the forces resolve into <i>Prana</i>.  The energies (forces) become potential energies and they remain in a non-vibrant state.  At the beginning of the next cycle, <i>Prana</i> manifests <i>akasa</i> and from it the other <i>pancha</i>&#8211;<i>bhutas</i> (five basic elements) evolves out successively.  The different combinations of the pancha-bhutas give different forms.  The different energies in the universe are the different manifestations of the <i>Prana</i>.  It is the <i>Prana</i> that is manifested as the motion, gravitation, and magnetism.  Thought is the highest and finest manifestation of <i>Prana</i>.  <i>Prana</i> is manifested as the actions of the body and as the nerve currents.  From the thought force down to the lowest force, each energy is the manifestation of the <i>Prana</i>.  The sum total of all the forces in the universe, whether mental or physical when resolved back to their original state is called <i>Prana</i>.  Thus the sum total of all the energies become potential and toned down in the unmanifested period and the energies manifest as these forces in the manifestation period.  Thus the energies evolve and involve through eternity.</p>
+<p style="text-align: justify">Throughout the universe the <i>Prana</i> vibrates at different frequencies.  The whole universe is of varying layers of <i>Prana</i> and each layer has different frequency of vibration.  The different layers are the different vibrations of the same <i>Prana</i>.  One order of vibration makes one plane.  Millions of miles are set to one set of vibration.  Then similarly millions of miles are set to another set of vibration and so on.  In the Indian tradition these different layers of vibrations are called different <i>lokas</i> (spheres).  Just like the &#8220;birds of a feather flock together&#8221;, beings with the same intensity of vibration recognize each other.  The beings of one layer do not recognize the beings of the other layer.  Depending on the vibration of the <i>Prana</i> the forms of the beings also differ.  Each individual represent <i>Prana</i> in a certain state of vibration.  It is possible to change the intensity of vibration of an individual by <i>bhakti</i>, <i>yoga</i>, positive or negative emotions.  Thought is a finer manifestation of <i>Prana</i>, by intense thought we can change the intensity of vibration.  Just like adjusting camera to get distant and close views, we can change the intensity of vibration by thoughts, <i>yoga</i>, <i>bhakti</i> etc., and can recognize the beings in the other intensity levels.  Whether we want to recognize the higher intensity level or the lower intensity level is our choice, because it depends on how we tune the vibration level.  All the beings including the divine beings are of the same ocean of <i>Prana</i>, they differ only in the rate of vibration.  When we increase the rate of vibration, we recognize the divine beings, their forms, their ideas and words and so on.  In the extreme higher levels of vibration, it is possible to understand the whole combination of creation.  At this stage it is possible to understand the past, present, and future of each and every being of the different energy level.  Any extraordinary display of power is the manifestation of the <i>Prana</i>.  When the vibration of the <i>Prana</i> decreases, the beings at the lower vibration level are recognized.  The people who do anything with the occult and mystical energies are trying to control the <i>Pranic</i> vibrations.  In the normal state, an individual recognizes the other beings in their same layer of vibration.</p>
+<p style="text-align: justify">According to Vedanta there is no difference between two forms, though it may differ scientifically.  The whole universe with different forms is a mass of matter with the same operating energy, but with different vibrating frequency.</p>
+<p style="text-align: justify"><i><span style="text-decoration: underline">Prana</span></i><span style="text-decoration: underline"> at the individual level (<i>vyashti</i>)</span></p>
+<p style="text-align: justify">&#8220;Energy if it vibrates, takes a form.  <i>Prana</i> is the physical energy, which is the source of all physical creation.  The whole existence is just a vibration&#8221;, Sadguru Jaggi Vasudev.  The entire universe is composed of the subtle vibration of <i>Prana</i>. The knowledge and  control of the <i>Prana</i> is <i>Pranayama</i>. The little wave of <i>Prana</i> which represent as our own energy, mental and physical is the nearest to us, of all the waves of the infinite ocean of <i>Prana</i>.  Through the little wave of our own <i>Prana</i>, we get access to the infinite <i>Prana</i>.  The most obvious manifestation of this <i>Prana</i> in the human body is the motion of the lungs.  <i>Pranayama</i> means controlling the motion of the lungs, and this motion is associated with breath.  The disturbance of the <i>Prana</i> in the body is called in medical terms as disease.  Sometimes the movement of the <i>Prana</i> will not be stable and uniform in the body and the passage of energy will be blocked in the affected part of the body which causes irritation or pain.  The uniform motion of <i>Prana</i> cures the pain.</p>
+<p style="text-align: justify">It is the <i>Prana</i> which keeps the <i>jiva</i> and the physical body connected by its vibrations.  When the <i>Prana</i> disconnects from the physical body, it is said that the body is dead.  Only the gross body is dead, the subtle and causal bodies are intact and still vibrating at a low pace or almost in a sedate state.  This is due to the existing karmas and they remain in that state till the <i>Jiva</i> takes a new body.  &#8221; Just as a man casts off worn-out clothes and puts on new ones, so also the embodied Self casts off worn-out bodies and enters others which are new&#8221; Baghavad Gita, 2, 22.  When the physical body becomes weak due to old age, disease, etc, the vibration of the <i>Prana</i> to hold on the body also weakens by nature.  Many of the old age problems like memory loss, blockage of veins and so on are caused due to the weakening of the vibration of the prana and its connection with the body.</p>
+<p style="text-align: justify">If the damage to the body is sudden or unexpected at very young age like accident, murder etc, then the <i>Prana</i> is very vibrant, but the body is dead.  The <i>Prana</i> cannot immediately reconstruct the body.  It is highly possible that the <i>Prana&#8217;s</i> intense vibration may sometimes be felt by others, and this is what people commonly refer to as &#8216;ghost&#8217;.  They need not be necessarily harmful or negative; they just hang around because they cannot accept the sudden damage to their body.  When a person has intense desires, longings, ambitions etc, then their <i>pranic</i> vibration will be very high and it will take a long time to settle down.</p>
+<p style="text-align: justify">After leaving the physical body, if the <i>Pranic</i> body (subtle body) is very vibrant due to unnatural death or so on, they cannot enter or take a new body.  The <i>Pranic</i> vibration must be very low or in a sedate state to enter a new body.  In the Indian tradition there are some ritual practices done by the relatives and friends of the departed <i>jiva</i> to lower the vibrancy to a sedate or a very low state, so that it can help them to take new bodies.  Else they will hang around till their <i>pranic</i> vibration becomes low by nature, with the passage of time.  However, this is not the case when a person leaves the body of old age or by natural death, because their <i>prana</i> has gone a full course by the exhaustion of their <i>prarabdha</i> <i>karmas</i>, and the vibration of the Prana is low while leaving the body.  This helps them to take rebirths at a faster rate. The <i>Prana</i> reaches a certain level of sedateness and disentangle itself without any struggle or disturbance.  The vibration of the <i>Prana</i> remains in the sedate state till it finds its new body (rebirth).  If the <i>Prana</i> leaves the body without peace, then there is violence in it and it is carried as impressions in the subtle body which is not good for that <i>Jiva</i> or for the people around it.</p>
+<p style="text-align: justify">A physical body takes form initially by the combination of the cells of the parents.  This mass of cell grows in the mother&#8217;s womb.  In the duration of forty to forty eight days of its formation, a <i>jiva</i> enters in to that mass of cell in the mother&#8217;s womb.  The new body now becomes a Being, till then it is only a mass of flesh.  According to the karmic account, the <i>Jiva</i> has the natural tendency to go in a certain direction to a certain mother&#8217;s womb.  In a way it can be said that, the <i>Jiva</i> selects the parents, family, situations etc according to its past <i>karmas</i>.  Once the <i>Jiva</i> enters the new body, the <i>Prana</i> regains its vibrancy to perform the new set of <i>karmas</i>.  The <i>Prana</i> enhances the quality of the physical body according to the <i>karmas</i>.  A mother or medical help alone is not responsible for bringing out a healthy and an intelligent child.  The <i>Pranic</i> vibrations according to the <i>karma</i> play an important role in the health and the mentality of a child.  Even the movement of the feotus inside the mother&#8217;s womb depends on the <i>pranic</i> vibration of that <i>Jiva</i>.  No two individual&#8217;s personality is ever same because of their <i>karmic</i> structure and accordingly their <i>Pranic</i> vibrations differ.</p>
+<p style="text-align: justify">If the vibration of the <i>Prana</i> reaches a tremendous high intensity, then the vibrations will become still.  At this stage it cannot hold on to the body.  One can reach this state of extreme vibrancy by <i>yoga</i>, <i>bhakti</i>, knowledge, or intense emotions.  When the extreme vibrancy is reached consciously, it is called <i>samadhi</i>.  Such beings will not seek another body because their vibrations are so intense to hold on to a body.  Just like bursting of a bubble, they merge in infinity.</p>
+<p style="text-align: justify"><i>Prana</i> is important not only during the lifetime; it also plays an important role after the lifetime to take rebirth.  &#8220;Spirituality makes us realize that each individual is a little bit of energy caught in a <i>karmic</i> structure.  When <i>karma</i> is removed, energy falls back to what it was&#8221;, Sadguru Jaggi Vasudev.  If there are no <i>karmas</i>, the mental body and the energy body cannot hold themselves.  It is the <i>karma</i> along with the ego (I sense) that gives the individuality.  The <i>karmas</i> are destroyed by <i>viveka</i> (differentiation) of the <i>Atma</i> (Self) and <i>anatma</i> (non-Self).  This knowledge is attained by Vedanta.  The importance of the <i>Prana</i> is to be understood and has to be controlled or managed accordingly.  <i>Pranayama</i> plays an important role in controlling the <i>Prana</i>.</p>
+<p style="text-align: justify">SOURCES</p>
+<p style="text-align: justify">Swami Vivekananda, Raja Yoga, Advaita Ashrama, Kolkata</p>
+<p style="text-align: justify">Sadguru Jaggi Vasudev, Mystic&#8217;s Musings, Wisdom tree, New Delhi</p>
+				
+					</article>
+			
+					<article id="post-673" class="et_pb_post post-673 post type-post status-publish format-standard hentry category-articles">
+
+				
+															<h2 class="entry-title"><a href="/articles/devotion-and-vedanta/">DEVOTION AND VEDANTA</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">Nov 12, 2013</span> | <a href="/category/articles/" rel="category tag">Articles</a></p>
+<h4>                                                                        DEVOTION AND VEDANTA</h4>
+<p>&nbsp;</p>
+<p style="text-align: justify">Intense devotion at one stage takes the path of Vedanta before reaching the destination, <i>moksha</i>.  Intense devotion cannot be viewed as separate from Vedanta.  Majority of the people have faith in form worship, which is the concept of duality.  In the initial stage, they depend on God for worldly pleasures and satisfying their desires.  They are unable to grasp the subtle concepts of Vedanta.  They have faith in a form and perform the rituals before a deity in that form.  They imagine that they are doing this to the Lord directly.  They simplify their idea of God in that particular form.  According to the mentality of the different people, the form, rituals, and practices differ.  They imagine that God is separate from them.  They believe that God is superior to them and stay in a faraway place.  They think that by doing these rituals, they can reach that place of God after their death.  They believe that God is responsible for their activities and pray God to spare them from the difficulties in life.  They pray to allot them with wealth and prosperities.  Sometimes this faith also takes a negative turn.  Negative turn implies that, they want God to take revenge on their enemies, on their behalf.  Many people involve in blind faith without knowing the truth.</p>
+<p style="text-align: justify">Intense devotion is a sure step towards <i>moksha</i>.  Devotion of whatever method or form will definitely purify the mind.  The matter is, if the devotion is pure and selfless with proper understanding, then the path is clear and <i>moksha</i> is not far away from the devotee.  If we use devotion to satisfy the emotions, then the devotee has to travel a long path before reaching the final destination.</p>
+<p style="text-align: justify">It is common practice in the initial stages of devotion to imagine God as separate from us and expect God to satisfy our needs.  However, when we mature, this idea has to fade away.  The truth has to be realized and the method to know the truth has to be practiced accordingly, else one will not have any spiritual evolvement even after several births.  When we mature the devotion must also mature, and the two parallel lines of thought that &#8216;I am different from God&#8217; has to merge into a single path.  When pure devotion for God intensifies, the knowledge about God automatically happens.  When we depend on God for self motives, even though we have intense devotion, our selfish motives becomes an obstacle for enlightenment.</p>
+<p style="text-align: justify">Even in form worship, when we have knowledge about the rituals (instead of blind faith), it helps us to overcome ignorance.  The above points are made clear by citing the example of devotion of the two very young children, which is explained in <i>Srimad</i> <i>Baghavada</i>.  Their pure devotion, their attitude and spiritual knowledge differ in their own way.  The two young children are Prahlada and Dhruva.  They both were of the tender age of five, but their spiritual knowledge and maturity were remarkably different.</p>
+<p style="text-align: justify">Prahlada was born in the <i>Asura</i> clan, and Dhruva was born in the extremely holy line of Swayambhuva <i>manu</i> and a <i>shathriya</i>.  They both used the medium of devotion to know the truth.  The knowledge of truth is deep rooted in Prahlada, whereas the spiritual knowledge of Dhruva was a fleeting experience.  Both of them are par excellent than a common devotee.  Their devotion is praised and referred as examples even after thousands of years after their life time.  Both of them had sage Narada as their Guru (teacher).</p>
+<p style="text-align: justify">Dhruva was the grandson of Swayambhuva manu and the son of Uttanapada, by his wife Suniti.  One day Dhruva&#8217;s step brother Uttama was made to sit on his father&#8217;s lap and this rejection of not being able to near his father caused distress in the young mind of Dhruva.  In addition to this, the harsh words of insult from his step mother were like rubbing salt on the wound.  Seeing Dhruva crying inconsolably, his mother Suniti advised young Dhruva to worship the sattvic form of  Brahman (Lord Vishnu), with intense devotion.  She advised that this tapas will be a turning point in his life.  Accepting her advice, Dhruva went to the forest to worship Lord Vishnu with intense devotion.  In the forest, sage Narada advised him about the secret of happiness and unhappiness.  Sage Narada said that one might sense honour or dishonour, but the feeling of happiness and unhappiness associated with it is caused by ignorance.  Karmas are the main cause for happiness and unhappiness, and only an ignorant person does not know to overcome the karmas.  He too advised young Dhruva to meditate on the divine form of Lord Vishnu.  When a person has intense selfless devotion, he attains <i>dharma</i> (morality), <i>artha</i> (prosperity), <i>kama</i> (attaining desires), and <i>moksha</i> (liberation).</p>
+<p style="text-align: justify">Dhruva meditated on Lord Vishnu with unswerving devotion.  He began his meditation based on the form of the Supreme Lord and imagined the Lord is separate from him.  When the devotion became intense, he perceived only the divine form in his mind and nothing else.  When his devotion intensified further through meditation, he perceived that the Lord, the universe, and he are not different from each other.  Lord is non-dual and infinite.  He had the vision of the Lord in the form he meditated.  However, when he returned to the normal life after his intense meditation, he grew up forgetting the divine knowledge.  Like on ordinary person he took revenge on the killers of his brother, the <i>Yakshakas</i>.  The <i>Yakshkas</i> are people with intense emotion and passion.  He killed the <i>Yakshkas</i> in great number, till his grandfather reminded him of his past meditation and realization.  He forgot about the non-dual nature of the Lord, the universe and himself.  He thought that the enemies killed his brother, forgetting the fact that it was his brother&#8217;s past karmas that took his life.  He was unable to perceive the reality at that moment of time.  The vision of the <i>Paramatma</i> removed his ignorance; still his knowledge was not deep rooted.  That may be the only reason for him destroying his brother&#8217;s enemies.  Even after understanding the universal nature of Brahman, his mind was not entirely relieved from enjoying the worldly pleasures.  This does not demean the spiritual excellence and devotion of young Dhruva.  It only means that intense devotion lead to the path of Vedanta, and to establish in the concept of Vedanta and to attain <i>moksha</i>, the knowledge of Vedanta must be deep rooted.  Otherwise our worldly desires and ambitions will become an obstacle on the path of <i>moksha</i>.  This is evident from Dhruva&#8217;s repentance over his ignorance in asking the boons to the Lord.  He repented later for having wasted the precious opportunity by asking boons for worldly ambitions.  Dhruva&#8217;s mentality, devotion, vision, knowledge, and the boon he asked and duly rewarded were all entirely different from that of another young devotee, Prahlad.</p>
+<p style="text-align: justify">Prahlad was also a young boy of age five.  He was the youngest son of the famous <i>asura</i> Hiranyakasipu.  Prahlad was noted for his virtues.  Even at that very young age, he was learned, exemplary in his conduct; he had mastery of the senses, and was equipoise.  Wealth, learning, beauty, noble birth etc, none of these swelled his ego or filled him with pride.  He did not have any trace of the nature of his <i>asuric</i> clan.  When Prahlad was very young, he and his mother had an opportunity to stay with sage Narada.  Sage Narada taught him about the nature of the Self and the universal truth.  Sage Narada&#8217;s teachings created great impact in the young mind of Prahlad.  Later, when he grew among the <i>asuras</i>, these noble teachings created strong vibrations in Prahlad.  Prahlad&#8217;s mind was completely absorbed in the thoughts of Lord Vishnu.  Whatever activities he did externally, he was internally absorbed to the Supreme Lord.  Unswerving devotion to the Lord became his nature.  His nature was just opposite to the <i>asuric</i> nature of his father, and this inflicted cruel tortures from his father.  Advices and teachings from <i>asuric</i> teachers had no impact on the divine mentality of Prahlad.  His father took extreme steps to change his divine nature but it had no impact on Prahlad.  He was well aware of the universal nature of the Lord but at the same time he meditated on the form of Lord Vishnu.  He knows that worldly pleasures never bring peace and satisfaction to one self.  They are fleeting and impermanent.</p>
+<p style="text-align: justify">He was aware of the fact that, Vedic ritualism brings only fulfillment of desires, and causes repeated births.  To elude from the wheel of <i>samsara</i>, one has to feel the presence of the Lord continuously.  He advised that the karmas that brought the body into being yields both happiness and sorrow, and no special effort is needed for that.  Instead of devoting time in that, one should have intense devotion to Lord.  He advises to practice devotion and renunciation even at a very young age, before the tendencies of <i>samsara</i> entangle a person.  He taught the fellow <i>asura</i> boys about Self-knowledge.  Sage Narada taught him about the characteristics of the <i>Atma</i> and this knowledge enabled him to give up his identification with the body.  The body is the result of ignorance.  The body which is the complex of the categories of the <i>prakriti</i> is non-<i>Atma</i>, and it is to be rejected to reach the ultimate end.  One has to purify the mind by devotion to know the truth.  The states of waking, dream and sleep are the three modifications of the <i>buddhi</i> (intellect).  The awareness which stands aloof from the three states as their witness is the <i>Atma</i>.  These three states are born of the <i>gunas</i> of <i>prakriti</i> and are the result of karma.  They do not contact or contaminate the <i>Atma</i>.  The <i>Atma</i> pervades all and is distinct from all these.  This <i>samsara</i> is based on ignorance, producing the false identification of the <i>Atma</i> with the modifications of the <i>buddhi</i>, which are a product of the <i>gunas</i> of <i>prakriti</i>.  Prahlad gave such valuable advices and asked the fellow <i>asura</i> boys to destroy ignorance.  He believed that devotion is the easiest path to attain liberation and intense devotion automatically leads to Self-knowledge.  When the subtle tendencies and ignorance are destroyed by intense devotion, a devotee identifies himself with the Lord.  According to Prahlad, this state is called &#8220;Bliss of oneness with Brahman&#8221;.  Prahlad said that the bodies are formed with the primordial elements and Sri Hari pervades as <i>Atma</i> (self) in all the bodies.  Prahlad&#8217;s supreme knowledge irritated Hiranyakashipu.  He ordered tremendous tortures to destroy young Prahlad, but Prahlad was protected by God&#8217;s grace and his own intelligence.  Prahlad advised his father that one&#8217;s enemy is in his mind and so the mind should be kept even and unperturbed, seeing no difference between the friend and foe.</p>
+<p style="text-align: justify">Prahlad had the vision of the Supreme Being according to the specifications of the boon received by his father Hiranyakasipu, the man-lion form called Lord Narasimha.  The whole world was feared of this form, but not Prahald.  He was well aware that form is only an external appearance of the all pervading <i>Atma</i>.  Even though prahlad was tempted by the boons by the Lord, he felt that a person who seeks for boons and favours is not a true devotee, and instead of boons he asked for purity of mind.  He was well established in the fact that it is the mind which weakens all the faculties of man.  Even though Prahlad was not keen in receiving boons from the Lord, the Lord granted him with <i>dharma</i>, <i>artha</i>, <i>kama</i> and <i>moksha</i>, which are the results of true devotion.</p>
+<p style="text-align: justify"><span style="text-decoration: underline">Conclusion</span></p>
+<p style="text-align: justify">If a person is endowed with dispassion (vairagya), he can straight away enter the path of Vedanta and attain liberation.  He has to be well established in the concepts of Vedanta.  If a person is worldly minded, he can select the path of intense devotion and experience <i>dharma</i>, <i>artha</i>, <i>kama</i> and finally <i>moksha</i>.  Vedanta is nothing but an advanced form of devotion (<i>bhakti</i>) to the universal nature of the formless Brahman.</p>
+<p style="text-align: justify">
+</p>
+<p style="text-align: justify">Source</p>
+<p style="text-align: justify">Srimad Bhagavata, vol I &amp; II, (trans, Swami Tapasyananda), Sri Ramakrishna Math, Chennai.</p>
+				
+					</article>
+			<div class="pagination clearfix">
+	<div class="alignleft"><a href="/author/advaitamandscience/page/21/">&laquo; Older Entries</a></div>
+	<div class="alignright"><a href="/author/advaitamandscience/page/19/">Next Entries &raquo;</a></div>
+</div>			</div>
+
+				<div id="sidebar">
+		<div id="search-2" class="et_pb_widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://advaitamandscience.in001.wpcs.cc/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form></div>
+		<div id="recent-posts-2" class="et_pb_widget widget_recent_entries">
+		<h4 class="widgettitle">Recent Posts</h4>
+		<ul>
+											<li>
+					<a href="/articles/idol-worship-in-sanatana-dharma/">IDOL WORSHIP IN SANATANA DHARMA</a>
+									</li>
+											<li>
+					<a href="/articles/the-importance-of-pooja-in-sanatana-dharma/">THE IMPORTANCE OF POOJA IN SANATANA DHARMA</a>
+									</li>
+											<li>
+					<a href="/articles/rishis-of-sanatana-dharma/">RISHIS OF SANATANA DHARMA</a>
+									</li>
+											<li>
+					<a href="/articles/the-mutts-and-the-desa-nama-sampradaya-established-by-sri-adi-shankaracharya/">THE MUTTS AND THE DESA NAMA SAMPRADAYA ESTABLISHED BY SRI ADI SHANKARACHARYA</a>
+									</li>
+											<li>
+					<a href="/articles/advaita-guru-parampara/">ADVAITA GURU PARAMPARA</a>
+									</li>
+					</ul>
+
+		</div>
+<div id="recent-comments-2" class="et_pb_widget widget_recent_comments">
+<h4 class="widgettitle">Recent Comments</h4>
+<ul id="recentcomments">
+<li class="recentcomments">
+<span class="comment-author-link">Vrinda</span> on <a href="/articles/paroksha-jnana-to-aparoksha-jnana/#comment-41">PAROKSHA JNANA TO APAROKSHA JNANA</a>
+</li>
+<li class="recentcomments">
+<span class="comment-author-link">advaitamandscience</span> on <a href="/articles/the-three-types-of-knowledge/#comment-40">THE THREE TYPES OF KNOWLEDGE</a>
+</li>
+<li class="recentcomments">
+<span class="comment-author-link"><a href="http://www.dwaitaadwaitam.wordpress.com/" class="url" rel="ugc external nofollow">N. Anuradha</a></span> on <a href="/articles/the-three-types-of-knowledge/#comment-39">THE THREE TYPES OF KNOWLEDGE</a>
+</li>
+<li class="recentcomments">
+<span class="comment-author-link">Jyoti</span> on <a href="/articles/destiny-versus-freewill/#comment-44">DESTINY VERSUS FREEWILL</a>
+</li>
+<li class="recentcomments">
+<span class="comment-author-link">RESHMA ARORA</span> on <a href="/articles/atma-anatma-viveka/#comment-27">ATMA &#8211; ANATMA &#8211; VIVEKA</a>
+</li>
+</ul>
+</div>
+<div id="block-3" class="et_pb_widget widget_block"><div class="logged-out wp-block-loginout"><a href="/wp-login.php?redirect_to=https%3A%2F%2F%2Fauthor%2Fadvaitamandscience%2Fpage%2F20%2F%3Fsimply_static_page%3D2221">Log in</a></div></div>	</div>
+		</div>
+	</div>
+</div>
+
+	<footer class="et-l et-l--footer">
+			<div class="et_builder_inner_content et_pb_gutters3">
+<div class="et_pb_section et_pb_section_0_tb_footer et_pb_with_background et_section_regular">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_footer et_pb_equal_columns et_pb_gutters3">
+				<div class="et_pb_column et_pb_column_1_4 et_pb_column_0_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0_tb_footer  et_pb_text_align_left et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>Powered by : <a href="https://digitalindiya.com/" target="_blank" rel="noopener">DigitalIndiya.com</a></p></div>
+			</div>
+			</div>
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_1_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_1_tb_footer  et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p style="text-align: center;"><a href="/" id="site-title">DigitalIndiya.com</a> <span>©</span> 2023 | <a href="/privacy-policy/">Privacy policy</a></p></div>
+			</div>
+<div class="et_pb_module et_pb_code et_pb_code_0_tb_footer">
+				
+				
+				
+				
+				<div class="et_pb_code_inner"><script>jQuery(document).ready(function($){
+    var title = $('head title').text();
+   $('footer a#site-title').html(title);
+});</script></div>
+			</div>
+			</div>
+<div class="et_pb_column et_pb_column_1_4 et_pb_column_2_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<ul class="et_pb_module et_pb_social_media_follow et_pb_social_media_follow_0_tb_footer clearfix  et_pb_text_align_right et_pb_bg_layout_light">
+				
+				
+				
+				
+				<li class="et_pb_social_media_follow_network_0_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-facebook"><a href="#" class="icon et_pb_with_border" title="Follow on Facebook" target="_blank"><span class="et_pb_social_media_follow_network_name" aria-hidden="true">Follow</span></a></li>
+<li class="et_pb_social_media_follow_network_1_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-twitter"><a href="#" class="icon et_pb_with_border" title="Follow on Twitter" target="_blank"><span class="et_pb_social_media_follow_network_name" aria-hidden="true">Follow</span></a></li>
+<li class="et_pb_social_media_follow_network_2_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-linkedin"><a href="#" class="icon et_pb_with_border" title="Follow on LinkedIn" target="_blank"><span class="et_pb_social_media_follow_network_name" aria-hidden="true">Follow</span></a></li>
+			</ul>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</footer>
+		</div>
+
+			
+		</div>
+		</div>
+
+				<script type="text/javascript">var et_animation_data = [{"class":"et_pb_blurb_0_tb_header","style":"zoom","repeat":"once","duration":"600ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"}];
+					var et_link_options_data = [{"class":"et_pb_text_0_tb_header","url":"\/","target":"_self"}];</script>
+	<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.4" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="jquery-js-after">jqueryParams.length&&$.each(jqueryParams,function(e,r){if("function"==typeof r){var n=String(r);n.replace("$","jQuery");var a=new Function("return "+n)();$(document).ready(a)}});</script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"\/wp-admin\/admin-ajax.php","images_uri":"\/wp-content\/themes\/Divi\/images","builder_images_uri":"\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"7316ea661e","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"cf480ed468","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"694","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":"\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#7EBEC5","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/Divi/js/scripts.min.js?ver=4.21.0" id="divi-custom-script-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.21.0" id="fitvids-js"></script>
+<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=6.2.2" id="comment-reply-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.21.0" id="jquery-mobile-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.21.0" id="magnific-popup-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.21.0" id="easypiechart-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.21.0" id="salvattore-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/core/admin/js/common.js?ver=4.21.0" id="et-core-common-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.21.0" id="et-builder-modules-script-motion-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.21.0" id="et-builder-modules-script-sticky-js"></script>
+<style id="et-builder-module-design-1831-cached-inline-styles">.et_pb_menu .et_pb_menu__wrap{justify-content:flex-end}.et_pb_menu__logo img{max-height:90px!important;width:auto!important;padding:10px}.et_pb_module.et_pb_menu--with-logo{width:100%}.et-menu a,.et-menu a:hover{transition:none}header .et_pb_section.et_pb_sticky .et_pb_row{max-height:80px}header .et_pb_section.et_pb_sticky .et_pb_module img{min-height:60px;max-width:240px!important}@media (max-width:980px){header .et_pb_column:first-child{max-width:80%;margin-bottom:0px!important}header .et_pb_column:last-child{position:absolute;z-index:1}.et_mobile_nav_menu{padding:24px 10px}}.et_pb_section_0_tb_header.et_pb_section{padding-top:11px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:3%;margin-right:0px;margin-left:0px;background-color:rgba(0,0,0,0)!important}.et_pb_row_0_tb_header.et_pb_row{padding-top:0px!important;padding-right:0px!important;padding-bottom:0px!important;padding-left:0px!important;padding-top:0;padding-right:0px;padding-bottom:0;padding-left:0px}.et_pb_blurb_0_tb_header .et_pb_main_blurb_image .et_pb_only_image_mode_wrap,.et_pb_blurb_0_tb_header .et_pb_main_blurb_image .et-pb-icon{border-radius:100% 100% 100% 100%;overflow:hidden;border-width:1px}.et_pb_blurb_0_tb_header.et_pb_blurb{max-width:180px}.et_pb_blurb_0_tb_header .et_pb_main_blurb_image .et_pb_image_wrap{box-shadow:0px 2px 35px 10px #ffffff;max-width:100%}.et_pb_blurb_0_tb_header.et_pb_blurb .et_pb_main_blurb_image{margin-top:30px}.et_pb_column_1_tb_header{margin:auto}.et_pb_text_0_tb_header.et_pb_text,.et_pb_text_1_tb_header.et_pb_text{color:#ffffff!important}.et_pb_text_0_tb_header h1{font-weight:700;font-size:54px;color:#ffffff!important;text-align:center;text-shadow:0em 0.1em 0.1em #BB1593}.et_pb_text_0_tb_header{padding-top:2%!important;padding-right:3%!important;padding-bottom:2%!important;padding-left:3%!important;margin-top:0px!important}.et_pb_text_1_tb_header h1{text-align:center}.et_pb_text_1_tb_header h4{font-size:16px;line-height:1.4em;text-align:center}.et_pb_text_1_tb_header{border-radius:5px 5px 5px 5px;overflow:hidden;padding-top:2%!important;padding-right:0px!important;padding-bottom:2%!important;padding-left:0px!important;margin-top:-60px!important;margin-right:0px!important;margin-left:0px!important;max-width:500px}.et_pb_row_1_tb_header.et_pb_row{padding-top:0px!important;padding-right:0px!important;padding-bottom:0px!important;padding-left:0px!important;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px}.et_pb_row_1_tb_header,body.et_boxed_layout #page-container .et_pb_row_1_tb_header.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_1_tb_header.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_1_tb_header.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single.et_full_width_portfolio_page #page-container #et-boc .et-l .et_pb_row_1_tb_header.et_pb_row{width:100%}.et_pb_menu_0_tb_header.et_pb_menu ul li a{font-weight:700;font-size:17px;color:#dd1c70!important}.et_pb_menu_0_tb_header.et_pb_menu{background-color:#000000}.et_pb_menu_0_tb_header{padding-top:20px;padding-bottom:20px}.et_pb_menu_0_tb_header.et_pb_menu ul li.current-menu-item a{color:#FFFFFF!important}.et_pb_menu_0_tb_header.et_pb_menu .nav li ul,.et_pb_menu_0_tb_header.et_pb_menu .et_mobile_menu,.et_pb_menu_0_tb_header.et_pb_menu .et_mobile_menu ul{background-color:#000000!important}.et_pb_menu_0_tb_header .et_pb_menu_inner_container>.et_pb_menu__logo-wrap,.et_pb_menu_0_tb_header .et_pb_menu__logo-slot{width:auto;max-width:100%}.et_pb_menu_0_tb_header .et_pb_menu_inner_container>.et_pb_menu__logo-wrap .et_pb_menu__logo img,.et_pb_menu_0_tb_header .et_pb_menu__logo-slot .et_pb_menu__logo-wrap img{height:auto;max-height:none}.et_pb_menu_0_tb_header .mobile_nav .mobile_menu_bar:before,.et_pb_menu_0_tb_header .et_pb_menu__icon.et_pb_menu__search-button,.et_pb_menu_0_tb_header .et_pb_menu__icon.et_pb_menu__close-search-button,.et_pb_menu_0_tb_header .et_pb_menu__icon.et_pb_menu__cart-button{color:#7EBEC5}.et_pb_text_1_tb_header.et_pb_module{margin-left:auto!important;margin-right:auto!important}@media only screen and (max-width:767px){.et_pb_text_0_tb_header h1{font-size:54px}}</style>
+<style id="et-builder-module-design-1832-cached-inline-styles">.et_pb_section_0_tb_footer.et_pb_section{padding-top:0px;padding-bottom:0px;background-color:#000000!important}.et_pb_row_0_tb_footer.et_pb_row{padding-top:15px!important;padding-bottom:15px!important;padding-top:15px;padding-bottom:15px}.et_pb_row_0_tb_footer,body.et_boxed_layout #page-container .et_pb_row_0_tb_footer.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single.et_full_width_portfolio_page #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row{max-width:1280px}.et_pb_column_0_tb_footer,.et_pb_column_1_tb_footer,.et_pb_column_2_tb_footer{margin:auto}.et_pb_text_0_tb_footer.et_pb_text a,.et_pb_text_1_tb_footer.et_pb_text a:hover{color:#0eb1ed!important}.et_pb_text_0_tb_footer a{font-weight:600}.et_pb_text_1_tb_footer.et_pb_text a{color:#FFFFFF!important;transition:color 300ms ease 0ms}.et_pb_text_1_tb_footer{margin-bottom:0px!important}.et_pb_social_media_follow_network_0_tb_footer a.icon{background-color:#3b5998!important}.et_pb_social_media_follow_network_1_tb_footer a.icon{background-color:#00aced!important}.et_pb_social_media_follow_network_2_tb_footer a.icon{background-color:#007bb6!important}</style>	
+			<span class="et_pb_scroll_top et-pb-icon"></span>
+	</body>
+</html>

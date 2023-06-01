@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="/xmlrpc.php">
+
+	<script type="text/javascript">document.documentElement.className = 'js';</script>
+	
+	<title>advaitamandscience | Advaitam and Science</title>
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,latin-ext&display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style>
+<meta name="robots" content="noindex, nofollow">
+<script type="text/javascript">let jqueryParams=[],jQuery=function(r){return jqueryParams=[...jqueryParams,r],jQuery},$=function(r){return jqueryParams=[...jqueryParams,r],$};window.jQuery=jQuery,window.$=jQuery;let customHeadScripts=!1;jQuery.fn=jQuery.prototype={},$.fn=jQuery.prototype={},jQuery.noConflict=function(r){if(window.jQuery)return jQuery=window.jQuery,$=window.jQuery,customHeadScripts=!0,jQuery.noConflict},jQuery.ready=function(r){jqueryParams=[...jqueryParams,r]},$.ready=function(r){jqueryParams=[...jqueryParams,r]},jQuery.load=function(r){jqueryParams=[...jqueryParams,r]},$.load=function(r){jqueryParams=[...jqueryParams,r]},jQuery.fn.ready=function(r){jqueryParams=[...jqueryParams,r]},$.fn.ready=function(r){jqueryParams=[...jqueryParams,r]};</script><link rel="alternate" type="application/rss+xml" title="Advaitam and Science &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="Advaitam and Science &raquo; Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Advaitam and Science &raquo; Posts by advaitamandscience Feed" href="/author/advaitamandscience/feed/">
+<meta content="Default Divi Child v.4.0.1" name="generator">
+<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=6.2.2" type="text/css" media="all">
+<style id="wp-block-library-theme-inline-css" type="text/css">.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}</style>
+<style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}</style>
+<link rel="stylesheet" id="divi-style-parent-css" href="/wp-content/themes/Divi/style-static.min.css?ver=4.21.0" type="text/css" media="all">
+<link rel="stylesheet" id="divi-style-css" href="/wp-content/themes/default-divichild/style.css?ver=4.21.0" type="text/css" media="all">
+<link rel="stylesheet" id="site_style-css" href="/wp-content/themes/default-divichild/site-style.css?ver=6.2.2" type="text/css" media="all">
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/users/5">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 6.2.2">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1">
+<style type="text/css" id="custom-background-css">body.custom-background { background-image: url("/wp-content/uploads/sites/3/2021/05/page-1024x640-1.jpeg"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }</style>
+	<script>
+// Add A Dynamic Year In Divi Footer Copyright
+ // var beg_year = 2019; // Year site went live
+ var this_year = new Date(); // Get current date
+ var developed_by = '<p>Site Powered by <a href="https://digitalindiya.com/" target="_blank" rel="noopener noreferrer"><strong>DigitalIndiya.com<\/strong><\/a><\/p>'; // Developer info
+ //this_year = this_year.getFullYear();
+ stitle = jQuery('title').text(); 
+ var s_title = stitle;
+ var year = this_year;
+ 
+ jQuery(function($){
+ $('#footer-info').html('© ' + year + ' <a href="/">' + s_title + '<\/a> ' + developed_by );
+ });
+</script><style id="et-divi-customizer-global-cached-inline-styles">#top-menu li a{font-size:16px}body.et_vertical_nav .container.et_search_form_container .et-search-form input{font-size:16px!important}@media only screen and (min-width:981px){.et_header_style_left #et-top-navigation,.et_header_style_split #et-top-navigation{padding:50px 0 0 0}.et_header_style_left #et-top-navigation nav>ul>li>a,.et_header_style_split #et-top-navigation nav>ul>li>a{padding-bottom:50px}.et_header_style_split .centered-inline-logo-wrap{width:100px;margin:-100px 0}.et_header_style_split .centered-inline-logo-wrap #logo{max-height:100px}.et_pb_svg_logo.et_header_style_split .centered-inline-logo-wrap #logo{height:100px}.et_header_style_centered #top-menu>li>a{padding-bottom:18px}.et_header_style_slide #et-top-navigation,.et_header_style_fullscreen #et-top-navigation{padding:41px 0 41px 0!important}.et_header_style_centered #main-header .logo_container{height:100px}#logo{max-height:100%}.et_pb_svg_logo #logo{height:100%}}@media only screen and (min-width:1350px){.et_pb_row{padding:27px 0}.et_pb_section{padding:54px 0}.single.et_pb_pagebuilder_layout.et_full_width_page .et_post_meta_wrapper{padding-top:81px}.et_pb_fullwidth_section{padding:0}}.et_pb_widget_area_left{border-right:0px!important;padding-right:0px!important;border-left:1px solid rgba(0,0,0,.1);padding-left:30px}.et_pb_column article{margin-bottom:30px!important}.post-content{padding-bottom:20px}.post-content-inner{padding-bottom:15px}a[aria-current="page"],.et_pb_widget_area a:hover{color:#e91e63!important}h4.widgettitle{font-size:20px;font-weight:600;border-bottom:1px dashed #ccc;margin-bottom:15px}.wp-block-loginout{padding:10px;background:#edfaff;text-align:center;border-radius:5px}a#cancel-comment-reply-link{position:relative;right:0px;top:21px;background:#fff4f4;padding:10px 15px}#commentform{padding-bottom:50px;padding-top:30px}</style>
+</head>
+<body class="archive paged author author-advaitamandscience author-5 custom-background paged-9 author-paged-9 et-tb-has-template et-tb-has-header et-tb-has-footer et_pb_button_helper_class et_boxed_layout et_cover_background et_pb_gutter et_pb_gutters3 et_right_sidebar et_divi_theme et-db">
+	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><div id="page-container">
+<div id="et-boc" class="et-boc">
+			
+		<header class="et-l et-l--header">
+			<div class="et_builder_inner_content et_pb_gutters3">
+<div class="et_pb_section et_pb_section_0_tb_header et_pb_with_background et_section_regular et_pb_section--with-menu">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_header et_pb_equal_columns et_pb_gutters3">
+				<div class="et_pb_column et_pb_column_1_4 et_pb_column_0_tb_header  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_with_border et_pb_module et_pb_blurb et_pb_blurb_0_tb_header logo et_animated  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><a href="/"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img decoding="async" src="https://advaitamandscience.org/wp-content/uploads/sites/3/2021/05/advaitam-logo-wpp1605575340446.png" alt="" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone"></span></a></div>
+					<div class="et_pb_blurb_container">
+						
+						
+					</div>
+				</div>
+			</div>
+			</div>
+<div class="et_pb_column et_pb_column_3_4 et_pb_column_1_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0_tb_header et_clickable  et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h1 style="text-align: center;"><strong>Advaitam and Science</strong></h1></div>
+			</div>
+<div class="et_pb_module et_pb_text et_pb_text_1_tb_header  et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h4>
+<strong>OM, Purnamata purnamitam purnat purnamutachyate, </strong><strong>purnasya purnamataye purnamevavasishyate – Bri.Up V.i.1</strong>
+</h4></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+<div class="et_pb_row et_pb_row_1_tb_header et_pb_row--with-menu">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_2_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column--with-menu">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_menu et_pb_menu_0_tb_header et_pb_bg_layout_light  et_pb_text_align_center et_dropdown_animation_fade et_pb_menu--without-logo et_pb_menu--style-left_aligned">
+					
+					
+					
+					
+					<div class="et_pb_menu_inner_container clearfix">
+						
+						<div class="et_pb_menu__wrap">
+							<div class="et_pb_menu__menu">
+								<nav class="et-menu-nav"><ul id="menu-main-menu" class="et-menu nav">
+<li class="et_pb_menu_page_id-home menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1553"><a href="/">Home</a></li>
+<li class="et_pb_menu_page_id-4 menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1923"><a href="/category/articles/">Articles</a></li>
+<li class="et_pb_menu_page_id-7 menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1924"><a href="/category/poems/">Poems</a></li>
+<li class="et_pb_menu_page_id-5 menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1872"><a href="/category/my-views/">My Views</a></li>
+<li class="et_pb_menu_page_id-103 menu-item menu-item-type-post_type menu-item-object-page menu-item-1557"><a href="/about-me/">About me</a></li>
+<li class="et_pb_menu_page_id-104 menu-item menu-item-type-post_type menu-item-object-page menu-item-1558"><a href="/contact-2/">Contact</a></li>
+</ul></nav>
+							</div>
+							
+							
+							<div class="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</header>
+	<div id="et-main-area">
+	
+<div id="main-content">
+	<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+		
+					<article id="post-1187" class="et_pb_post post-1187 post type-post status-publish format-standard hentry category-articles">
+
+				
+															<h2 class="entry-title"><a href="/articles/kaala-time/">KAALA (TIME)</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">Feb 18, 2019</span> | <a href="/category/articles/" rel="category tag">Articles</a></p>
+				
+<h2 class="wp-block-heading"></h2>
+
+
+
+<p style="text-align:center"><strong>KAALA (TIME)</strong></p>
+
+
+
+<p>Kaala (time) exists in two forms &#8211; the subtle,
+transcendental form and the gross form.&nbsp;
+The all powerful time which is the shakti of the Lord Himself, is
+unperceivable, transcendental, subtle and it is called mahakaala.&nbsp; It becomes perceivable when it is seen as
+controlling everything that exists.&nbsp; It
+is perceivable only in movement and this expression of time is called kaala.&nbsp; Kaala is said as the gross form in the sense that
+it is perceivable as seen controlling everything.&nbsp; The lord, using the gross power kaala creates
+and controls this creation.&nbsp; </p>
+
+
+
+<p><strong>Mahakaala</strong></p>
+
+
+
+<p>Srimad Bhagavata explains, &#8220;Time in itself is
+without any modification and insubstantial, without beginning and end, but it
+gets a form or expression when it causes the stirring of the gunas of prakriti
+at the beginning of a creative circle&#8221;, Srimad Bhagavat (3,10,10).&nbsp; The time that is infinite and without any
+modification is called mahakaala.&nbsp; The
+whole creation is on the lap of mahakaala; and at the end of the creative cycle
+the entire creation enters in mahakaala.&nbsp;
+Mahakaala is not perceivable to the ordinary mind.&nbsp; It is very subtle and it does not express
+itself.&nbsp; There is creation only because
+of mahakaala.&nbsp; Mahakaala always exists;
+only thing is it cannot be grasped by the mind.&nbsp;
+Mahakaala is also said as the fourth state.</p>
+
+
+
+<p><strong>Kaala
+(time)</strong></p>
+
+
+
+<p>Life is the play of time.&nbsp; The time we experience is related to
+movement.&nbsp; If there is movement then
+there is time.&nbsp; Time expresses itself as
+movement.&nbsp; Everything in the material
+world is controlled by time.</p>
+
+
+
+<p>Kaala (time) is based on the movement of the earth.&nbsp; Earth takes 24 hours to spin on its axis and
+365 days to go around the sun.&nbsp; In
+another planet, time is based on the movement of that planet.&nbsp; For example, planet Saturn takes thirty years
+(comparing to the time in earth) to go around the Sun.&nbsp; Outer space does not have the concept of time.
+&nbsp;Since time and direction are related to
+the movement of Earth, there is no time or direction in outer space.&nbsp; Even on earth time differs in different
+places.&nbsp; Day time in one place is the
+night time for the opposite side of the planet.&nbsp;
+Therefore, time is based on the movement of planet earth.&nbsp; Time is absolutely needed for humans to
+survive.&nbsp; Even though all other beings
+are subject to time they are not aware of it.&nbsp;
+&nbsp;&nbsp;</p>
+
+
+
+<p><strong>Kaala&#8217;s
+influence on the material world</strong></p>
+
+
+
+<p>Any object in the world takes birth, grows, and is
+destroyed by time.&nbsp; Any object in this
+world passes through these three phases; which indicates that any object passes
+from one phase to another automatically by the passage of time.&nbsp; Any movement is subject to time and anything
+static is non-subject to time.&nbsp; In
+Vedantic terms, whatever is subject to time and has movement is called prakriti;
+whatever is non-subject to time and movement is called purusha.&nbsp; Purusha is beyond time and movement.&nbsp; We realize the movement and passage of time
+by our mind.&nbsp; </p>
+
+
+
+<p><strong>Time
+and mind</strong></p>
+
+
+
+<p>We experience time only when we are awake.&nbsp; Time is based on the movement of earth and it
+is experienced by the mind.&nbsp; In deep
+sleep, in meditation or in some exceptional physical conditions like coma or
+swoon, we are not aware of time.&nbsp; Mind moves
+on a static substratum, Atma.&nbsp; The power
+behind the functioning of the mind is Atma.&nbsp;
+Physical body is based on the mind and so body is also subject to
+movement and time.&nbsp; One cannot expect
+anything permanent from something which is always subject to movement.&nbsp; Permanent pleasure is experienced only from
+the static substratum, Atma.&nbsp; Mind
+experiences pleasure from Atma through the anandamaya kosa (bliss layer).&nbsp; When one wants to transact with the world,
+attach the mind to the material world.&nbsp; During
+meditation place the mind on the Atma.&nbsp; The
+power to switch the mind from external to internal is called maneesha.&nbsp; When we are based on Sat, that is presence
+and existence, whatever has passed is considered as past; whatever is to come is
+considered as future.&nbsp; Therefore, the
+center point is the present, that is Sat, which is pure existence.&nbsp; </p>
+
+
+
+<p>The objects subject to time and movement are subject
+to destruction, because kaala (time) itself is an expression of Mahakaala. &nbsp;The movement along with time comes to a
+standstill and folds back till the next cycle begins from mahakaala.</p>
+
+
+
+<p><strong>Ancient
+method of calculating time</strong></p>
+
+
+
+<p>In the vedic period, when there were no scientific
+development or electronic instruments to measure time, people used a very
+unique and accurate way of measure time.&nbsp;
+The way they calculated time is well explained in Srimad Bhagavata.&nbsp; </p>
+
+
+
+<p>In the beginning of the formation of the universe even
+before any type of combination took place and solidify as objects or materials,
+paramanu or ultimate material particle existed.&nbsp;
+Paramanu are ultimate material particles.&nbsp; They existed in large numbers and can be
+conceived only as an irreducible unit.&nbsp;
+The period required for the sun (sun rays, the indicator of time with
+respect to the movement of earth) to pass a paramanu, which is the basic
+building block of the material universe, is called a particle of time
+(paramanukaala).&nbsp; An atom or anu is a
+combination of two ultimate particles.&nbsp;
+When three atoms join together, it is called Trasarenu. &nbsp;The period required for the sunlight to pass a
+trasarenu is called trasarenu kaala.&nbsp; In
+the ancient times, when there were no scientific equipments like microscope,
+the visible very minute floating particles that can be seen in a sunbeam coming
+through a window slit is considered a trasarenu.&nbsp; The period taken by the sunlight to pass that
+very minute particle is called trasarenu kaala.&nbsp;
+The time required for the sunlight to cover three trasarenu is called
+truti.&nbsp; A hundred trutis of time make a
+vedha.&nbsp; Three vedas make one lava.&nbsp; Three lavas make one nimisha or moment (one
+minute).&nbsp; Three such moments make one
+kshana.&nbsp; Five kshanas make a kashtha, fifteen
+kashthas make one laghu, and fifteen laghus make one nadika (i.e 24 minutes in
+modern time system). &nbsp;Three such nadikas
+make a muhurta.&nbsp; Six or seven nadikas
+make one prahara or yama.&nbsp; Eight yamas
+make a day and night of man.&nbsp; A fortnight
+is fifteen days and fifteen nights.&nbsp; Two
+fortnights (one white and one dark) constitute a month.&nbsp; Two months together form a season.&nbsp; Six months make one solstices of the
+sun.&nbsp; There are two such solstices, one
+dark and one bright and these two constitute a year.&nbsp; From this description given in Srimad Baghavata
+we understand that in the ancient period, calculation of time was based on the
+sunlight covering the minute particles floating freely in the atmosphere. &nbsp;After the Vedic period many methods were used
+to indicate the movement of time like sand glasses, and calculating time by
+seeing the sun&#8217;s position.&nbsp; Another
+method used in ancient time to measure time was, large disks with markings on
+it were placed in the open space.&nbsp; There
+were markings on the disk and a needle was also placed on it.&nbsp; The shadow of the needle falling on the
+markings on the disk indicates the accurate time.&nbsp; The position of the shadow changes according
+to the movement of the earth.&nbsp; Such
+ancient instruments for measuring time are kept for exhibition in some places
+in India.&nbsp; </p>
+
+
+
+<p><strong>Indian
+astronomy and time </strong></p>
+
+
+
+<p>According to Indian astronomy, time has a great
+impact on the human system.&nbsp; The spin of
+the earth, our body system, our destiny and nature are all so closely related
+to each other.&nbsp; Our body system is very
+closely connected to earth, other planets and the sun.&nbsp; Based on the place we live everything like time,
+body system and nature changes drastically.&nbsp;
+This in turn affects the working of our mind and brain.&nbsp; Time is not only the concept of the mind; it
+is deep rooted in our system.&nbsp; </p>
+
+
+
+<p>According to the modern time system, every two hours
+is called a unit of time, lagna.&nbsp; Mind
+changes for every lagna.&nbsp; Mind means the
+thoughts, feelings and emotions.&nbsp; Every
+sixty hours (two and a half days) the mood and emotion changes.&nbsp; Suppose, we are in a negative mood then the
+negativity reaches a peak and decline within sixty hours.&nbsp; Many factors including the spin of the earth,
+moon, sun, other planets, climate etc affect the mind drastically.&nbsp; Every morning from 4.30 AM to 6.30 AM is
+called the Brahma muhurta.&nbsp; It is the
+most creative time within the 24 hours.&nbsp; At
+this time the nature will be highly charged as well as our mind.&nbsp; </p>
+
+
+
+<p>Indian astronomy divides the path of the earth
+around the sun as twenty seven segments.&nbsp;
+Each point is the place for the twenty seven nakshatras (stars).&nbsp; Each segment is again divided in to four
+minor segments called padhas.&nbsp; When the
+planet earth moves from one point to the other point, moon also revolves around
+it causing full moon and new moon.&nbsp; In
+these twenty seven segments sun plays a very significant role on the planet
+earth.&nbsp; When the planet earth moves along
+the passage from one point to another, human body and mind responds and
+corresponds to this movement accordingly.&nbsp;
+This is said as the connection between the macrocosm (unda) and the
+microcosm (pinda).&nbsp; </p>
+
+
+
+<p>According to the Indian astronomy, the entire solar
+system moves on an elliptical path around the very big star or the center star
+(which in Indian astronomy is said as vishnu nabi), in our galaxy.&nbsp; It is said in the yogic science that it takes
+25920 years for the solar system to complete one circle around the vishnu nabi.&nbsp; When our solar system comes near the big
+star, the intellectual capacity of the beings on earth will rise and will be
+high (satya yug).&nbsp; When our solar system
+moves away from the big star then the intellectual capacity of the beings on
+earth will be low (kali yug).&nbsp; The yugas
+in the Indian astronomy is calculated based on the movement of the solar system
+on its elliptical path around the big star or vishnu nabi.&nbsp;&nbsp; </p>
+
+
+
+<p>The time taken by the sun to traverse from one
+constellation (rasi) to another constellation is called a solar month.&nbsp; There are twelve such constellation and
+twelve solar months.&nbsp; Twelve such solar
+months constitute a solar year called samvatsara. </p>
+
+
+
+<p><strong>Conclusion&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+
+
+
+<p>Time matters only when
+a person identifies with his physical body.&nbsp;
+If a person identifies with Atma, then time does not matter.&nbsp; Therefore, time is important for the physical
+existence.&nbsp; It controls the nature and
+organizes life.&nbsp; A person has to surpass
+time (kaala) to enter in the spiritual realm.&nbsp;
+A person&#8217;s physical existence is based on the cyclic movement of time.</p>
+						
+					</article>
+			
+					<article id="post-969" class="et_pb_post post-969 post type-post status-publish format-standard hentry category-articles">
+
+				
+															<h2 class="entry-title"><a href="/articles/diverse-views-about-the-atman/">DIVERSE VIEWS ABOUT THE ATMAN</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">Oct 6, 2018</span> | <a href="/category/articles/" rel="category tag">Articles</a></p>
+<p>				</p>
+<div class="et_pb_section et_pb_section_0 et_section_regular">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0">
+							<div class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner">
+<p style="text-align: center">DIVERSE VIEWS ABOUT THE ATMAN</p>
+<p>&nbsp;</p>
+<p>India is a big country where people with diverse views and beliefs about the Self, God and the world live with unity.  They respect each other&#8217;s views and beliefs.  Unity in diversity is needed for a vibrant society.  Majority of the Indians believe Atman is the base of their life; however they have different views about the Atman.  This leads to different philosophies.  Different views about the Atman leads to different steps towards the ultimate.</p>
+<p>The concept of &#8216;I&#8217; defines our life.  Philosophies differ in understanding &#8216;I&#8217; (aham).  Our life depends on the way we assume &#8216;I&#8217; to be.  Definition of &#8216;I&#8217; is different in different philosophies.  The way we assume &#8216;I&#8217; decides our knowledge and discriminative power (bhuddhi).  The way we define &#8216;I&#8217; makes us either a limited person or an infinite one.  Vedanta defines &#8216;I&#8217; as Atman.  Atman is omnipresent, omnipotent and omniscient.  It is all-pervading and infinite.  Vedanta says, &#8220;I am Atman and I interact with this world with my mind and body&#8221;.</p>
+<p>People at different degrees of understanding misunderstand the srutis (Vedas), according to their level of understanding, and jump to wrong conclusions.  This misunderstanding has paved way for different philosophies.  Knowledge and beliefs are based on gunas (nature).</p>
+<p>This article outlines how the other philosophies differ from Vedanta in the concept of Atman.</p>
+<p>SCHOOL OF CHARVAKA</p>
+<p>Charvakas are of the view that the gross body is the Atman.  They think that gross body illumined by chit (intelligence) is the Atman.  When body dies the Atman (chit) also dies.  Life does not exist after that.  Therefore, they accept smart living without any concern for dharma, papa or puniya.  They are called materialists.  They do not accept the concept of Atman in Vedanta, that is, chit is all-pervading, omnipresent, and omniscient.</p>
+<p>A division of the charvakas believes that the five senses along with the bhuddhi are the Atman.  Some have concluded that the five senses are the Atman.</p>
+<p>SCHOOL OF HIRANYAGHARBHA (PRANATMAVADIN)</p>
+<p>Pranatmavadins believe that prana is the Atman.  They argue that when any one of the senses is weak (like being blind etc.) that person still survives; and therefore, life exists even without the senses.  However, one cannot exist without prana.  When prana leaves the body, the body is dead.  Therefore, prana is the Atman.  They also argue that when we say, &#8220;my eyes&#8217;, it shows that there is some other entity other than the eye and that entity is prana.  Senses are not powerful and so prana is the Atman.  Pranatmavadins are a division of the materialistic group.</p>
+<p>SCHOOL OF NARADA-PANCARATRA</p>
+<p>They are devoted to the worship of deities.  They believe that mind is the Atman.  They say that only mind experiences all emotions, pain and pleasure.  Prana is inert.  It does not have intelligence and so prana cannot be Atman and the intelligent mind is the Atman.</p>
+<p>Vedantins argue that mind is the reason for bondage and freedom.  Mind has different moods and it is dependent.  How can a dependent mind become Atman?  Mind is only an instrument.  In deep sleep mind disappears.  Therefore mind cannot be Atman.</p>
+<p>SCHOOL OF BHUDDISM</p>
+<p>A branch of Bhuddism says mind is dependent on Bhuddhi.  Bhuddhi decides, mind executes, and so bhuddhi (vijnanamaya kosa) is the Atman.  Antakarana (mind) has two kinds of thoughts (vritti).  They are, the I- Consciousness and This-Consciousness.  I-consciousness is the subject, the intellect; it is the cause (karanam).  Aham vritti (I-Consciousness) is the vijnanamaya kosa.  This-Consciousness is called the idam vritti.  It is the manomaya kosa (mind).  It is the object.  If put in a nutshell, the I-Consciousness is the bhuddhi; it is the ego and the subject.  This-Consciousness is the mind and the object.  This-Consciousness is based on I-Consciousness.  Here the discriminating factor of the bhuddhi and the doubting faculty of the mind are ignored.  Since ego is needed to perceive the external world and it is the base for the mind the I-Consciousness, which is bhuddhi is the Atman.</p>
+<p>Another branch of Bhuddism shanika vada sect says, I-Consciousness appears and disappears in seconds (shanika).  It is only a continuance of momentary &#8220;&#8216;I&#8217;s&#8221;.  I-Consciousness appears and disappears every moment.  It needs no further principle to illumine and so intellectual sheath or the vijnanamaya kosa is the Atman.  The whole world is cognized by &#8216;I&#8217; and so vijnanamaya kosa is the Atman.</p>
+<p>SCHOOL OF SUNIYAVADA</p>
+<p>It is also a branch of Bhuddism.  It says that nothingness (void) is the Atman.  It says intellect (bhuddhi) is momentary like the flash of lightning in a cloud or twinkling of an eye; however, nothingness exists for ever and so nothingness (void) is the Atman.  Shanika vada accepts Atman; but it says it is temporary &#8211; only for few seconds.  However, suniya vada completely rejects the Atman and believes in void.</p>
+<p>SCHOOL OF VAIDIKA</p>
+<p>They refute Bhuddism.  They say that even void or illusion needs a witness; otherwise one cannot experience void or illusion.  That witness must be intelligent otherwise it cannot witness and it must be the base for vijnanamaya kosa; that witness is anandamaya kosa and so anandamaya kosa is the Atman.</p>
+<p>Different schools are also formed based on the size of the Atman.  Some say that Atman is atomic in size, others say it is all pervading and some are of the view that it is something in between.  Now, let us see the idea of different schools based on the size of the Atman.</p>
+<p>SCHOOL OF ANTARALA</p>
+<p>They hold the view that Atman is atomic in size, because they travel through minute capillaries (nadis).  The capillaries itself are very small like&#8217; hair&#8217;s end split into 1000&#8242; and Atman travels through these very minute capillaries.  Therefore, Atman must be very minute in size.  They quote many sruti verses to support their claim like &#8220;Atman is smaller than the smallest, minute than an atom and more refined than the most refined&#8221; etc.</p>
+<p>SCHOOL OF DIGAMBARA (JAINISM)</p>
+<p>They hold the view that Atman is equal to the size of the body; it pervades the body and illumines all parts of the body.  They also say that Atman is of medium size and it easily enters a body adapting to any size.  It enlarges or diminishes its size to accommodate itself to the parts of the body into which it enters.  Atman according to them, being with parts, can adjust itself.</p>
+<p>Vedantins reject this view because if Atman has parts, then it is perishable.  Body perishes because it has parts.  Atman is imperishable; it has no parts.  Another point is if Atman is born, and enters the body then there will be no continuity of karma.  If Atman is perishable then all the merits and demerits of the jiva in a particular birth vanishes without bearing their fruit.  Similarly, in the present birth jiva cannot experience the result (effect) of the previous birth.  The incidents in this life will be purely accidental.  Therefore, Vedantins refute the theory of the Digambars.</p>
+<p>Vedantins maintain the view that Atman is all pervading.  It is neither atomic nor of medium size.  It is infinite, partless and all pervading.</p>
+<p>Now we discuss about the different views based on the nature of the Atman &#8211; whether it is conscious, unconscious or a compound of the two.</p>
+<p>SCHOOL OF PRABHAKARA</p>
+<p>Followers of Prabhakara say that Atman by nature is unconscious.  They think that Atma is an elementary matter like earth, water etc.  Matter has guna (attributes); for example, the guna of akasa is sound.  They think that Atman is a matter and its guna is chit.  Atman differs from the other matters due of its particular property, consciousness.</p>
+<p>Vedantins cannot accept this view for the very obvious reason that Atman is not a matter and it has no gunas.</p>
+<p>SCHOOL OF TARKA SASTRA</p>
+<p>Tarka sastra agrees that Atman is consciousness, but they include eight other special gunas with the Atman.  These gunas are desire, aversion, effort, virtue, vice, pleasure, pain and latent impressions.  They say that Atman&#8217;s basic guna is chaitanya (intelligence).</p>
+<p>They say Atman and mind are different.  They come together because of karma and give the effect of the karma.  When karma is over they are separated again.  When Atman and mind are separated, karma cannot give its effect.  When the past karma ceases to operate as cause, jiva goes into deep sleep and the eight properties too become latent.  They say that Atman possess intelligence and therefore called intelligent.  It manifests intelligence in the form of desires, aversion, and effort.  Atman is a doer.  It performs good and bad deeds and as a consequence experiences pleasure and pain.  Despite its all-pervasiveness, Atman goes from birth to death.  Moreover, Prabhakara and tarka sastra believes that anandamaya kosa is the Atman.  Vedantins refute this theory and argues that gunas are based on the mind.</p>
+<p>SCHOOL OF BHATTA</p>
+<p>Followers of Bhatta hold the view that consciousness is hidden in Atman and its nature is both consciousness and unconsciousness.  They hold the view that knowledge is obscured by ignorance in certain conditions.  Inert state is experienced in deep sleep and so Atman is unconscious.  At the same time, remembrance of unconsciousness in deep sleep is possible in the waking state because Atman is conscious.  They say Atman is both conscious and unconscious.  It is both intelligence and inert.</p>
+<p>SCHOOL OF SANKYA</p>
+<p>School of sankya accepts the fact that Atman is chit (intelligence), but it introduces another inert concept, Prakriti.  Chit aspect is called purusha and jada (inert) aspect is called prakriti.  Prakriti is unconscious in nature.  Sankya refutes the school of Bhatta by saying, Atman cannot have two states, both chit and achit.  It is only chit and it is called Purusha.  Prakriti is jada and it is ever changing.  Prakriti is composed of three gunas namely sattva, rajas and tamas.  Purusha and prakriti are always together.  Purusha is pure and it is subject to bondage and freedom because of prakriti.  It also says that there are many purushas because each one has different destinies.  Individual purusha is released from prakriti when purusha understands its original nature.</p>
+<p>CONCLUSION</p>
+<p>Vedanta differs from the school of charvakas to sankyas in the concept of Atman.  This is the root cause for forming different schools.  Verses of Vedas are misinterpreted by different people.  The non-dual Universal power, Atman, is interpreted according to their capacity or latent knowledge, which results in multiple schools of philosophy.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+			</div>
+			</div>		
+				
+				
+				
+				
+			</div>	
+				
+				
+			</div>		
+				
+					</article>
+			
+					<article id="post-966" class="et_pb_post post-966 post type-post status-publish format-standard hentry category-articles">
+
+				
+															<h2 class="entry-title"><a href="/articles/law-of-karma-and-the-power-of-thoughts/">LAW OF KARMA AND THE POWER OF THOUGHTS</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">Sep 25, 2018</span> | <a href="/category/articles/" rel="category tag">Articles</a></p>
+<p>				</p>
+<div class="et_pb_section et_pb_section_1 et_section_regular">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_1">
+							<div class="et_pb_column et_pb_column_4_4 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner">
+<h3 style="text-align: center">LAW OF KARMA AND THE POWER OF THOUGHTS</h3>
+<p>&nbsp;</p>
+<p>A person&#8217;s life is based on two factors.  They are impressions of his past life and his present thoughts; whichever is powerful dominates his life.  When a person is born he carries with him the impressions of his past life.  Present thoughts are the result of the knowledge gathered in the present birth.  When a child is born his physical appearance, mind, intellect, intelligence, family and friends, surroundings, opportunities and his destiny are largely influenced by his past karmas.  Mainly a person&#8217;s early life (before he matures to gather considerable knowledge and experience) is dominated by his past karmic impressions.  Gradually, when he grows up his parental influence, knowledge gathered from various sources, influence from the surroundings, his own experience all these take hold on him.  Past karmas give tendencies and situations in life.  Any situation can be dealt either in the positive or in the negative way.  It is the present knowledge which teaches the way to tackle the tendencies and deal with the situation in hand.</p>
+<p>This article mainly deals with facing negative karmas because it is there many people succumb to strong negative emotions.</p>
+<p>FORMATION OF KARMIC IMPRESSIONS</p>
+<p>A person&#8217;s mental, verbal and physical activities are immediately recorded in the chitta (a combination of subconscious and unconscious mind), DNA, space (akasa) and in the planets; which means our thoughts, feelings , emotions, words and actions are subsequently recorded in these four places immediately.  Among them impressions formed in the chitta are very powerful.  It remains there until they are retrieved and processed at the appropriate time which is called exhausting of karmas (karma phala).  The creation of the thought, emotion, feeling, subsequent action (creation of karma) and experiencing the same in return (experiencing karma phala) completes a karmic cycle.  The time period to experience the karma phala may be in this life time or in the future births.  It all depends on the ripening of the karma, which means it depends on the magnitude, power of the karmic impressions, the time and place suitable for experiencing the same emotions and feelings in return.  The subtle impressions of the chitta leave an impression in the brain and it is executed by the physical body.</p>
+<p>Human mind has four functions.  They are the manas (conscious thinking mind), buddhi (intellect), chitta (subconscious and unconscious mind), and ahamkara (the sense of self-identity).  Chitta is also called as memory or deeper mind.  In fact, these four are the combination of the subtle and the causal body.  The four functions of the mind together are called as jiva or an individual self.  Jiva is superimposed on chit (pure intelligence, Atma).  Jiva and chit (i.e Atma) together are called as jivatma.  At the time of death jiva travels from the dead body and takes another body according to its latent impressions in the chitta.</p>
+<p>Manas, the conscious mind works at two levels, the external and the internal level.  The external mind is analytic.  It uses the intellect and memory for its thinking and analysis.  It accepts, rejects, calculates, thinks, confuses, takes information from the senses and memory and analysis all matters.  This is the mind which we commonly experience at all times except in deep sleep (sushupti avasta) state.  The internal mind does not do any analysis or thinking.  It is also said as the inner conscience or witness of the mind (mana sakshi).  In fact, it is the projection of the pure intelligence.  It is always very calm, detached, impartial, witness of all the mental and physical activities.  It is a great witness.  It is non-judgmental and it knows the intensions, motives, and circumstances of each and every action.  The internal mind which is a great witness immediately records the emotions, feelings, attitude and motive of an action in the subconscious mind, as soon as it is formed.  By the passage of time, the impressions in the subconscious mind sink to the unconscious mind if not retrieved and processed.  It remains there in the inactive mode.  By a proper stimulus it becomes active and come again to the subconscious mind.  Thus the karmic impressions are formed in the chitta.  Any action is judged as a sin or a virtue by its attitude, motive, and emotional involvement.  It is the mind which mostly experiences the pain and pleasure of the karmic effect.</p>
+<p>The past karmic impressions recorded in the subconscious mind by the inner conscience are called sanskars.  Sanskars play an important role because any present action is preceded by a thought.  Sanskars influence the thought and we perform the present action accordingly.  Thoughts have subtle energy and they have life.  Thoughts have a magnetic power to attract situations, people and events.  We gravitate towards the direction of our dominant thoughts.  When thoughts are influenced by past karmic impressions, then we attract situations, people and events according to the past karmic impressions.  Mind and buddhi works based on the dominant karmic impressions.  Thus our past karmas influence our present life at the level of thoughts.</p>
+<p>Water is an element which absorbs the thought pattern easily.  Our body cells contain water and it absorbs the thought pattern (influenced by sanskars); our cells react according to our thoughts and in turn it affects the body.  Many diseases and bodily problems are caused in this way.  When the emotions and feelings are stronger, then our thought vibrations, feelings and emotions are recorded in the DNA.  Thus our strong thought vibrations, feelings and emotions are carried to the future generations and they also experience the thought pattern of their ancestors.</p>
+<p>Our mental, verbal and physical activities are recorded in the akasa (space) as subtle vibrations.  These are called akasic records.  These records are present forever.  Thoughts create subtle grooves in space and the Universal energy flows towards our mind only through these grooves.  If the records are positive, then its vibrations attract similar vibrations and influence our present thoughts in a positive way.  The same happens for negative vibrations also.</p>
+<p>Similarly, terrestrial bodies like planets which are in similar vibration with us and close to planet earth in the solar system also record our thought vibrations, feelings and emotions.  Planets with similar vibrations record similar karmic vibrations.  When the planet comes to a particular position or particular constellation (i.e alignment with our mental vibration) the absorbed information is downloaded back to the mind.  This influences the mind to a large extent.  When the vibration of the karmic impression in the chitta aligns with the vibration of that particular planet, then we get that planetary influence.  Our thought and actions are largely affected by this process.  We live in Consciousness which include the whole universe.  We naturally send and receive information from everything around us.  Even at this moment this effect is happening around us.  Thus our mental, verbal and physical actions are recorded in the chitta, DNA, akasa and the planets and we experience theirs effects accordingly.</p>
+<p>HOW DO WE EXPERIENCE OUR KARMIC EFFECT (KARMA PHALA)</p>
+<p>There are three ways by which we experience the effect of our karmas.  They are daivik dukha (mental suffering), daihik dukha (physical suffering), bhautik dukha (sufferings due to nature&#8217;s fury).</p>
+<p><em>DAIVIK DUKHA (MENTAL SUFFERING)</em></p>
+<p>Mental sins caused to someone in the past results in mental sufferings in the present birth like worry, anxiety, humiliation, fear, grief, anguish etc.  Any types of psychological disorders are included in it.  Mental sins are acts done deliberately with full mental awareness to cause mental injury (insult) to others.  The main reason for causing mental sin is false ego which leads to jealousy, hatred, anger, revenge etc.  Some physical actions like murder, robbery, cruelty to other beings, social and domestic violence etc, may be physical, but their intention, motive and attitude are mental.  Majority of the physical karmas have strong intension and motive; hence they come under the category of both mental and physical suffering.</p>
+<p>Depending on the magnitude and nature of the impression, the subconscious mind prepares a suitable opportunity to exhaust the karmic impressions.  When similar action, emotion and feelings are experienced, the impressions are erased from the mind.  Only then it completes a karmic cycle.  Every suffering sends a strong message and helps us to take a right path by puncturing our false ego and vanity.  For a spiritually evolved person, mental or physical suffering helps to realize the temporary nature of the world.</p>
+<p>Similarly, virtues in the past life result in peaceful and compassionate mentality in the present life.</p>
+<p><em>DAIHIK DUKHA (PHYSICAL SUFFERING)</em></p>
+<p>Misuse of the body (or organs) for adharmic purposes in the previous life results in physical suffering like diseases, accidents, subject to physical cruelty, physical disability etc in the present birth.  We have taken this body to perform actions and exhaust our karmas.  If we use this body to disturb or cause pain to others, then it is misuse of the body.  When the jiva leaves the body, it carries with it subtle impressions (blue print) of the physical body, mental potentials, tendencies that are to be manifested in the present birth.  If the sense organs and their corresponding physical organs have done any sinful actions in the past birth, they lose their vitality in the subtle body and in the present birth it is reflected in the body with corresponding physical deformity, impairment or imperfection.  Correction of the physical body in the present birth depends on the degree of the sin committed in the past.  If the sensual pleasure exceeds a limit, then it is considered as physical sin and it reflects as malfunction of organs, deficiency of vitamins, diseases etc.  The scar of the impression fades away by repentance and nature rejuvenates that particular organ.  If physical or mental sin is not repented or neutralized in the present birth, then it is carried over to the next birth.</p>
+<p>In the same way, virtuous deeds done in the past are reflected in the present birth with sound health and peaceful life style.</p>
+<p><em>BAUTIK DUKHA (SUFFERING DUE TO NATURAL CALAMITIES)</em></p>
+<p>Natural disasters are the result of disturbing the nature and the mother earth.  People disturb the nature in the name of development and for personal gains.  Nature is disturbed in many ways like building dams across rivers at wrong places, disturbing earth for mining purposes, buildings erected on mountains and marsh lands, polluting air by industries, discarding waste in the river and sea and many more.  Earthquakes, drought, famine, deluge etc are the effect of such barbaric acts which disturbs the nature.  The basic elements of nature are interconnected.  When one is disturbed, it sends waves of disturbance vibration to the whole universe and the whole universe feels it.</p>
+<p>If a group of people has done sinful action against humanity or has disturbed the nature, then they experience the result collectively.  The shocking incidents will shake their life and lifestyle disturbing them mentally and physically.</p>
+<p>Similarly, virtuous deeds done to save nature in the past will give its effect in the present birth to enjoy and use nature in the most productive way.</p>
+<p>Karma phala (effect of karma) is received in the future for both virtuous and sinful deeds in their corresponding way.</p>
+<p>TYPES OF KARMA</p>
+<p>There are three main types of karma namely sanchita karma, prarabhdha karma and aagami karma.</p>
+<p><em>SANCHITA KARMA</em></p>
+<p>The karmas the jiva has done in thousands of years are stored and it is called as sanchita karma.  The karmas done by the jiva from the time it separated from the universal consciousness, and assumed as an individual with the help of ego are stored in the unconscious and the subconscious mind and are called as sanchita karma.  These karmas are mostly in an inactive state, but with proper stimulant they become active.  From the sanchita karma some of the karmas become active (according to their maturity) and they come to the surface level and gives effect in the present birth.</p>
+<p><em>PRARABHDHA KARMA</em></p>
+<p>Karmas which become active from the sanchita karma and gives effect in the present birth are called as prarabhdha karma.  In other words, karmas which are active and give effect in the present birth are called as prarabhdha karma.  As said earlier, a person gets his body, mental state, intellect, family, friends, surroundings, lifestyle, situations, and events in life according to his prarabhdha karma.</p>
+<p>There are two types of prarabhdha karma &#8211; prabhalla prarabhdha karma and durbhalla prarabhdha karma.  Mental, verbal or physical actions which are done intentionally, voluntarily, or deliberately under strong emotional stimuli and mental involvement to hurt others mentally or physically are called prabhalla prarabhdha karmas.  Such actions carve deep impressions and they give strong results which cannot be altered, diluted by any means.  When the appropriate time, place and situation comes they give their effect.  According to the nature and depth of the impression, the inner conscience makes the mind to experience the suffering till there is compatibility in the mental or physical pain experienced by the victim in the past.  It is not revenge; it is the power of the impressions.  The subconscious mind gravitate towards us situations, persons or events according to the karmic impression influenced thoughts.  It may happen in the present life time or in future births.  Sometimes, by creating good karmas in the later period in the previous birth, the sinner of the previous birth is born as a goodhearted person in the present birth.  A sensitive goodhearted person feels more pain for his karmas and this helps to exhaust the karmas quickly.  Sometimes, people with similar strong karmic vibrations are born in the same family and are bound to experience the same type of karmas.  For example, if a person in a family goes to coma state (brain dead state) then all the members in the family experience the same mental pain.  Any accidents where many people die or any natural calamity is due to the effect of collective karmas of many people.</p>
+<p>The impressions which are comparatively weaker are called durbhalla prarabhdha karmas.  Sometimes our negative surroundings, ambience, compulsion and helplessness compel us to do adharmic actions.  It can also be said as involuntary mental karmas which are unknown to the conscious mind.  The impressions of such actions are feeble.  Such weak impressions are known as durbhalla prarabhdha karmas.  They are buried in the dormant state and inactive.  However, the ambiance of the present birth may suit to experience its effect; with this as proper stimuli they become active.  Such weak negative impressions are wiped out by the continuous flow of strong positive vibrations.</p>
+<p><em>AAGAMI KARMA</em></p>
+<p>In the present birth, while experiencing the karma phala a person will either deny or accept the karma phala.  Commonly, out of ignorance he will reject, restrain or deny the karmic influence and make the situation worse.  The way he deals with the situation becomes the seed for new set of karmas to be experienced in the future.  In addition to this, he also does karma according to his present knowledge and influence from the people surrounding him.  The karmas in the present birth which are set to give effect in the future are called aagami karmas.  A jnani will not react to the situations in his life and by this way he consciously detaches from creating aagami karmas.  When a jnani consciously restrain from creating aagami karma, sanchita karma detaches from jivatma and jivatma becomes paramatma.  It is a gradual evolution of the mind.</p>
+<p>CAN PRESENT THOUGH POWER OVERCOME PAST KARMAS</p>
+<p>Past karmas attract situations and give tendencies in the present birth.  How a person reacts to that situation and tackle the tendencies depend on the gathered knowledge in the present birth.  A person can surpass the past negative karmas, without succumbing to the misfortunes in life, by using the positive thought power.  Prabhalla prarabhdha karma does not fail to give its effect.  For example, due to past karmas some people are born with physical disability; at the same time, we have witnessed the Himalayan success of such people.  They shine in their chosen field.  They never took their misfortune as negative; instead they took it as a challenge and performed their actions with perfection.  Therefore, past karmas cannot completely flatter a person.  It can give situations.  Past karmas can give tendencies, but present life&#8217;s thought process is in our control.  We have to decide the way we want to lead our life.  One must try and take effort to make any situation positive.  If it is not possible then accept the situation and overcome it by creating powerful positive thoughts.  There should not be any adulteration in positive thoughts by mixing negative thoughts like jealousy, anger, anguish, anxiety, hatred, blaming the misfortune etc.  All these weaken the positive thought power.</p>
+<p>UNDERSTANDING KARMIC PATTERNS</p>
+<p>Past karmas have already started to give its effect.  We are experiencing the present life according to the past karmas.  However, we have the freedom of will power.  Future is in the power of our present thoughts.  Scripture says, aagami karma is the effect of our present mental, verbal and physical activity.  Tomorrow is the effect of our present thoughts.  Even if our life is completely crippled today by the effect of the past karmas, we can build tomorrow by our present powerful positive thoughts.  It is the power of freewill.  What we think at the present moment creates the next moment.  Of course, our past karmas influence our thoughts to an extent, but it has its limit.  If only past karmas can design the present life exclusively, then what is the value of the present life?  Present life exhausts the past karmas and at the same time it also creates the future karmas (aagami karma).  The present life is the combination of the effect of the past life and the seed for the future.  Future means the remaining period of the present birth and the future births.  The way we react to the present situation designs the future.  Only present knowledge and positive thoughts design a very powerful future.  The magnitude and power of our present thoughts changes the future.  It erases the negative durbhalla prarabhdha karma and weakens the negative prabhalla prarabhdha karma by having a meek effect on us.</p>
+<p>Only man has the unique capacity to think, analyze and take decisions.  This power is not given to man to experience life as predestined.  Only man has the power to lead the life according to his choice.  A person&#8217;s belief creates his thoughts and subsequently his future.  If man beliefs that life is predestined and his present efforts have no value, then his life will be according to his beliefs, as predestined.  If he beliefs that freewill has power, then he has the power to design his future.</p>
+<p>If a person denies the present situation then unnecessary questions like how it happened, why it happened, who is behind this action etc, occupies the mind and he is unable to find solutions.  Gradually, the misfortunes will haunt him and he becomes mentally weak.  Therefore, accept the situation and create solutions.  When we concentrate more on past karmas and always blame situations in life, then the universal energy which is common to all gets blocked.  Whenever we deny or resist a situation then the universal energy is blocked.  Our mind needs energy to survive and hence we search for that energy from others by getting emotional help or we search shoulders to cry.  This sometimes helps and many times depletes more energy.  Instead, if we accept the situation and concentrate on solutions, it will help to drag in energy from the universe and helps to surpass the situation with ease.</p>
+<p>Powerful positive beliefs create powerful positive thoughts which attract positive situation and people towards us.  If we fail to have strong beliefs then series of mistakes will cripple the future.  Never create the thoughts about the present situation; instead create positive thoughts about the future.  Design the future by your thoughts.  Spiritual knowledge will not erase the karmic impressions directly.  It will teach the way to accept and deal with the situation in hand and to build a positive future.  Thoughts have life and power.  Thoughts manifest and create destiny.  Life is sankalp (assumption) to shrishti (creation).  This is mind over matter.</p>
+<p>Many people believe in horoscope and they refer to it even for taking silly decisions.  It is not wrong, but this weakens the thought power and freewill.  If we believe that life goes only by predestined document, then what is the value of our present knowledge and its influence in life?  Basically, horoscopes are used by ancient people to understand the planetary position and the alignment of the planets in a person&#8217;s life so that performing a particular ritual or spiritual practice at a particular time will benefit that person and his family.  It is not used to predict the future as it is done today.  Horoscope is a science which is reflecting to us the actions done by this particular soul in the past birth and its predicted effect.  It is a scientific document with precision.  However the effect is only a prediction, it is not the truth.  Prediction means it has a chance to change.  Horoscope itself says, if a person performs the necessary self-purification act then the negative prediction will change to positive.  This implies that a positive attitude will change the future according to the desires in mind and nothing is predestined.</p>
+<p>ROLE OF THE DIVINE POWER (GOD) IN THE EFFECTS OF KARMA (KARMA PHALA)</p>
+<p>Unfortunately, even God do not have the power to design our destiny.  It is purely in the hands of our thoughts and actions.  Definitely, divine thoughts have very high frequency and it elevates our thoughts.  It will purify us and take us to the next higher level.  However, it is not like magic.  Divine thoughts will help us to create powerful positive thoughts with strong mentality (unfailing mind) and helps to have clear concentrated mind.  This helps to create a bright future.  Sometimes a mind with pure divine thoughts, by experiencing worldly difficulties, will detach from the material world and becomes a spiritual minded person.  When his mind is attracted by divine vibrations his mentality becomes pure and peaceful.  Other than this it is our own responsibility to design our destiny.</p>
+<p>When a mind is in distress it finds peace in blaming others.  It fails to take responsibility.  Out of spiritual immaturity we feel that God is punishing us and we perform the spiritual rites to please him to reduce the punishment.  Moreover, we think that only the supreme power has the power to write the destiny.  Sometimes, some of the incidents in life will bring our life to standstill.  A sudden unexpected negative happening (due to strong prarabhdha karma) makes one feel that there is a higher power responsible for this change.  At this time, we blame God and we feel that praying is a futile effort.  Our mentality will change to disbelief in God and to contempt of God.  This is absurd.  Prayer is connecting the mind to the higher power so that our mental vibration will reach that higher vibration frequency, atleast temporarily.  When we often connect with that divine vibration we can understand life better.  This helps us to take productive decisions and escape from the adversities of life. God never directly involves in creating any fortune or misfortune for any individual in this world.  It is impossible for HIM.  If we connect with the divine frequency (subtle higher frequency) then our mind gets the power to build a desired future.  It gives mental purity and peace of mind.</p>
+<p>CONCLUSION</p>
+<p>Destiny is a complicated interwoven pathway of past and present lives.  It is not exactly predictable.  Profound study is needed to understand it completely.</p>
+<p>The only message karma gives is our past thoughts and actions decide our present life and our present thoughts and actions decide the future; and hence accept the situation  and take the fortune and misfortune equally and deal with the present situations in life with equanimity of mind.  Refine the good qualities and polish them to have a bright future.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>REFERENCES</p>
+<p>Srimad Bhagavad Gita bhasya of Sri Sankaracharya</p>
+<p>The Bhagavad Gita bhasya of Swami Shivananda</p>
+<p>Pandit Shriram Sharma Acharya, What is destiny, epublisher Ashutosh Sarswat</p>
+<p>Swami Shivananda, Mind &#8211; Its mysteries and control,  The divine life society, Himalayas, 2001</p>
+<p>Sister Shivani in conversation with Suresh Oberoi, Happiness Unlimited,  Manjul publishing house,  2015</p>
+<p>http://www.lifeexplained.com</p>
+</div>
+			</div>
+			</div>		
+				
+				
+				
+				
+			</div>	
+				
+				
+			</div>		
+				
+					</article>
+			
+					<article id="post-962" class="et_pb_post post-962 post type-post status-publish format-standard hentry category-articles">
+
+				
+															<h2 class="entry-title"><a href="/articles/spirituality-and-science/">SPIRITUALITY AND SCIENCE</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">Sep 3, 2018</span> | <a href="/category/articles/" rel="category tag">Articles</a></p>
+<h3 style="text-align: center"><strong>SPIRITUALITY AND SCIENCE </strong></h3>
+<h3 style="text-align: center"><strong> </strong></h3>
+<p>Science has advanced to a remarkable level; but spirituality is ancient.  The most important and basic thing for humanity to survive in peace is to understand the emotion of others and adjust with others accordingly.  Today&#8217;s scientific development questions this basic human attitude.  Our understanding and knowledge about the world helps us to lead our life successfully.  It is true that in today&#8217;s scientific world, one cannot survive without a few electrical and electronic gadgets.  Our life is so dependent of science that a person not using a latest available scientific product is considered as uneducated and illiterate.  It is true, for well being science is absolutely needed; it gives maximum physical comforts.  Even to tell these points to the world, science is needed.  Science has made remarkable advancement &#8211; no doubt in it.  The question is &#8211; can we survive only with physical comforts?  &#8211;  Absolutely not.  We crave for psychological comforts too, which only spirituality can give.  If science advances without spirituality then large percentage of the people who use the modern technology, use it in a twisted way for their personal and material gains.</p>
+<p>SCIENCE WITHOUT SPIRITUALITY</p>
+<p>The atrocities happening in our society and the world over prove that spirituality has not gone far into people&#8217;s life as science has gone.  Science has taken major part of our life leaving no space for spiritual development.  Instruments and machines dominate our life style.  Even when science advances to a far level its attitude is NOT towards peace.  Science has changed our attitude towards life.  Competition and winning attitude without understanding human emotions distort the image of science.  If human emotions and values are ignored then every competition is a rat race and there will be no real winner.  One of the main reason for this is science is not taking spirituality into its hold; and spirituality cannot hold science because science need instrumental proofs with mathematical precision.  In the absence of spirituality, every individual uses the comforts provided by science ignoring the discomfort it cause for the fellow beings and the surroundings.  It is a serious issue, and it is to be addressed in a proper way; else peace in the future world will be a question.  It is humanity which develops, uses, and benefits from technology.  Humanity&#8217;s attitude must be towards peace; else technology destroys humanity itself.  It is the attitude which makes the difference.  If science and spirituality are pursued together, it widens the human knowledge and wisdom and this in turn brings peace to the world.</p>
+<p>Science has made the world so busy.  Science has gone deep rooted in people&#8217;s mind, and so people will not believe in spirituality alone.  Therefore, to a certain level spiritual facts have to be explained using science; else, spirituality will be completely ignored by people.  Of course, advanced spirituality cannot be perceived by science, because spirituality is beyond mind and brain.  Science helps to understand life to a certain extent.  Ancient scriptures and Rishis have also explained many scientific facts, which are little known to the world.  Science is not alien to Vedas.  However, science alone cannot move the world forward in peace.</p>
+<p>At present science is misused to a large extent.  Science needs spiritual guidance.  Mentality of the people who use science must be fine tuned with spirituality, to make them use science for peace and good will.  It is the mentality and attitude of the people which determines what to do with the instrument at hand.</p>
+<p>INABILITY OF SCIENCE</p>
+<p>Definitely, in the absence of science, world would not have developed beyond Stone Age.  At the same time, any scientific advancement will definitely disturb the nature to an extent.  To a certain extent nature also adjusts with it.  However, if the disturbances of science cross a limit then nature retaliates.  If the harmonious nature of the atmosphere is disturbed the nature retaliates.  The recent nature&#8217;s fury like floods, typhoons, repeated storms and cyclones, land erosion, landslides, etc are the proof for it.  When nature retaliates science cannot stop it.  This inability results in destruction of valuable life and their life time belongings.</p>
+<p>Science view human beings only as a biological creature.  It deals only with the physical aspect of life.  Science does not care for emotions, values, soul, etc.  This attitude results in arrogance, hatred, comparison, revenge, jealousy etc.</p>
+<p>Spirituality gives a different dimension for human life.  It makes people view oneself as the one in all.  This attitude brings compassion and unity.  There are subtle layers in a being which science cannot measure or see by its gross instruments.  Man is more than a mere physical body.  He is the Supreme Being, not different from the supreme nature of his fellow beings.  Science fails to understand this concept of spirituality.  Spirituality converge the world to a point rather than having diverse views.  There must be some compatibility between science and spirituality to move the world in peace.</p>
+<p>Spirituality needs to be spread in the manner as science has spread all over.  Only then the true nature of man is understood.  This also helps one to use science in the way it is to be used.  Science is very important for survival; however, there is a priority where it should be kept.  Science can be used as a very good tool.  It helps to understand the external nature of the world to a remarkable level.</p>
+<p>SPIRITUALITY IS INTERNAL AND SCIENCE IS EXTERNAL</p>
+<p>Spirituality is based on refined attention, contemplative investigation and it is purely based on inner experience.  Scientific investigations are based on external data and external observations.  Spirituality and science both proceed in different directions.  However, a spiritual scientist can find out the point where they both converge.  Spirituality and science are searching for truth in their own manner.  Science is limited.  It studies the physical world.  Our experiences make us feel that each object in the world is independent.  Nevertheless, spirituality proves that the entire universe is dependent on the non-dual reality, which Vedanta says as &#8220;Brahman&#8221;, and it is commonly said as Consciousness.  In this way, we all are divine with different expressions and there is unity among all of us.  This is the main point in which science differs from spirituality.</p>
+<p>Unity in diversity changes the attitude of life.  Dependence is seen as a disgrace by today&#8217;s world.  Independent thoughts have lead to racism, nationalism, terrorism and so on.  People think that independence means they can pursue their ambitions without any concern for others, disturb anyone who do not agree with their own mindset and somehow attain material and social status.  This is a wrong attitude.  Every major religion tells about the unity in all beings.  Moreover, it is clearly, profoundly and strongly explained in Vedas.  In spite of all this, people who lack social ethics misuse science for their benefits.  Science aims at comfortable life style and social ethics take back position.  If you disturb a single object at one point, it will bounce back at another point at another time.  This world is not independent, as it appears to be.  It has a very deep connection which is not explicit.</p>
+<p>SPIRITUALITY AND QUANTUM MECHANICS</p>
+<p>Quantum mechanics gave new interpretation to spirituality and it made the world realize that there is something beyond the world of so called &#8220;reality&#8221;.  Quantum mechanics accepted the concept of Consciousness to an extent.  It made the world realize that the world is not as it appears to be.  It says that all the objects have a subtle existence beyond its gross physical form.  Some of its lab experiments like the famous double slit experiment prove that life depends on the way we observe the world.</p>
+<p>Quantum mechanics says that an electron exists as a particle or a wave; it depends on the observer.  An observer is an active participant in the movement of an electron.  It shows that matter and mind are dependent.  It shows that anything when given attention turns in to matter or events.  It also proves, which Vedanta was telling for centuries, everything in this universe exists in a potential form, when given attention it takes form.  It also accepts unity in diversity.  However, theoretical physics is far away from this concept.  World is a network of complex inter relations.  Each one has their own independent views and stand point about reality and targets others from their stand point.  There is a great disparity in our understanding of the world and the reality.</p>
+<p>SPIRITUALITY AND SCIENCE ON CREATION AND DISSOLUTION</p>
+<p>Spiritualist and scientist have their respective views on creation and dissolution.  In the spiritualist view, the five basic elements namely space, air, fire, water and earth and the three gunas namely sattva, rajas and tamas are important in the formation of this universe.  In contrast, scientist explains evolution from the view point of atoms and their different combinations.  However, they both accept dissolution of this universe after a period of time.  Scientist takes this world as real and spiritualist consider this world as relative existence, and the world is an illusion.  Spiritualist further say that there is an intelligent principle behind this creation and it is transcendent of laws of cause and effect.  After dissolution the universe exists in that intelligent principle, Consciousness, in the potential form till the beginning of the next cycle.  For science, the reason behind the creation is not the intelligent principle; it is just a chain of cause and effect.  In this context spiritualist question that, if there is no intelligent principle behind the creation, then how can this vast universe with such order and intelligence emerge out of a non-sentient base.  Therefore, there must be some intelligent principle from which all these sentient beings spring out.  This is the strong point of spirituality.</p>
+<p>According to Vedanta the whole process went from subtleness to grossness.  The order of creation is, first space was formed, then air, then fire, then water and then earth.  They roll back in the same reverse order at the time of dissolution; that is earth &#8211; water &#8211; fire &#8211; air- -space.  After dissolution the whole universe remains in an unmanifested form in the intelligent principle for millions of years.</p>
+<p>According to science the initial moments after big bang was too dense and hot for any formation.  It took millions of years for the dust particles to settle down.  After that the sub-atomic and atomic particles were formed and gradually the present form of the universe took its shape.  Spirituality does not reject the presence of sub-atomic and atomic particles; it only argues about the presence of a Conscious principle behind the creation.</p>
+<p>ROLE OF THE MIND</p>
+<p>Scientist question that if intelligence is the base of creation, then why is such a disparity in creation.  Spiritualists say that the disparity is due to the accumulated impressions in the mind.  Mind is ignored by science.  Its counterpart brain, which is physical, is taken for analysis.  Spirituality says brain is only an instrument of mind to execute its desires in the physical realm.  Every being vibrates in a certain way according to their mental impression, which also gives their physical form.  Even plants and rocks vibrate in their own way.  The only thing is their vibrations are very weak and subtle, they do not have their counterpart, the brain, and so they cannot express in the way we express.</p>
+<p>Science gives a different identity for every individual.  Science accepts physical identity, skills and talents.  It does not identify the real person.  Spirituality identifies the real person which is love, purity and compassion.  Consciousness is subjective.  It cannot be explained with material paradigms.  It is metaphysical, cannot be proved by science.  Without understanding Consciousness, the totality of life cannot be understood.</p>
+<p>CONCLUSION</p>
+<p>Science has been spectacular in exploring reality.  It has opened new avenues to know about humanity, creation and existence.  The question is &#8211; whether science can provide a comprehensive understanding of the entire spectrum of reality and human existence with its limited vision and more importantly ignoring spirituality.  Science accepts knowledge derived through empirical method by using observation, inference and experimental verification.  It accepts data only if a group of people accepts their findings.  Can science observe Consciousness externally and verify it?  In this context, how far can science go in understanding the totality of existence?</p>
+<p>If science integrates with spirituality, science can go heights and help people to a large extent by using spiritual knowledge.  Our attitude and relationship depends on how we view ourselves and how we view others through our mind.  Misuse of electronic and social media, using poisonous chemicals in agriculture, high atmosphere pollution caused  by industries, degrade in the field of medicine, inhuman truth finding methods used by police, free use of arms by common people, disgrace caused by education system, use of poisonous chemical and weapons by terrorist to mow down society etc &#8211; all these question the real development of science.  Science must not degrade human values in the name of development.  Science and spirituality must work together for the betterment of humanity.  Spirituality is indispensable in this scientific age.		</p>
+				
+					</article>
+			
+					<article id="post-953" class="et_pb_post post-953 post type-post status-publish format-standard hentry category-articles">
+
+				
+															<h2 class="entry-title"><a href="/articles/science-behind-the-mantras/">SCIENCE BEHIND THE MANTRAS</a></h2>
+					
+					<p class="post-meta"> by <span class="author vcard"><a href="/author/advaitamandscience/" title="Posts by advaitamandscience" rel="author">advaitamandscience</a></span> | <span class="published">Aug 23, 2018</span> | <a href="/category/articles/" rel="category tag">Articles</a></p>
+<h3><strong>                                        SCIENCE BEHIND THE MANTRAS</strong></h3>
+<h3></h3>
+<p>SOUND AND VIBRATIONS</p>
+<p>The omnipresent eternal origin of sound is called Sabda and it is the initial expression of Brahman.  Where there is sound there is vibration.  Scriptures say that vibrations are also expressions of Brahman.  Universe is a network of vibrations with different frequencies.  Everything exists in the form of vibration before it manifest (vyakta).  Even, we after shedding the gross body, the subtle body and causal body continue to exist in the form of subtle vibrations till it takes another gross body.  We exist in an ocean of vibrations with different frequencies.</p>
+<p>Sound has two effects.  First, the meaning of the sound has psychological effect on the mind.  Second, the sound itself (without its meaning) has an effect on the mind and body.  For example, when you hear a drum beat, it has no meaning; however, our body and mind reacts to the sound.  There are two types of sound.  They are audible sound (vyakta) and non-audible (avyakta).  If the frequency is in the range of 20 Hz &#8211; 20,000 Hz then the sound is audible.  If the frequency is below 20Hz then it is said as infra frequency and it is not audible.  If the frequency is above 20.000Hz then it is said as ultra frequency and the sound is non-audible.  The universe has sound waves of all frequencies among which some are audible and some are non-audible.</p>
+<p>Vibrations once generated exist for ever in the Universe.  Thus, vibrations of words, mantras and thoughts of Rishis and great spiritual personalities remain in the space for ever.  They influence us in every way.  Thoughts and words of every human being exist in the Universe for ever as vibrations.  Thought waves are equally powerful like sound waves.  An intense thought wave can penetrate the far layers of the Cosmos.  The vibrations emitted by all beings and every entity in the Universe are superimposed on the basic vibration and eternal sound of the Universe &#8216;OM&#8217;.  By meditating on this basic vibration &#8216;OM&#8217;, we can feel its existence in us and we can feel that we are connected to the rest of the world.  Scriptures say that Om or Omkara is the initial sound which came in to existence after the unfolding of the Universe.  A dedicated mantra practitioner (sadhaka) can sense the omkara reverberating inside him.  Every sound manifest from the basic sound &#8216;OM&#8217;, and is pronounced as &#8216;AUM&#8217;.  The Universal vibration which is reverberating in music is called Nada and the Universal origin of sound is called Sabda.</p>
+<p>WHAT ARE MANTRAS</p>
+<p>Mantras are cosmic vibrations which are revealed to the Rishis in their trance.  Rishis had the capacity to decode the vibrations and reveal to us as mantras.  Great philosophies and spiritual secrets are encapsulated in the form of mantras.  Mantra means mental retention and repetition that relieves the mind from ego and worldly attachments and leads to the path of ultimate freedom.  Mantras are used mainly for four purposes namely for dharma (righteous act), artha (achievement of goal and objects to facilitate dharma), kama (achievement of happiness and fulfillment of desires to expand one&#8217;s dharma) and moksha (liberation of the soul).  Apart from this there are arogya mantras which are widely used in ayurvedic treatments.  Some mantras can also be twisted and used for non-righteous acts by perverted minded people.</p>
+<p>Mantras when chanted purify the gross, subtle and causal bodies.  Mantra uproots the evil tendency, implant, enhances virtues, and makes one&#8217;s destiny positive.  Mantras erase the impressions of evil tendencies (sins) present in the causal body.   Mantras help to reflect our original nature which is divine.  Individual Consciousness is part of the Universal Consciousness.  Each individual is divine.  Our core desires also has power to manifest in the external world.  We dilute that power by our negative thoughts and doubts.  Mantras help us to realize these facts.</p>
+<p>Vibrations of mantras carry immense energy.  They are further amplified by the prana, refined spiritual thoughts, faith of the practitioner and by the static and thermal electricity of the practitioner.  The circular flow of the blood, inhalation and exhalation by the lungs, expansion and compression of the muscles, beating of the heart etc produces a subtle thermal and static electricity which is also said as bio-electric energy.  Apart from this continuous generation of thoughts and emotions also produce electromagnetic waves.  All these help to energize the mantra to achieve the goal.</p>
+<p>HOW DOES A MANTRA WORK</p>
+<p>Mantras have the power to connect the individual consciousness to the Universal Consciousness.  Sanskrit mantras are formed by selecting the appropriate syllables in Sanskrit to get the required frequency.  Vibrations produced by pronouncing Sanskrit words have high vibration frequency than pronouncing words from other languages.  The combination of Sanskrit syllables in a mantra gives a specific sonic effect.  Sometimes a single syllable (beej mantra) gives that effect.  Therefore, a mantra with perfect accent, pitch, amplitude and rhythm has a very powerful effect.  If the pronunciation is wrong then its effect diminishes.  A powerful sound can travel anywhere in the Universe.  Repeating the mantra for a certain number of times is called mantra japa.  Repetition helps to generate the specific sonic pattern.</p>
+<p>When a mantra is chanted it has direct effect on the body, mind and the atmosphere surrounding the sadhaka.  In the body, the chanting of the mantra induces energy in the seven main chakras, nerve centers, mind and brain.  Every mantra has a meter which is called chandas.  Only the right syllable and right chandas give the required sonic effect.  Each mantra has its own sonic pattern which makes them effective.</p>
+<p>The intensity and faith with which we chant a mantra gives the mantra its power.  Our faith in the mantra helps to connect the mantra with the divine consciousness easily.  The powerful vibration of the mantra establishes a link between the individual and the different cosmic layers.  Sound waves can travel thousands of miles, combining with other sound waves with similar frequencies.  These sound waves return back to us along with the gathered sound waves on their travel.  They come back in a magnified form.  Thus, whatever we think or utter influences the surrounding and return back to us.</p>
+<p>Pt.Sriram sharma acharya in his book &#8220;Science of sound and mantras&#8221; explains, &#8216;every mantra is linked to a devata except the mantra &#8216;OM&#8217;.  A devata symbolizes an eternal energy field of specific flow of cosmic consciousness.  When a mantra is chanted in a specific rhythmic manner, its associated sonic waves expand in a specific pattern.  It travels in space and penetrates the corresponding cosmic field of divine power.  When we concentrate on the mantra, a subtle energy is generated from the mind.  This subtle energy helps the transmission of the sound waves to reach the desired energy field.  The waves of the mantra travel and collide with the corresponding divine power center and results in the reflection of the desired cosmic radiation, as per the aim of the associated mantra.  This cosmic radiation returns back to the physical and subtle energy level in and around the sadhaka&#8217;.  If the sadhaka wishes, the divine cosmic radiation can be directed to any desired place.  The quality of the returning waves depends on the intensity, emotion and faith with which the original mantra waves are transmitted.  The original transmitted mantra waves are magnified by the cosmic divine power for which the mantra is aimed at and they return back to the sadhaka. The sound vibration and emotional energy with faith gives life to the mantra.  The regularity in timing, its speed, numbers of repetitions are important to generate the appropriate sonic vibrations from the japa of a mantra.  While doing mantra japa, the mind must rely within the mantra and not on external matters.</p>
+<p>When mantra japa is performed along with yagna (sacrificial fire), the herbs used in the yagna and the thermal energy produced by the sacred fire multiplies the effect of the mantra by energizing the sonic vibrations of the mantra and expands them at the cosmic level.  This in turn brings back manifold benefits to a vast domain.  Furthermore,  Pt. Sriram sharma acharya also explains &#8216;when the sonic waves generated by chanting of the mantra collide with the thermal energy generated by the yagna fire, it amplifies the sabda (inner energy) in the mantra.  The spiral waves of electrons in the yagna vapour play the role of &#8216;transmitter&#8217; to &#8216;communicate&#8217; the signals of the mantra in the etheric whole.  Thus the positive effects of the mantra are spread to a large domain and many people are benefited by yagna&#8217;.  The vibrations of the mantra are more felt in the subtle body than in the gross body.  It brings many positive effects to the sadhaka.  The speed by which one recites the mantra must match one&#8217;s natural frequency of speech.  As said before, linguistic meaning have only a psychological effect and prime importance is given for the sonic pattern generated by pronouncing the mantra.  The densely energized and compact beej mantras like &#8216;hreem&#8217;, &#8216;shreem&#8217;, &#8216;kleem&#8217;, &#8216;aim&#8217;, etc do not have a linguistic meaning.  It may denote a specific divine power.  However, it is the force of the sound vibration which makes them highly powerful.  These highly energized mantras are used in tantric tradition.  Tantric tradition is devotional worship of various deities (divine power) and mantras are used to reveal the inner truth of these deities.  Tantric mantras have very high potential and it has specific targets.  The vibration generated by pronouncing these mantras have direct and intense effect and their misuse results in physical and mental disorder.  In tantric tradition, the mantra is the sound form of the deity.</p>
+<p>Continuous repetition of a mantra for sometime produces a centrifugal force of attraction created by the circular, cyclic and upward movements of the associated sonic waves produced by the japa of the mantra.  The speed by which one chants the mantra must be constant.  The consistency and continuity gives a cyclic motion to the sonic waves generated by the japa.  This helps to activate the related divine powers and attract the desired result.</p>
+<p>As said earlier, while chanting a mantra the sonic patterns produced by the different configuration of syllables are very important.  In this aspect, chanting of gayatri mantra is very powerful.  The twenty four syllable gayatri mantra produces very powerful vibration in and around the sadhaka.  The rhythmic pattern (meter) for chanting a mantra is called chandas.  Gayatri is the name of a meter (chandas) in Rig Veda.  When a mantra is repeated with its appropriate chandas, its specific pattern of sonic waveform is generated.  Gayatri mantra is chanted to the Sun devata.  A regular dedicated sadhaka gets vital energy, inspiration and divine illumination from the Sun God, Savitha.  The communication may be very slow in the beginning; however it gradually increases by practice.</p>
+<p>DEVATA</p>
+<p>Devata represents the specific cosmic energy field.  It can also be said as the divine quality and aspect of the Universal Consciousness.  The same quality is present in us but it may be in an inactivate state.  A mantra to a particular devata activates the corresponding quality in us as well and it helps us to connect with that particular realm of Consciousness.  For example, some of the divine qualities are Lakshmi for wealth, Saraswati for learning and knowledge, Kali for strength and vigour, Shiva for peace etc.  Only a specific mantra can link the sadhaka (individual consciousness) with the particular devata.</p>
+<p>Different forms of devata are the different expressions of the non-dual Universal Consciousness.  Every sound has a certain vibration and has its corresponding image.  Dr. Hans Jenny&#8217;s Tonoscope is the instrument which produces sonic transformation.  When you pass a sound in tonoscope it converts the sound to its corresponding vibration image.  When you chant a mantra with mental concentration it produces its related vibration image of the devata.  However, it is too subtle to be perceived by the normal senses.</p>
+<p>Atmosphere also amplifies the effect of the mantra japa.  Mantras chanted in the cave, in cremation ground, in thick forest, near the bank of the river or sea shore, in sacred places like temples, in front of the rising sun, in front of the ghee lit lamp are more powerful.  Chanting of mantras inside the house gives only a moderate effect.</p>
+<p>CONCLUSION</p>
+<p>Vibrations of the mantra impact at the gross and subtle level.  In the gross level, vibrations of mantras stimulate the otherwise latent glands and energy centers in the body of the sadhaka.  Some specific energy lies hidden in some glands of our body.  When you chant a mantra its vibrations stammers these glands, stimulate these glands and release the energy.  Utterances of certain words have this impact on certain glands and stimulate the energies which activate right wisdom.  Mantras are composed based on this principle.  At the subtle level, the power of shraddha (faith) of the sadhaka in the mantra gives a conscious force that induces a subtle magnetic attraction of the desired goal.  The strength and power of attraction of the gross and subtle fields become very strong by continuous repetition.  Some of the ways by which mantras can be chanted are</p>
+<ol>
+<li>vachika japa &#8211; mantras are chanted in a manner that they are audible to others. It is most suitable for beginners. In this japa the rhythm, amplitude and pitch must be consistent.</li>
+<li>Upansu japa &#8211; mantras are chanted in such a way that there will be lip movement but no sound. This method is useful for extroverts and makes one introvert.</li>
+<li>Manasika japa &#8211; the japa is performed silently in the mind. The mind is focused upon the meaning of the mantra. This type of japa is very powerful.  It activates the chakras and nerve centers more quickly.</li>
+<li>Ajapa japa &#8211; with every inhalation and exhalation, mantra is recited. For example, &#8216;SO&#8217; is recited with inhalation and &#8216;HAM&#8217; is recited with exhalation. Soham is said as the hamsa mantra.  Much concentration is needed for this practice.  Ajapa japa is mostly used in yogic practices.</li>
+<li>Pradakshina japa &#8211; when a mantra is chanted while doing circular motion (pradakshina) of the deity in sacred places, it is called pradakshina japa. This is very popular among people who follow the bhakti culture.</li>
+</ol>
+<p>Mantras are the sound power.  Yantra is its geometrical representation or form of the deity associated with that mantra and tantra is the knowledge of application of mantra and yantra.</p>
+<p>In yogic science, mantras are chanted along with pranayama and they are highly powerful.  By dedicated yoga sadhana we can generate vibrations from the seven important chakras and this helps our spiritual transformation.</p>
+<p>In ayurvedic medicine, the Rishis understood the deep connection of the mantras and its effect on particular nerve centers.  Sounds have deep impact on our body and mind and this forms the basis of their treatment.</p>
+<p>When we chant a mantra the vibration pattern settles in the subconscious level of the mind.  It clams the mind whenever it gets agitated.  Mantras have the power to erase the deep seated negative impressions in our mind.  It has the power to change our mind from tamas to rajas and to sattva.  By using mantras we can restructure our karmic tendencies.  Therefore, regular practice of the mantra japa is highly beneficial.</p>
+<p>&nbsp;</p>
+<p>Reference books</p>
+<p>Pt. Shriram sharma acharya, Science of sound and mantras., shantikunj, Haridwar., 2003</p>
+<p>OM swami., The ancient science of mantras., Jaico Publishing house., Mumbai., 2017</p>
+<p>Dr. David Frawley., Mantra yoga and Primal sound.,  New age books., New Delhi.,  2011</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;		</p>
+				
+					</article>
+			<div class="pagination clearfix">
+	<div class="alignleft"><a href="/author/advaitamandscience/page/10/">&laquo; Older Entries</a></div>
+	<div class="alignright"><a href="/author/advaitamandscience/page/8/">Next Entries &raquo;</a></div>
+</div>			</div>
+
+				<div id="sidebar">
+		<div id="search-2" class="et_pb_widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://advaitamandscience.in001.wpcs.cc/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form></div>
+		<div id="recent-posts-2" class="et_pb_widget widget_recent_entries">
+		<h4 class="widgettitle">Recent Posts</h4>
+		<ul>
+											<li>
+					<a href="/articles/idol-worship-in-sanatana-dharma/">IDOL WORSHIP IN SANATANA DHARMA</a>
+									</li>
+											<li>
+					<a href="/articles/the-importance-of-pooja-in-sanatana-dharma/">THE IMPORTANCE OF POOJA IN SANATANA DHARMA</a>
+									</li>
+											<li>
+					<a href="/articles/rishis-of-sanatana-dharma/">RISHIS OF SANATANA DHARMA</a>
+									</li>
+											<li>
+					<a href="/articles/the-mutts-and-the-desa-nama-sampradaya-established-by-sri-adi-shankaracharya/">THE MUTTS AND THE DESA NAMA SAMPRADAYA ESTABLISHED BY SRI ADI SHANKARACHARYA</a>
+									</li>
+											<li>
+					<a href="/articles/advaita-guru-parampara/">ADVAITA GURU PARAMPARA</a>
+									</li>
+					</ul>
+
+		</div>
+<div id="recent-comments-2" class="et_pb_widget widget_recent_comments">
+<h4 class="widgettitle">Recent Comments</h4>
+<ul id="recentcomments">
+<li class="recentcomments">
+<span class="comment-author-link">Vrinda</span> on <a href="/articles/paroksha-jnana-to-aparoksha-jnana/#comment-41">PAROKSHA JNANA TO APAROKSHA JNANA</a>
+</li>
+<li class="recentcomments">
+<span class="comment-author-link">advaitamandscience</span> on <a href="/articles/the-three-types-of-knowledge/#comment-40">THE THREE TYPES OF KNOWLEDGE</a>
+</li>
+<li class="recentcomments">
+<span class="comment-author-link"><a href="http://www.dwaitaadwaitam.wordpress.com/" class="url" rel="ugc external nofollow">N. Anuradha</a></span> on <a href="/articles/the-three-types-of-knowledge/#comment-39">THE THREE TYPES OF KNOWLEDGE</a>
+</li>
+<li class="recentcomments">
+<span class="comment-author-link">Jyoti</span> on <a href="/articles/destiny-versus-freewill/#comment-44">DESTINY VERSUS FREEWILL</a>
+</li>
+<li class="recentcomments">
+<span class="comment-author-link">RESHMA ARORA</span> on <a href="/articles/atma-anatma-viveka/#comment-27">ATMA &#8211; ANATMA &#8211; VIVEKA</a>
+</li>
+</ul>
+</div>
+<div id="block-3" class="et_pb_widget widget_block"><div class="logged-out wp-block-loginout"><a href="/wp-login.php?redirect_to=https%3A%2F%2F%2Fauthor%2Fadvaitamandscience%2Fpage%2F9%2F%3Fsimply_static_page%3D2156">Log in</a></div></div>	</div>
+		</div>
+	</div>
+</div>
+
+	<footer class="et-l et-l--footer">
+			<div class="et_builder_inner_content et_pb_gutters3">
+<div class="et_pb_section et_pb_section_0_tb_footer et_pb_with_background et_section_regular">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_footer et_pb_equal_columns et_pb_gutters3">
+				<div class="et_pb_column et_pb_column_1_4 et_pb_column_0_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0_tb_footer  et_pb_text_align_left et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>Powered by : <a href="https://digitalindiya.com/" target="_blank" rel="noopener">DigitalIndiya.com</a></p></div>
+			</div>
+			</div>
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_1_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_1_tb_footer  et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p style="text-align: center;"><a href="/" id="site-title">DigitalIndiya.com</a> <span>©</span> 2023 | <a href="/privacy-policy/">Privacy policy</a></p></div>
+			</div>
+<div class="et_pb_module et_pb_code et_pb_code_0_tb_footer">
+				
+				
+				
+				
+				<div class="et_pb_code_inner"><script>jQuery(document).ready(function($){
+    var title = $('head title').text();
+   $('footer a#site-title').html(title);
+});</script></div>
+			</div>
+			</div>
+<div class="et_pb_column et_pb_column_1_4 et_pb_column_2_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<ul class="et_pb_module et_pb_social_media_follow et_pb_social_media_follow_0_tb_footer clearfix  et_pb_text_align_right et_pb_bg_layout_light">
+				
+				
+				
+				
+				<li class="et_pb_social_media_follow_network_0_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-facebook"><a href="#" class="icon et_pb_with_border" title="Follow on Facebook" target="_blank"><span class="et_pb_social_media_follow_network_name" aria-hidden="true">Follow</span></a></li>
+<li class="et_pb_social_media_follow_network_1_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-twitter"><a href="#" class="icon et_pb_with_border" title="Follow on Twitter" target="_blank"><span class="et_pb_social_media_follow_network_name" aria-hidden="true">Follow</span></a></li>
+<li class="et_pb_social_media_follow_network_2_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-linkedin"><a href="#" class="icon et_pb_with_border" title="Follow on LinkedIn" target="_blank"><span class="et_pb_social_media_follow_network_name" aria-hidden="true">Follow</span></a></li>
+			</ul>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</footer>
+		</div>
+
+			
+		</div>
+		</div>
+
+				<script type="text/javascript">var et_animation_data = [{"class":"et_pb_blurb_0_tb_header","style":"zoom","repeat":"once","duration":"600ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"}];
+					var et_link_options_data = [{"class":"et_pb_text_0_tb_header","url":"\/","target":"_self"}];</script>
+	<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.4" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="jquery-js-after">jqueryParams.length&&$.each(jqueryParams,function(e,r){if("function"==typeof r){var n=String(r);n.replace("$","jQuery");var a=new Function("return "+n)();$(document).ready(a)}});</script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"\/wp-admin\/admin-ajax.php","images_uri":"\/wp-content\/themes\/Divi\/images","builder_images_uri":"\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"7316ea661e","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"cf480ed468","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"1187","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":"\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#7EBEC5","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/Divi/js/scripts.min.js?ver=4.21.0" id="divi-custom-script-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.21.0" id="fitvids-js"></script>
+<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=6.2.2" id="comment-reply-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.21.0" id="jquery-mobile-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.21.0" id="magnific-popup-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.21.0" id="easypiechart-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.21.0" id="salvattore-js"></script>
+<script type="text/javascript" src="/wp-content/themes/Divi/core/admin/js/common.js?ver=4.21.0" id="et-core-common-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.21.0" id="et-builder-modules-script-motion-js"></script>
+<script type="text/javascript" id="et-builder-modules-script-sticky-js-extra">
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.21.0" id="et-builder-modules-script-sticky-js"></script>
+<style id="et-builder-module-design-1831-cached-inline-styles">.et_pb_menu .et_pb_menu__wrap{justify-content:flex-end}.et_pb_menu__logo img{max-height:90px!important;width:auto!important;padding:10px}.et_pb_module.et_pb_menu--with-logo{width:100%}.et-menu a,.et-menu a:hover{transition:none}header .et_pb_section.et_pb_sticky .et_pb_row{max-height:80px}header .et_pb_section.et_pb_sticky .et_pb_module img{min-height:60px;max-width:240px!important}@media (max-width:980px){header .et_pb_column:first-child{max-width:80%;margin-bottom:0px!important}header .et_pb_column:last-child{position:absolute;z-index:1}.et_mobile_nav_menu{padding:24px 10px}}.et_pb_section_0_tb_header.et_pb_section{padding-top:11px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:3%;margin-right:0px;margin-left:0px;background-color:rgba(0,0,0,0)!important}.et_pb_row_0_tb_header.et_pb_row{padding-top:0px!important;padding-right:0px!important;padding-bottom:0px!important;padding-left:0px!important;padding-top:0;padding-right:0px;padding-bottom:0;padding-left:0px}.et_pb_blurb_0_tb_header .et_pb_main_blurb_image .et_pb_only_image_mode_wrap,.et_pb_blurb_0_tb_header .et_pb_main_blurb_image .et-pb-icon{border-radius:100% 100% 100% 100%;overflow:hidden;border-width:1px}.et_pb_blurb_0_tb_header.et_pb_blurb{max-width:180px}.et_pb_blurb_0_tb_header .et_pb_main_blurb_image .et_pb_image_wrap{box-shadow:0px 2px 35px 10px #ffffff;max-width:100%}.et_pb_blurb_0_tb_header.et_pb_blurb .et_pb_main_blurb_image{margin-top:30px}.et_pb_column_1_tb_header{margin:auto}.et_pb_text_0_tb_header.et_pb_text,.et_pb_text_1_tb_header.et_pb_text{color:#ffffff!important}.et_pb_text_0_tb_header h1{font-weight:700;font-size:54px;color:#ffffff!important;text-align:center;text-shadow:0em 0.1em 0.1em #BB1593}.et_pb_text_0_tb_header{padding-top:2%!important;padding-right:3%!important;padding-bottom:2%!important;padding-left:3%!important;margin-top:0px!important}.et_pb_text_1_tb_header h1{text-align:center}.et_pb_text_1_tb_header h4{font-size:16px;line-height:1.4em;text-align:center}.et_pb_text_1_tb_header{border-radius:5px 5px 5px 5px;overflow:hidden;padding-top:2%!important;padding-right:0px!important;padding-bottom:2%!important;padding-left:0px!important;margin-top:-60px!important;margin-right:0px!important;margin-left:0px!important;max-width:500px}.et_pb_row_1_tb_header.et_pb_row{padding-top:0px!important;padding-right:0px!important;padding-bottom:0px!important;padding-left:0px!important;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px}.et_pb_row_1_tb_header,body.et_boxed_layout #page-container .et_pb_row_1_tb_header.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_1_tb_header.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_1_tb_header.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single.et_full_width_portfolio_page #page-container #et-boc .et-l .et_pb_row_1_tb_header.et_pb_row{width:100%}.et_pb_menu_0_tb_header.et_pb_menu ul li a{font-weight:700;font-size:17px;color:#dd1c70!important}.et_pb_menu_0_tb_header.et_pb_menu{background-color:#000000}.et_pb_menu_0_tb_header{padding-top:20px;padding-bottom:20px}.et_pb_menu_0_tb_header.et_pb_menu ul li.current-menu-item a{color:#FFFFFF!important}.et_pb_menu_0_tb_header.et_pb_menu .nav li ul,.et_pb_menu_0_tb_header.et_pb_menu .et_mobile_menu,.et_pb_menu_0_tb_header.et_pb_menu .et_mobile_menu ul{background-color:#000000!important}.et_pb_menu_0_tb_header .et_pb_menu_inner_container>.et_pb_menu__logo-wrap,.et_pb_menu_0_tb_header .et_pb_menu__logo-slot{width:auto;max-width:100%}.et_pb_menu_0_tb_header .et_pb_menu_inner_container>.et_pb_menu__logo-wrap .et_pb_menu__logo img,.et_pb_menu_0_tb_header .et_pb_menu__logo-slot .et_pb_menu__logo-wrap img{height:auto;max-height:none}.et_pb_menu_0_tb_header .mobile_nav .mobile_menu_bar:before,.et_pb_menu_0_tb_header .et_pb_menu__icon.et_pb_menu__search-button,.et_pb_menu_0_tb_header .et_pb_menu__icon.et_pb_menu__close-search-button,.et_pb_menu_0_tb_header .et_pb_menu__icon.et_pb_menu__cart-button{color:#7EBEC5}.et_pb_text_1_tb_header.et_pb_module{margin-left:auto!important;margin-right:auto!important}@media only screen and (max-width:767px){.et_pb_text_0_tb_header h1{font-size:54px}}</style>
+<style id="et-builder-module-design-1832-cached-inline-styles">.et_pb_section_0_tb_footer.et_pb_section{padding-top:0px;padding-bottom:0px;background-color:#000000!important}.et_pb_row_0_tb_footer.et_pb_row{padding-top:15px!important;padding-bottom:15px!important;padding-top:15px;padding-bottom:15px}.et_pb_row_0_tb_footer,body.et_boxed_layout #page-container .et_pb_row_0_tb_footer.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,body.et_boxed_layout.et_pb_pagebuilder_layout.single.et_full_width_portfolio_page #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row{max-width:1280px}.et_pb_column_0_tb_footer,.et_pb_column_1_tb_footer,.et_pb_column_2_tb_footer{margin:auto}.et_pb_text_0_tb_footer.et_pb_text a,.et_pb_text_1_tb_footer.et_pb_text a:hover{color:#0eb1ed!important}.et_pb_text_0_tb_footer a{font-weight:600}.et_pb_text_1_tb_footer.et_pb_text a{color:#FFFFFF!important;transition:color 300ms ease 0ms}.et_pb_text_1_tb_footer{margin-bottom:0px!important}.et_pb_social_media_follow_network_0_tb_footer a.icon{background-color:#3b5998!important}.et_pb_social_media_follow_network_1_tb_footer a.icon{background-color:#00aced!important}.et_pb_social_media_follow_network_2_tb_footer a.icon{background-color:#007bb6!important}</style>	
+			<span class="et_pb_scroll_top et-pb-icon"></span>
+	</body>
+</html>
